@@ -28,10 +28,16 @@ footer{
     background-color: cover;
     background-position: center;
     height: 150px;
+    width: 100%;
+    /*centrerer teksten i midten af billedet*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .season-row{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5%;
 }
