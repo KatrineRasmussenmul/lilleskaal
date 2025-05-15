@@ -24,8 +24,21 @@ function updateCurrentSeason() {
         vinter: "Vinter"
     };
 
+    /*Sætter akutelt sæsonbillede i banneret */
     banner.style.backgroundImage = `url('${seasonImages[season]}')`;
     banner.textContent = seasonText[season];
+
+    /*Tilføj de andre sæsoner nedenunder*/
+    const otherSeasons = document.getElementById("other-seasons");
+    for (const key in seasonImages){
+        if (key !==season) {
+            const card = document.createElement("div");
+            card.className = "season-card";
+            card.style.backgroundImage = `url('${seasonImages[key]}')`;
+            card.textContent = seasonText[key];
+            otherSeasons.appendChild(card)
+        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", updateCurrentSeason);
