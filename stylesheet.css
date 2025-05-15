@@ -1,0 +1,6 @@
+
+/*sørger for, at billedet tilpasser sig bredden af dets container og bevarer proportionerne*/
+img{
+    width: 100%;
+    height: auto;
+}
