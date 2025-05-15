@@ -11,10 +11,10 @@ function updateCurrentSeason() {
     const banner = document.getElementById("current-season");
 
     const seasonImages = {
-        foraar: "eksempel.jpg",
-        sommer: "eksempel.jpg",
-        efteraar: "eksempel.jpg",
-        vinter: "eksempel.jpg"
+        foraar: "img/eksempel.jpg",
+        sommer: "img/eksempel.jpg",
+        efteraar: "img/eksempel.jpg",
+        vinter: "img/eksempel.jpg"
     };
 
     const seasonText = {
