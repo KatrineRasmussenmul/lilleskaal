@@ -51,7 +51,6 @@ footer{
     width: 100%;
     height: 1050px;
     box-sizing: border-box;
-    background: green;
 }
 
 /*Alle billeder i collagen*/
@@ -85,6 +84,6 @@ footer{
 /*----------------------------MOBIL-VERISON----------------------------*/
 
 @media screen and (max-width: 768px) {
-  /* Stylingingen gælder kun på mobil */
+  /* Stylingen gælder kun på mobil */
 
 }
