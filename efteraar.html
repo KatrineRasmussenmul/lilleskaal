@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skabelon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!--NAVIGATIONSBAR-->
+    <!--LOGO TIL VENSTRE-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--MENU-LINJE TIL HØJRE-->
+            <!--justify-content-end for at sætte elemterne ud til højre-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!--DROPDOWN M. SÆSONER-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="opskrifter.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Opskrifter
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="foraar.html">Forår</a></li>
+                            <li><a class="dropdown-item" href="sommer.html">Sommer</a></li>
+                            <li><a class="dropdown-item" href="efteraar.html">Efterår</a></li>
+                            <li><a class="dropdown-item" href="vinter.html">Vinter</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="omos.html">Om Os</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HERO-SEKTION-->
+    <!--BAGGRUNDSBILLEDE-->
+    <!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
+    <div class="hero-sektion position-relative">
+        <picture>
+            <source media="(min-width: 768px)" srcset="https://placehold.co/1240x400">
+            <img src="https://placehold.co/100x100" alt="">
+        </picture>
+
+
+        <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
+        <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
+        <!--w-100 h-100: gør overlay lige så stort som billedet-->
+        <!--d-flex ....: centrerer tekst midt i billedet-->
+        <div
+            class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
+            <h1>Efterår</h1>
+        </div>
+    </div>
+
+    <!--INTRODUKTIONS-AFSNIT-->
+    <div class="container">
+        <div class="row align-items-start my-5">
+            <!--Tekstfelt m. introduktion til side-->
+            <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
+            <div class="col-12 col-sm-6">
+                <p>Efteråret er tiden, hvor køkkenet bliver fyldt med de varme, dybe smage fra sæsonens råvarer. Det er en tid til både at lave mad for sig selv, når det er koldt udenfor, og til at samle vennerne omkring et måltid, der varmer både krop og sjæl.</p>
+            </div>
+            <!--Illustration til højre-->
+            <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
+            <div class="d-none d-sm-block col-sm-2 offset-sm-4">
+                <img src="#" alt="illustration">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Smagen af forår - organge container -->
+    <div class="container orange">
+        <div class="col-12 col-sm-6">
+            <h2>Efterårets Lune Retter</h2>
+            <p>Her finder du opskrifter med alt det bedste fra efteråret – som græskar, rødbeder, pastinak og æbler. Retter, der smager af stearinlys, tæpper og lange, hyggelige middage med dem, du holder af.</p>
+        </div>
+
+        <div class="container text-center p-0">
+            <div class="row align-items-start">
+                <div class="col-4">
+                    <img src="https://placehold.co/100x100" alt="Græskar-Daal">
+                </div>
+                <div class="col-4">
+                    <img src="https://placehold.co/100x100" alt="efterårspasta">
+                </div>
+                <div class="col-4">
+                    <img src="https://placehold.co/100x100" alt="ovnbagte rodfrugter">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
