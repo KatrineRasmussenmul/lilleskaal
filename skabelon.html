@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+<<<<<<< HEAD
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,9 +52,39 @@
           </li>
         </ul>
       </div>
+=======
+    <!--MENU-LINJE TIL HØJRE-->
+    <!--justify-content-end for at sætte elemterne ud til højre-->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <!--DROPDOWN M. SÆSONER-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="opskrifter.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Opskrifter
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="foraar.html">Forår</a></li>
+            <li><a class="dropdown-item" href="sommer.html">Sommer</a></li>
+            <li><a class="dropdown-item" href="efteraar.html">Efterår</a></li>
+            <li><a class="dropdown-item" href="vinter.html">Vinter</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="omos.html">Om Os</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+>>>>>>> f99848eba00d0cda741f00965490316090465b3b
     </div>
   </nav>
 
+<<<<<<< HEAD
   <!--HERO-SEKTION-->
   <!--BAGGRUNDSBILLEDE-->
   <!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
@@ -84,6 +115,41 @@
       <div class="d-none d-sm-block col-sm-2 offset-sm-2">
         <img src="#" alt="illustration">
       </div>
+=======
+<!--HERO-SEKTION-->
+<!--BAGGRUNDSBILLEDE-->
+<!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
+<div class="hero-sektion position-relative">
+    <picture>
+      <source media="(min-width: 768px)" srcset="https://placehold.co/1240x400">
+      <img src="https://placehold.co/100x100" alt="">
+    </picture>
+
+
+
+        <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
+        <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
+        <!--w-100 h-100: gør overlay lige så stort som billedet-->
+        <!--d-flex ....: centrerer tekst midt i billedet-->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
+            <h1>Lille Skål</h1>
+            <a href="opskrifter.html">Opskrifter til små køkkener og store smage ></a>
+        </div>
+</div>
+
+<!--INTRODUKTIONS-AFSNIT-->
+<div class="container">
+  <div class="row align-items-start">
+    <!--Tekstfelt m. introduktion til side-->
+    <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
+    <div class="col-12 col-sm-6">
+      <p>Tekst</p>
+    </div>
+    <!--Illustration til højre-->
+    <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
+    <div class="d-none d-sm-block col-sm-2 offset-sm-4">
+      <img src="#" alt="illustration">
+>>>>>>> f99848eba00d0cda741f00965490316090465b3b
     </div>
   </div>
 
