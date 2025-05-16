@@ -1,4 +1,23 @@
 
+:root {
+    --primær-orange: #FBEBDE;
+    --sekundær-orange: #FFDBBE;
+    --primær-blå: #093A9D;
+    --sekundær-blå: #5671A7;
+}
+
+body{
+    background-color: var(--primær-orange);
+}
+
+.orange{
+    background-color:var(--sekundær-orange);
+}
+
+.navbar{
+    background-color: var(--sekundær-orange) !important;
+}
+
 /*sørger for, at billedet tilpasser sig bredden af dets container og bevarer proportionerne*/
 img{
     width: 100%;
@@ -19,6 +38,10 @@ footer{
 
 .serviet-tekst{
     margin: 20px 0 20px 70px ;
+}
+
+.kontakt-boks{
+    width: 400px;
 }
 
 /*----------------------------OPSKRIFTER PÅ FORSIDEN----------------------------*/
