@@ -81,6 +81,43 @@ footer{
 .bord-container img{
     width: 70%;
 }
+
+/*----------------------------OM OS----------------------------*/
+
+
+
+
+/*----------------------------KONTAKT----------------------------*/
+.polaroid {
+    width: 250px;
+    background-color: white;
+    padding: 10px 10px 30px 10px; /* ekstra plads i bunden */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transform: rotate(3deg); /* valgfri rotation */
+    border: 1px solid #ccc;
+  }
+
+  .polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-style: italic;
+  }
+
+ 
+
+
+
+
+
+
 /*----------------------------MOBIL-VERISON----------------------------*/
 
 @media screen and (max-width: 768px) {
