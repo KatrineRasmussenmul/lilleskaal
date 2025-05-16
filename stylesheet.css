@@ -84,50 +84,58 @@ footer{
 
 /*----------------------------OM OS----------------------------*/
 
+/* Overordnet container for "Om Os"-sektionen */
 .om-os {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 2rem;                  /* Giver luft hele vejen rundt om indholdet */
+  max-width: 1200px;              /* Begrænser bredden, så det ikke bliver for bredt på store skærme */
+  margin: 0 auto;                 /* Centrerer indholdet horisontalt */
 }
 
+/* Grid-struktur til layout af venstre billede, tekst og højre billeder */
 .om-os-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 2rem;
-  align-items: start;
+  display: grid;                  /* Aktiverer CSS Grid layout */
+  grid-template-columns: repeat(12, 1fr); /* Opretter 12 lige brede kolonner */
+  gap: 2rem;                      /* Mellemrum mellem elementerne i grid’et */
+  align-items: start;            /* Sørger for at alt starter fra toppen lodret */
 }
 
+/* Venstre billede – tager 3 ud af 12 kolonner */
 .om-os-image-left {
   grid-column: span 3;
 }
 
+/* Midtertekst – tager 5 ud af 12 kolonner */
 .om-os-text {
   grid-column: span 5;
 }
 
+/* Højre billed-collage – tager 4 ud af 12 kolonner og danner nyt grid */
 .om-os-image-right {
   grid-column: span 4;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  position: relative;
+  display: grid;                         /* Indre grid for de to billeder */
+  grid-template-columns: 1fr 1fr;        /* To lige brede kolonner */
+  gap: 1rem;                             /* Mellemrum mellem billederne */
+  position: relative;                    /* Gør det muligt at bruge z-index på billederne */
 }
 
+/* Fælles styling for billederne i højre sektion */
 .om-os-image-right img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%;                           /* Fylder hele kolonnen */
+  height: auto;                          /* Beholder billedets proportioner */
+  object-fit: cover;                     /* Fylder uden at forvrænge, beskærer om nødvendigt */
 }
 
+/* Billede 1 i højre side – drejet lidt for at skabe collageeffekt */
 .billede10 {
-  transform: rotate(2deg);
-  z-index: 2;
+  transform: rotate(2deg);              /* Drejer billedet 2 grader med uret */
+  z-index: 2;                            /* Ligger øverst hvis de overlapper */
 }
 
+/* Billede 2 i højre side – drejet modsat og lidt forskudt nedad */
 .billede11 {
-  transform: rotate(-2deg);
-  margin-top: 2rem;
-  z-index: 1;
+  transform: rotate(-2deg);             /* Drejer billedet 2 grader mod uret */
+  margin-top: 2rem;                     /* Skubber billedet lidt ned for dynamik */
+  z-index: 1;                            /* Ligger bagved billede10 ved overlap */
 }
 
 
