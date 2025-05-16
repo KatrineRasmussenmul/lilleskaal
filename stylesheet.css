@@ -91,7 +91,7 @@ footer{
   margin: 0 auto;                 /* Centrerer indholdet horisontalt */
 }
 
-/* Grid-struktur til layout af venstre billede, tekst og højre billeder */
+/* Grid-struktur til første del layout af venstre billede, tekst og højre billeder */
 .om-os-grid {
   display: grid;                  /* Aktiverer CSS Grid layout */
   grid-template-columns: repeat(12, 1fr); /* Opretter 12 lige brede kolonner */
@@ -116,10 +116,13 @@ footer{
   grid-template-columns: 1fr 1fr;        /* To lige brede kolonner */
   gap: 1rem;                             /* Mellemrum mellem billederne */
   position: relative;                    /* Gør det muligt at bruge z-index på billederne */
+    aspect-ratio: 3 / 4; /* Holder forholdet men tilpasser højden efter bredden */
 }
 
+
+
 /* Fælles styling for billederne i højre sektion */
-.om-os-image-right img {
+.om-os-image-right img{
   width: 100%;                           /* Fylder hele kolonnen */
   height: auto;                          /* Beholder billedets proportioner */
   object-fit: cover;                     /* Fylder uden at forvrænge, beskærer om nødvendigt */
@@ -137,6 +140,9 @@ footer{
   margin-top: 2rem;                     /* Skubber billedet lidt ned for dynamik */
   z-index: 1;                            /* Ligger bagved billede10 ved overlap */
 }
+
+
+
 
 
 
