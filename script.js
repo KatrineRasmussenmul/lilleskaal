@@ -1,3 +1,4 @@
+//FORSIDE - nuværende sæson kommer øverst som det største billede//
 function getCurrentSeason() {
     const month = new Date().getMonth() + 1;
     if (month >= 3 && month <=5) return "foraar";
@@ -42,3 +43,31 @@ function updateCurrentSeason() {
 }
 
 document.addEventListener("DOMContentLoaded", updateCurrentSeason);
+
+//ALLE OPSKRIFTER - nuværende sæson kommer øverst på siden//
+document.addEventListener("DOMContentLoaded", () => {
+  function getCurrentSeason() {
+    const month = new Date().getMonth() + 1;
+    if (month >= 3 && month <= 5) return "foraar";
+    if (month >= 6 && month <= 8) return "sommer";
+    if (month >= 9 && month <= 11) return "efteraar";
+    return "vinter";
+  }
+
+  const currentSeason = getCurrentSeason();
+  const containerId = `alle-${currentSeason}`;
+  const seasonContainer = document.getElementById(containerId);
+
+  if (seasonContainer) {
+    const introSection = document.querySelector(".introduktion"); // Den første container er introduktionen
+    if (introSection && introSection.parentNode) {
+      introSection.parentNode.insertBefore(seasonContainer, introSection.nextSibling);
+    }
+  }
+});
+
+
+
+
+
+  

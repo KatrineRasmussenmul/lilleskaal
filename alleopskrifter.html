@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skabelon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  
+  <body>
+    <!--NAVIGATIONSBAR-->
+    <!--LOGO TIL VENSTRE-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LOGO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--MENU-LINJE TIL HØJRE-->
+    <!--justify-content-end for at sætte elemterne ud til højre-->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <!--DROPDOWN M. SÆSONER-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="opskrifter.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Opskrifter
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="foraar.html">Forår</a></li>
+            <li><a class="dropdown-item" href="sommer.html">Sommer</a></li>
+            <li><a class="dropdown-item" href="efteraar.html">Efterår</a></li>
+            <li><a class="dropdown-item" href="vinter.html">Vinter</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="omos.html">Om Os</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--HERO-SEKTION-->
+<!--BAGGRUNDSBILLEDE-->
+<!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
+<div class="hero-sektion position-relative">
+    <picture>
+      <source media="(min-width: 768px)" srcset="https://placehold.co/1240x400">
+      <img src="https://placehold.co/100x100" alt="">
+    </picture>
+
+
+        <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
+        <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
+        <!--w-100 h-100: gør overlay lige så stort som billedet-->
+        <!--d-flex ....: centrerer tekst midt i billedet-->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
+            <h1>ALLE OPSKRIFTER</h1>
+            <p>Gør mere med mindre – lækre måltider til små budgetter.</p>
+        </div>
+</div>
+
+<!--INTRODUKTIONS-AFSNIT-->
+<div class="container introduktion">
+  <div class="row align-items-start my-5">
+    <!--Tekstfelt m. introduktion til side-->
+    <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
+    <div class="col-12 col-sm-6">
+      <p>Frisk forår, let sommer, varm vinter eller smagfuldt efterår? Her finder du nemme opskrifter med sæsonens danske råvarer – perfekt til både hverdagsmad og hyggelige måltider.</p>
+    </div>
+    <!--Illustration til højre-->
+    <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
+    <div class="d-none d-sm-block col-sm-2 offset-sm-4">
+      <img src="#" alt="illustration">
+    </div>
+  </div>
+</div>
+
+<!--Forår opskrifter-->
+<div id="alle-foraar" class="container orange d-none d-md-block">
+  <div class="row align-items-start my-5">
+    <h2>Forår</h2>
+    <div class="col">
+      <a href="foraar1.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="foraar1.html"><h3>Opskrift</h3></a>
+    </div>
+    <div class="col">
+      <a href="foraar2.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="foraar2.html"><h3>Opskrift</h3></a>
+    </div>
+    <div class="col">
+      <a href="foraar3.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="foraar3.html"><h3>Opskrift</h3></a>
+    </div>
+  </div>
+</div>
+
+<!--Sommer opskrifter-->
+<div id="alle-sommer" class="container d-none d-md-block">
+  <div class="row align-items-start my-5">
+    <h2>Sommer</h2>
+    <div class="col">
+      <a href="sommer1.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="sommer1.html"><h3>Opskrift</h3></a>
+    </div>
+    <div class="col">
+      <a href="sommer2.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="sommer2.html"><h3>Opskrift</h3></a>
+    </div>
+    <div class="col">
+      <a href="sommer3.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="sommer3.html"><h3>Opskrift</h3></a>
+    </div>
+  </div>
+</div>
+
+<!--Efterår opskrifter-->
+<div id="alle-efteraar" class="container orange d-none d-md-block">
+  <div class="row align-items-start my-5">
+    <h2>Efterår</h2>
+    <div class="col">
+      <a href="efteraar1.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="efteraar1.html"><h3>Opskrift</h3></a>
+    </div>
+    <div class="col">
+      <a href="efteraar2.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="efteraar2.html"><h3>Opskrift</h3></a>
+    </div>
+    <div class="col">
+      <a href="efteraar3.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="efteraar3.html"><h3>Opskrift</h3></a>
+    </div>
+  </div>
+</div>
+
+<!--Vinter opskrifter-->
+<div id="alle-vinter" class="container d-none d-md-block">
+  <div class="row align-items-start my-5">
+    <h2>Vinter</h2>
+    <div class="col">
+      <a href="vinter1.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="vinter1.html"><h3>Opskrift</h3></a>
+    </div>
+    <div class="col">
+      <a href="vinter2.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="vinter2.html"><h3>Opskrift</h3></a>
+    </div>
+    <div class="col">
+      <a href="vinter3.html"><img src="https://placehold.co/80x100" alt=""></a>
+      <a href="vinter3.html"><h3>Opskrift</h3></a>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Karussel til mobil-verison-->
+<!--Karussel Forår-->
+<div id="carouselExampleControlsNoTouching" class="carousel slide d-block d-md-none my-5" data-bs-touch="false">
+<h2>Forår</h2>
+  <div class="carousel-inner">
+
+    <a href="foraar1.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift</h3>
+        </div>
+    </a>
+
+    <a href="foraar2.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift 2</h3>
+        </div>
+    </a>
+
+    <a href="foraar3.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift 3</h3>
+        </div>
+    </a>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--Karussel Sommer-->
+<div id="carouselExampleControlsNoTouching" class="carousel slide d-block d-md-none my-5" data-bs-touch="false">
+<h2>Sommer</h2>
+  <div class="carousel-inner">
+
+    <a href="sommer1.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift</h3>
+        </div>
+    </a>
+
+    <a href="sommer2.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift 2</h3>
+        </div>
+    </a>
+
+    <a href="sommer3.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift 3</h3>
+        </div>
+    </a>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--Karussel Efterår-->
+<div id="carouselExampleControlsNoTouching" class="carousel slide d-block d-md-none my-5" data-bs-touch="false">
+<h2>Efterår</h2>
+  <div class="carousel-inner">
+
+    <a href="efteraar1.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift</h3>
+        </div>
+    </a>
+
+    <a href="efteraar2.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift 2</h3>
+        </div>
+    </a>
+
+    <a href="efteraar3.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift 3</h3>
+        </div>
+    </a>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--Karussel Vinter-->
+<div id="carouselExampleControlsNoTouching" class="carousel slide d-block d-md-none my-5" data-bs-touch="false">
+<h2>Vinter</h2>
+  <div class="carousel-inner">
+
+    <a href="vinter1.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift</h3>
+        </div>
+    </a>
+
+    <a href="vinter2.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift 2</h3>
+        </div>
+    </a>
+
+    <a href="vinter3.html">
+        <div class="carousel-item active text-center">
+            <img src="https://placehold.co/100x80" class="d-block w-100" alt="...">
+            <h3>Opskrift 3</h3>
+        </div>
+    </a>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+<!--Footer-->
+  <!-- Footer sektion med relativ positionering, så alt indeni kan placeres absolut -->
+<footer class="position-relative">
+
+  <!-- Centreret container der indeholder serviet-billede og tekst -->
+   <!--Centrerer billedet midt i containeren:
+- position-absolute: tillader præcis placering i forhold til nærmeste position-relative forælder
+- top-50 start-50: flytter billedets øverste venstre hjørne til midten af containeren
+- translate-middle: trækker billedet 50% tilbage i både X og Y retning,
+  så hele billedet er perfekt centreret (både vandret og lodret)-->
+  <div class="position-absolute top-50 start-50 translate-middle">
+    
+    <!-- Billedet af en serviet, som fungerer som "baggrund" for teksten -->
+  <div class="serviet"> 
+    <img src="https://placehold.co/600x200" alt="Serviet">
+  </div>
+   
+
+    <!-- Teksten placeret ovenpå serviet-billedet -->
+    <div class="serviet-tekst position-absolute top-0 start-0 translate-start">
+      
+      <!-- Bootstrap grid række -->
+      <div class="row">
+        <!-- Overskrift -->
+        <h3>Kontakt os:</h3>
+
+        <!-- Venstre kolonne med telefonnummer -->
+        <div class="telefon col-6">
+          <p>Telefon.nr.:</p>
+          <p>+45 27 14 78 **</p>
+        </div>
+
+        <!-- Højre kolonne med e-mailadresse -->
+        <div class="mail col-6">
+          <p>Mail:</p>
+          <p>lille@skaal.dk</p>
+        </div>
+
+        <!-- Ny række med hjerte-symbol og sociale medier -->
+        <div class="row">
+          <!-- Venstre kolonne med hjerte -->
+          <div class="hjerte col-7 text-end">
+            <!-- Hjerte skrevet som tekst -->
+            <p>&lt;3</p>
+          </div>
+
+          <!-- Højre kolonne med Instagram-ikoner -->
+          <div class="some col-5 text-end">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-tiktok"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+     <script src="script.js"></script>
+
+  </body>
+</html>
