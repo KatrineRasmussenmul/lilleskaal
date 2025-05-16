@@ -118,6 +118,22 @@ footer{
 
 
 
+    /* Fællesskål siden */
+
+    .minicollage{
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .overlagt-billede{
+        position: absolute;
+        bottom: 360px; 
+        right: 310px;
+    }
+
+
+
   /*----------------------------MELLEM DESKTOP (TIL COLLAGE)----------------------------*/
 
 @media screen and (max-width: 1024px) {
@@ -143,6 +159,11 @@ footer{
         width: 40%;
         box-sizing: border-box;
     }
+
+
+
+
+
   }
 
 /*----------------------------TABLET-VERISON----------------------------*/
@@ -170,7 +191,22 @@ footer{
         width: 45%;
         box-sizing: border-box;
     }
-  }
+
+    /* Fællesskål siden */
+
+    .minicollage{
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .overlagt-billede{
+        position: absolute;
+        bottom: 300px; 
+        right: 167px;
+    }
+    }
+
 
   /*----------------------------MOBIL-VERISON----------------------------*/
 
@@ -199,6 +235,15 @@ footer{
         margin-top: 60%;
         box-sizing: border-box;
     }
+
+
+        /* Fællesskål siden */
+    
+        .overlagt-billede{
+            position: absolute;
+            bottom: 50px; 
+            right: 200px;
+        }
   
 
   }
