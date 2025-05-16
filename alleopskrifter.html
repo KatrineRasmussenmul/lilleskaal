@@ -319,60 +319,44 @@
 
 
 <!--Footer-->
-  <!-- Footer sektion med relativ positionering, så alt indeni kan placeres absolut -->
-<footer class="position-relative">
+<footer class="py-4">
+  <div class="container d-flex flex-column align-items-center justify-content-center">
 
-  <!-- Centreret container der indeholder serviet-billede og tekst -->
-   <!--Centrerer billedet midt i containeren:
-- position-absolute: tillader præcis placering i forhold til nærmeste position-relative forælder
-- top-50 start-50: flytter billedets øverste venstre hjørne til midten af containeren
-- translate-middle: trækker billedet 50% tilbage i både X og Y retning,
-  så hele billedet er perfekt centreret (både vandret og lodret)-->
-  <div class="position-absolute top-50 start-50 translate-middle">
-    
-    <!-- Billedet af en serviet, som fungerer som "baggrund" for teksten -->
-  <div class="serviet"> 
-    <img src="https://placehold.co/600x200" alt="Serviet">
-  </div>
-   
+      <!-- Servietbillede som baggrund -->
+      <div class="position-relative py-3 py-md-5">
+          <picture>
+              <source media="(min-width: 768px)" srcset="https://placehold.co/600x200">
+              <img src="https://placehold.co/300x300" alt="Serviet" class="img-fluid">
+          </picture>
 
-    <!-- Teksten placeret ovenpå serviet-billedet -->
-    <div class="serviet-tekst position-absolute top-0 start-0 translate-start">
-      
-      <!-- Bootstrap grid række -->
-      <div class="row">
-        <!-- Overskrift -->
-        <h3>Kontakt os:</h3>
+          <!-- Tekst ovenpå billedet -->
+          <div class="position-absolute top-50 start-50 translate-middle">
+              <h3>Kontakt os:</h3>
 
-        <!-- Venstre kolonne med telefonnummer -->
-        <div class="telefon col-6">
-          <p>Telefon.nr.:</p>
-          <p>+45 27 14 78 **</p>
-        </div>
+              <div class="row justify-content-center">
+                  <div class="telefon col-12 col-md-6">
+                      <p>Telefon.nr.:</p>
+                      <p>+45 27 14 78 **</p>
+                  </div>
 
-        <!-- Højre kolonne med e-mailadresse -->
-        <div class="mail col-6">
-          <p>Mail:</p>
-          <p>lille@skaal.dk</p>
-        </div>
+                  <div class="mail col-12 col-md-6">
+                      <p>Mail:</p>
+                      <p>lille@skaal.dk</p>
+                  </div>
+              </div>
 
-        <!-- Ny række med hjerte-symbol og sociale medier -->
-        <div class="row">
-          <!-- Venstre kolonne med hjerte -->
-          <div class="hjerte col-7 text-end">
-            <!-- Hjerte skrevet som tekst -->
-            <p>&lt;3</p>
+              <div class="row mt-3 justify-content-center">
+                  <div class="hjerte col-6 text-end">
+                      <p>&lt;3</p>
+                  </div>
+                  <div class="some col-6 text-end">
+                      <i class="bi bi-instagram me-2"></i>
+                      <i class="bi bi-tiktok"></i>
+                  </div>
+              </div>
           </div>
-
-          <!-- Højre kolonne med Instagram-ikoner -->
-          <div class="some col-5 text-end">
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-tiktok"></i>
-          </div>
-        </div>
-
       </div>
-    </div>
+
   </div>
 </footer>
 
