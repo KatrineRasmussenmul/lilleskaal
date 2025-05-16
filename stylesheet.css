@@ -86,7 +86,10 @@ footer{
 }
 
 /*----------------------------OM OS----------------------------*/
-
+.madlavning{
+  margin-top: 70%;
+  transform: rotate(10deg);
+}
 
 
 
@@ -121,8 +124,9 @@ footer{
   /*----------------------------MELLEM DESKTOP (TIL COLLAGE)----------------------------*/
 
 @media screen and (max-width: 1024px) {
-    /* Styling på collage når skærmen bliver mindre  */
+    /* Styling ved mellem desktop*/
 
+    /*Styling for collage*/
     .collage-container{
         height: 750px;
     }
@@ -147,8 +151,9 @@ footer{
 /*----------------------------TABLET-VERISON----------------------------*/
 
 @media screen and (max-width: 768px) {
-    /* Styling på collage når det er en tablet */
+    /* Styling når det er en tablet */
 
+    /*Styling for collage*/
     .collage-container{
         height: 550px;
     }
@@ -168,17 +173,22 @@ footer{
         width: 45%;
         box-sizing: border-box;
     }
+
+      /*Styling for Om os-side*/
+    .madlavning{
+    display: none;
+    }
   }
 
   /*----------------------------MOBIL-VERISON----------------------------*/
 
 @media screen and (max-width: 430px) {
     /* Stylingen gælder kun på mobil */
-  
     .footer{
       display: block;
     }
 
+    /*Styling for collage*/
     .collage-container{
         height: 850px;
     }
@@ -195,9 +205,9 @@ footer{
         position: static;
         width: 90%;
         margin-top: 60%;
-
         box-sizing: border-box;
     }
   
+
   }
 
