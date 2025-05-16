@@ -84,6 +84,52 @@ footer{
 
 /*----------------------------OM OS----------------------------*/
 
+.om-os {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.om-os-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.om-os-image-left {
+  grid-column: span 3;
+}
+
+.om-os-text {
+  grid-column: span 5;
+}
+
+.om-os-image-right {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  position: relative;
+}
+
+.om-os-image-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.billede10 {
+  transform: rotate(2deg);
+  z-index: 2;
+}
+
+.billede11 {
+  transform: rotate(-2deg);
+  margin-top: 2rem;
+  z-index: 1;
+}
+
 
 
 
