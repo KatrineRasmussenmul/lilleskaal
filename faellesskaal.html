@@ -71,15 +71,22 @@
 
 <!--Første række med 2 kolonner-->
 <div class="container my-5">
-    <div class="row g-5">
+    <div class="row g-md-3 g-lg-5">
       <div class="col-md-6 col-12">
         <h2>Fokus på Fællesskabet</h2>
         <p>Vi elsker selv at kræse om maden, men det, der virkelig gør det hele værd, er fællesskabet omkring den. For os handler madlavning ikke kun om, hvad der ligger på tallerkenen, men om dem, man deler det med.
             <br>
         Fællesskab kan opstå både i et køkken, omkring et spisebord – og på en skærm. Derfor arbejder vi for at gøre madlavning sjov, nærværende og inspirerende – både digitalt og i virkeligheden.</p>
       </div>
+
+    
       <div class="col-md-6 col-12">
-        <img src="https://placehold.co/150x80" alt="">
+        
+        <picture>
+            <source media="(min-width: 1440px)" srcset="https://placehold.co/150x80">
+            <img src="https://placehold.co/150x120" alt="">
+        </picture>
+
       </div>
     </div>
   </div>
@@ -87,19 +94,26 @@
 
   <!--Anden række med 2 kolonner-->
   <div class="container my-5">
-    <div class="row g-5">
+    <div class="row g-md-3 g-lg-5">
   
-      <div class="col-md-6 col-12 position-relative" style="display: inline-block;">
+      <div class="minicollage col-md-6 col-12">
   
         <!-- Wrapper rundt om picture -->
-        <div class="offset-6 col-6">
+        <div class="under-billedet offset-6 col-6">
             <img src="https://placehold.co/150x250" alt="" class="img-fluid d-block">
         </div>
   
         <!-- Overlagt billede -->
-        <img src="https://placehold.co/200x150" alt="Overlagt billede"
-             class="col-6 position-absolute" style="bottom: 350px; right: 310px;">
-  
+         <div class="overlagt-billede col-6">
+
+          <picture>
+            <source media="(min-width: 768px)" srcset="https://placehold.co/200x150">
+            <img src="https://placehold.co/100x150" alt="Overlagt billede" class="d-block w-100">
+        </picture>
+
+
+         </div>
+         
       </div>
   
       <div class="col-md-6 col-12">
@@ -113,7 +127,7 @@
 
   <!--tredje række med 2 kolonner-->
 <div class="orange container my-5">
-    <div class="row g-5">
+    <div class="row g-md-3 g-lg-5">
       
       
         <div class="col-md-6 col-12 tilmelding-boks-faellesskaal">
@@ -131,7 +145,12 @@
 
 
       <div class="col-md-6 col-12">
-        <img src="https://placehold.co/150x80" alt="">
+        
+        <picture>
+            <source media="(min-width: 1440px)" srcset="https://placehold.co/150x80">
+            <img src="https://placehold.co/150x140" alt="">
+        </picture>
+
       </div>
     </div>
 </div>
@@ -141,7 +160,7 @@
 
 <!--Fjerde række med 2 kolonner-->
 <div class="container my-5">
-    <div class="row g-5">
+    <div class="row g-md-3 g-lg-5">
 
 
       <!--Carousel-->
@@ -149,13 +168,28 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://placehold.co/150x80" class="d-block w-100" alt="...">
+                
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="https://placehold.co/150x80">
+                    <img src="https://placehold.co/150x100" alt="" class="d-block w-100">
+                </picture>
+
               </div>
               <div class="carousel-item">
-                <img src="https://placehold.co/150x80" class="d-block w-100" alt="...">
+
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="https://placehold.co/150x80">
+                    <img src="https://placehold.co/150x100" alt="" class="d-block w-100">
+                </picture>
+
               </div>
               <div class="carousel-item">
-                <img src="https://placehold.co/150x80" class="d-block w-100" alt="...">
+
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="https://placehold.co/150x80">
+                    <img src="https://placehold.co/150x100" alt="" class="d-block w-100">
+                </picture>
+
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
