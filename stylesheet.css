@@ -6,6 +6,7 @@
     --sekundær-blå: #5671A7;
 }
 
+/* -----------------------Farver og Fonte ---------------------- */
 body{
     background-color: var(--primær-orange);
 }
@@ -14,9 +15,45 @@ body{
     background-color:var(--sekundær-orange);
 }
 
-.navbar{
+.navbar, .navbar a{
+    background-color: var(--sekundær-orange) !important;
+    color: var(--primær-blå);
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color: var(--sekundær-blå);
+}
+
+.dropdown-menu{
     background-color: var(--sekundær-orange) !important;
 }
+
+h1, h2, h3{
+    color: var(--primær-blå);
+    font-weight: bold;
+}
+
+h1{
+    font-family: 'Fuzzy Bubbles';
+    font-size: 4rem;
+}
+
+p, h2, h3, a{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------------------- Tilpasninger----------------------*/
+
+/* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
+.mere-padding{
+    padding: 5rem !important;
+}
+
+.logo img{
+    height: 50px;
+}
+
 
 /*sørger for, at billedet tilpasser sig bredden af dets container og bevarer proportionerne*/
 img{
@@ -232,6 +269,18 @@ footer{
         bottom: 300px; 
         right: 167px;
     }
+
+/*--------------------Tilpasninger----------------------*/
+
+/* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
+.mere-padding{
+    padding: 2.5rem !important;
+}
+
+.logo img{
+    height: 40px;
+}
+
     }
 
 
@@ -273,6 +322,13 @@ footer{
     footer{
         background-image: url('https://placehold.co/100x100'); 
     }
+
+    /*--------------------Tilpasninger----------------------*/
+
+/* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
+.mere-padding{
+    padding: 1rem !important;
+}
 
   }
 
