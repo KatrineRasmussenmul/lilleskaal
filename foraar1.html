@@ -189,7 +189,19 @@
     <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i kommentarfeltet herunder.</p>
 </section>
 
+    <div class="comment-container">
+        <div class="comment-form">
+            <input type="text" id="name" placeholder="Dit navn" />
+            <textarea id="comment" placeholder="Din kommentar"></textarea>
+            <button onclick="addComment()">Send</button>
+        </div>
 
+         <div class="comment-list">
+            <h2>Opskrifter</h2>
+            <div id="comments"></div>
+        </div>
+
+    </div>
 
 
 
@@ -246,5 +258,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

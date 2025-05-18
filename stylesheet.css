@@ -1,4 +1,3 @@
-
 :root {
     --primær-orange: #FBEBDE;
     --sekundær-orange: #FFDBBE;
@@ -146,7 +145,7 @@ footer{
     
 }
 
-/*----------------------------OPSKRIFTER----------------------------*/
+/*----------------------------STYLING TIL ALLE SIDER M. OPSKRIFTER----------------------------*/
 .collage-opskrift-container{
   position: relative;
   height: 830px;

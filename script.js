@@ -64,6 +64,33 @@ document.addEventListener("DOMContentLoaded", () => {
       introSection.parentNode.insertBefore(seasonContainer, introSection.nextSibling);
     }
   }
+
+
+
+//KOMMENTARSPOR - på hver side af hver enkelte opskrift//
+function addComment() {
+  const name = document.getElementById('name').value.trim();
+  const comment = document.getElementById('comment').value.trim();
+
+  if (name && comment) {
+    const commentBox = document.createElement('div');
+    commentBox.className = 'comment';
+    commentBox.innerHTML = `<strong>${name}</strong><p>${comment}</p>`;
+
+    document.getElementById('comments').prepend(commentBox);
+
+    // Clear inputs
+    document.getElementById('name').value = '';
+    document.getElementById('comment').value = '';
+  } else {
+    alert("Udfyld både navn og kommentar.");
+  }
+}
+
+
+
+
+
 });
 
 
