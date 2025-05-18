@@ -146,6 +146,41 @@ footer{
     
 }
 
+/*----------------------------OPSKRIFTER----------------------------*/
+.collage-opskrift-container{
+  position: relative;
+  height: 830px;
+}
+
+
+.pesto{ top: 35%; left: 10%; width: 50%; transform: rotate(-5deg);}
+.pastaret { top: 42%; left: 52%; width: 40%; }
+.bord { top: 70%; left: 48%; width: 40%; transform: rotate(10deg);}
+
+
+.ingredienser-boks{
+  position: absolute;
+  right: 0%;
+  width: 45%;
+  background: #5671A7;
+  color: #FBEBDE;
+  padding: 1.5rem;
+}
+
+.tip-boks{
+  position: absolute;
+  top: 148%;
+  right: 15%;
+  width: 18%;
+  background: #5671A7;
+  color: #FBEBDE;
+  padding: 1.5rem;
+  border-radius: 3rem;
+}
+
+
+
+
 /*----------------------------OM OS----------------------------*/
 .madlavning{
   margin-top: 70%;

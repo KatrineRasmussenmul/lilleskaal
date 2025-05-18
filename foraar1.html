@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skabelon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  
+      <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
+      <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+      <!--Google Fonts: Poppins til <p>-->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+  </head>
+  
+  <body class="px-5">
+    <!--NAVIGATIONSBAR-->
+    <!--LOGO TIL VENSTRE-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--MENU-LINJE TIL HØJRE-->
+    <!--justify-content-end for at sætte elemterne ud til højre-->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <!--DROPDOWN M. SÆSONER-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="opskrifter.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Opskrifter
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="foraar.html">Forår</a></li>
+            <li><a class="dropdown-item" href="sommer.html">Sommer</a></li>
+            <li><a class="dropdown-item" href="efteraar.html">Efterår</a></li>
+            <li><a class="dropdown-item" href="vinter.html">Vinter</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="omos.html">Om Os</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--HERO-SEKTION-->
+<!--BAGGRUNDSBILLEDE-->
+<!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
+<div class="hero-sektion position-relative">
+    <picture>
+      <source media="(min-width: 768px)" srcset="https://placehold.co/1240x400">
+      <img src="https://placehold.co/100x100" alt="">
+    </picture>
+
+
+        <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
+        <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
+        <!--w-100 h-100: gør overlay lige så stort som billedet-->
+        <!--d-flex ....: centrerer tekst midt i billedet-->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
+            <h1>Pasta med tomat, spidskål og ramsløgspesto</h1>
+        </div>
+</div>
+
+<!--INTRODUKTIONS-AFSNIT-->
+<div class="container">
+  <div class="row align-items-start my-5">
+    <!--Tekstfelt m. introduktion til side-->
+    <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
+    <div class="col-12 col-sm-6">
+      <p>Lækker, lun og klar på en solrig forårsaften! Pastaen vendes med cremet ramsløgspesto, søde tomater og letstegt spidskål – simpel hverdagslykke i en skål</p>
+    </div>
+    <!--Illustration til højre-->
+    <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
+    <div class="d-none d-sm-block col-sm-2 offset-sm-4">
+      <img src="#" alt="illustration">
+    </div>
+  </div>
+</div>
+
+<section class="orange py-5">
+    <!--Info-linje om tid og antal per.-->
+<section class="text-center">
+    <h2>Opskrift</h2>
+    <!--sætter hver p ved siden af hinanden horisontalt-->
+    <div class="d-flex justify-content-evenly">
+        <p>2 personer</p>
+        <p>Arbejdstid: 20 min</p>
+        <p>Tid i alt: 50 min</p>
+    </div>
+</section>
+
+
+<section>
+    <div class="d-flex flex-column flex-md-row gap-4 py-5">
+            <!--Venstre side: ingredienser & billeder-->
+        <div class="collage-opskrift-container col-12 col-sm-5">
+            <div class="ingredienser-boks">
+                <h4>Ingredienser</h4>
+                    <ul>
+                        <li>150 g pasta</li>
+                        <li>1 håndfuld spidskål</li>
+                        <li>6-8 cerrytomater</li>
+                        <li>1 håndfuld ramsløg</li>
+                        <li>1/2 dl olie</li>
+                        <li>Lidt citronsaft</li>
+                        <li>Salt</li>
+                    </ul>
+            </div>
+
+            <div>
+                <img src="img/omos/paastranden.png" class="billede pesto" alt="">
+                <img src="https://placehold.co/60x40" class="billede pastaret" alt="">
+                <img src="img/kurv.png" class="billede bord" alt="">
+            </div>
+    </div>
+
+
+    <!--Højre side: beskrivelse af fremgangsmåde-->
+        <div class="col-12 col-sm-4 offset-sm-1">
+            <h3>Fremgangsmåde</h3>
+            <p><strong>Kog pastaen</strong></p>
+            <p>Kog pastaen efter anvisning på pakken, og gem lidt kogevand til at justere konsistensen senere.</p>
+
+            <p><strong>Lav pestoen</strong></p>
+            <p>Blend ramsløg, olie, kerner, citron og lidt salt.</p>
+
+            <p><strong>Forbered grøntsagerne</strong></p>
+            <p>Snit spidskål fint og steg den hurtigt på en pande med lidt olie, indtil den falder sammen og bliver let karamelliseret.</p>
+            <p>Skær tomaterne i halve og kom dem på panden sammen med kålene de sidste minutter af tilberedningen, så de bliver let opvarmede og bløde.</p>
+
+            <p><strong>Samle retten</strong></p>
+            <p>Vend den kogte pasta med pesto, spidskål og tomater. Tilsæt lidt af pastavandet, hvis retten virker for tør.</p>
+
+            <p><strong>Server</strong></p>
+            <p>Server med ekstra pesto og evt. revet ost eller friskhakkede urter på toppen.</p>
+        </div>
+    </div>
+
+            <div class="tip-boks">
+            <p><strong>Et lille tip!</strong></p>
+            <p>Hvis du har pesto til overs, kan den opbevares i en tætsluttende beholder i fryseren og bruges til sandwich, pizza eller som dip senere</p>
+            </div>
+</section>
+</section>
+
+<!--Musik-->
+<section class="my-5 playlist-section">
+    <h3>Gør det hyggeligt!</h3>
+    <p>Hæld et glas hvidvin op og nyd vores playliste, mens du hygger dig med madlavningen</p>
+
+    <div class="spotify-embed">
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX60OAKjsWlA2?utm_source=generator&theme=0"
+        width="100%" height="140" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+
+<!--Andre opskrifter-->
+<section class="my-5">
+    <h3>Hvad skal du lave i morgen?</h3>
+
+    <div class="d-flex justify-content-center gap-5">
+        <a href="foraar2.html" class="col-12 col-sm-5"><img src="https://placehold.co/60x40" alt=""></a>
+        <a href="foraar3html." class="col-12 col-sm-5"><img src="https://placehold.co/60x40" alt=""></a>
+    </div>
+</section>
+
+
+
+<!--Kommentarspor-->
+<section>
+    <h3>Har du spørgsmål til oprksiften?</h3>
+    <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i kommentarfeltet herunder.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="py-4">
+  <div class="container d-flex flex-column align-items-center justify-content-center">
+
+      <!-- Servietbillede som baggrund -->
+      <div class="position-relative py-3 py-md-5">
+          <picture>
+              <source media="(min-width: 768px)" srcset="https://placehold.co/600x200">
+              <img src="https://placehold.co/300x300" alt="Serviet" class="img-fluid">
+          </picture>
+
+          <!-- Tekst ovenpå billedet -->
+          <div class="kontakt-boks position-absolute top-50 start-50 translate-middle">
+              <h3>Kontakt os:</h3>
+
+              <div class="row justify-content-center">
+                  <div class="telefon col-12 col-md-6">
+                      <p>Telefon.nr.:</p>
+                      <p>+45 27 14 78 **</p>
+                  </div>
+
+                  <div class="mail col-12 col-md-6">
+                      <p>Mail:</p>
+                      <p>lille@skaal.dk</p>
+                  </div>
+              </div>
+
+              <div class="row mt-3 justify-content-center">
+                  <div class="hjerte col-6 text-end">
+                      <p>&lt;3</p>
+                  </div>
+                  <div class="some col-6 text-end">
+                      <i class="bi bi-instagram me-2"></i>
+                      <i class="bi bi-tiktok"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>
