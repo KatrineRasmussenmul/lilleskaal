@@ -191,28 +191,15 @@ footer{
 
 
 /*----------------------------KONTAKT----------------------------*/
-.polaroid {
-    width: 250px;
-    background-color: white;
-    padding: 10px 10px 30px 10px; /* ekstra plads i bunden */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    transform: rotate(3deg); /* valgfri rotation */
-    border: 1px solid #ccc;
-  }
+.container-kontakt{
+    background-image: url('https://placehold.co/1240x400'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 500px;
+}
 
-  .polaroid img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
 
-  .caption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
-    font-style: italic;
-  }
+
 
 
 
@@ -351,8 +338,14 @@ footer{
             bottom: 50px; 
             right: 200px;
         }
+
+/*-------------------KONTAKT------------------------------- */
+.container-kontakt{
+    background-image: url('https://placehold.co/100x100'); 
+    margin-bottom: 380px;
+}
   
-        /*----------------------------FOOTER----------------------------*/
+/*----------------------------FOOTER----------------------------*/
     footer{
         background-image: url('https://placehold.co/100x100'); 
     }
@@ -365,4 +358,5 @@ footer{
 }
 
   }
+
 
