@@ -57,6 +57,12 @@ img{
     height: auto;
 }
 
+.logo img {
+    width: 80px; /* eller 150px, 200px, alt efter behov */
+    height: auto; /* sørger for at billedet ikke bliver forvrænget */
+  }
+  
+
 /*----------------------------FOOTER----------------------------*/
 footer{
     background-image: url('img/ternstor.png'); 
@@ -193,6 +199,13 @@ footer{
     height: 650px;
 }
 
+.logo-hero{ top: 22%; left: 41%;}
+
+.logo-hero img {
+    width: 80px; /* eller 150px, 200px, alt efter behov */
+    height: auto; /* sørger for at billedet ikke bliver forvrænget */
+  }
+  
 
 
 
@@ -286,6 +299,15 @@ footer{
         right: 167px;
     }
 
+
+
+/* -------------------KONTAKT--------------------------- */
+.container-kontakt{    
+    height: 400px;
+}
+
+
+
 /*--------------------Tilpasninger----------------------*/
 
 /* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
@@ -295,6 +317,8 @@ footer{
 
 .logo img{
     height: 40px;
+    width: auto;
+    
 }
 
     }
@@ -336,9 +360,15 @@ footer{
 
 /*-------------------KONTAKT------------------------------- */
 .container-kontakt{
-    background-image: url('img/tern.png'); 
+    background-image: url('img/ternkontakt.png'); 
     height: 1000px;
 }
+
+
+.logo-hero img {
+    width: 80px; /* eller 150px, 200px, alt efter behov */
+    height: auto; /* sørger for at billedet ikke bliver forvrænget */
+  }
   
 /*----------------------------FOOTER----------------------------*/
     footer{
