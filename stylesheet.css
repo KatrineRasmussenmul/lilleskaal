@@ -302,8 +302,13 @@ footer{
 
 
 /* -------------------KONTAKT--------------------------- */
+
 .container-kontakt{    
     height: 400px;
+}
+
+.kontakt-tekst{
+    width: 170px;
 }
 
 
