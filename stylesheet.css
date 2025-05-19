@@ -59,18 +59,10 @@ img{
 
 /*----------------------------FOOTER----------------------------*/
 footer{
-    background-image: url('https://placehold.co/1240x400'); 
+    background-image: url('img/ternstor.png'); 
     background-size: cover; 
     background-position: center; 
     height: 400px;
-}
-
-.kontakt{
-    height: 400px;
-}
-
-.serviet-tekst{
-    margin: 20px 0 20px 70px ;
 }
 
 .kontakt-boks{
@@ -195,10 +187,10 @@ footer{
 
 /*----------------------------KONTAKT----------------------------*/
 .container-kontakt{
-    background-image: url('https://placehold.co/1240x400'); 
+    background-image: url('img/ternstor.png'); 
     background-size: cover; 
     background-position: center; 
-    height: 500px;
+    height: 650px;
 }
 
 
@@ -344,14 +336,25 @@ footer{
 
 /*-------------------KONTAKT------------------------------- */
 .container-kontakt{
-    background-image: url('https://placehold.co/100x100'); 
-    margin-bottom: 380px;
+    background-image: url('img/tern.png'); 
+    height: 1000px;
 }
   
 /*----------------------------FOOTER----------------------------*/
     footer{
-        background-image: url('https://placehold.co/100x100'); 
+        background-image: url('img/tern.png'); 
+        height: 570px;
     }
+
+    .serviet-tekst{
+        margin: 20px 0 20px 70px ;
+    }
+    
+    .kontakt-boks{
+        width: 200px;
+    }
+
+   
 
     /*--------------------Tilpasninger----------------------*/
 
