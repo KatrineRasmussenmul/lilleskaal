@@ -184,32 +184,21 @@
 
 
 <!--Kommentarspor-->
-<section class="container">
-    <h3>Har du spørgsmål til opskriften ?</h3>
+
+<div class="comment-section container mx-sm-5">
+  <div class="comment-form">
+    <h2>Har du spørgsmål til opskriften?</h2>
     <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i kommentarfeltet herunder.</p>
-</section>
-
-    <div class="container comment-container">
-        <div class="comment-form">
-            <input type="text" id="name" placeholder="Dit navn" />
-            <textarea id="comment" placeholder="Din kommentar"></textarea>
-            <button onclick="addComment()">Send</button>
-        </div>
-
-         <div class="comment-list">
-            <h2>Opskrifter</h2>
-            <div id="comments"></div>
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
+    <input type="text" id="nameInput" placeholder="Dit navn" />
+    <textarea id="commentInput" placeholder="Din kommentar"></textarea>
+    <button onclick="addComment()">Send</button>
+  </div>
+  
+  <div class="comment-list">
+    <h2>Kommentarer</h2>
+    <div id="commentsContainer"></div>
+  </div>
+</div>
 
 
 

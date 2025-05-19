@@ -72,32 +72,49 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
     body.insertBefore(currentCarousel, body.querySelector(".introduktion")); // Første karusel
   }
-
+});
 
 
 //KOMMENTARSPOR - på hver side af hver enkelte opskrift//
 function addComment() {
-  const name = document.getElementById('name').value.trim();
-  const comment = document.getElementById('comment').value.trim();
-
-  if (name && comment) {
-    const commentBox = document.createElement('div');
-    commentBox.className = 'comment';
-    commentBox.innerHTML = `<strong>${name}</strong><p>${comment}</p>`;
-
-    document.getElementById('comments').prepend(commentBox);
-
-    // Clear inputs
-    document.getElementById('name').value = '';
-    document.getElementById('comment').value = '';
-  } else {
-    alert("Udfyld både navn og kommentar.");
+  const nameInput = document.getElementById('nameInput');
+  const commentInput = document.getElementById('commentInput');
+  const commentsContainer = document.getElementById('commentsContainer');
+  
+  const name = nameInput.value.trim();
+  const comment = commentInput.value.trim();
+  
+  if (!name || !comment) {
+    alert('Skriv både navn og kommentar!');
+    return;
   }
+  
+  // Opret kommentar-element
+  const commentEl = document.createElement('div');
+  commentEl.classList.add('comment');
+  
+  const nameEl = document.createElement('div');
+  nameEl.classList.add('name');
+  nameEl.textContent = name;
+  
+  const textEl = document.createElement('div');
+  textEl.classList.add('text');
+  textEl.textContent = comment;
+  
+  commentEl.appendChild(nameEl);
+  commentEl.appendChild(textEl);
+  
+  // Tilføj kommentar i listen
+  commentsContainer.appendChild(commentEl);
+  
+  // Ryd inputfelterne
+  nameInput.value = '';
+  commentInput.value = '';
+  
+  // Scroll ned til nyeste kommentar
+  commentsContainer.scrollTop = commentsContainer.scrollHeight;
 }
 
 
 
-
-
-});
 
