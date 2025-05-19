@@ -44,10 +44,7 @@ p, h2, h3, a{
 
 /*-------------------- Tilpasninger----------------------*/
 
-/* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
-.mere-padding{
-    padding: 5rem !important;
-}
+
 
 .logo img{
     height: 50px;
@@ -182,8 +179,14 @@ footer{
 
 /*----------------------------OM OS----------------------------*/
 .madlavning{
-  margin-top: 70%;
+  margin-top: 10%;
+  margin-left: 50%;
   transform: rotate(10deg);
+  width: 60%;
+}
+
+.kokke{
+  transform: rotate(-5deg);
 }
 
 
