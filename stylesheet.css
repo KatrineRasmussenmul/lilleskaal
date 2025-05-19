@@ -61,6 +61,10 @@ img{
     width: 80px; /* eller 150px, 200px, alt efter behov */
     height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
+
+i{
+    color: #093A9D;
+  }
   
 
 /*----------------------------FOOTER----------------------------*/
