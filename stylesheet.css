@@ -65,10 +65,6 @@ footer{
     height: 400px;
 }
 
-.kontakt{
-    height: 400px;
-}
-
 .serviet-tekst{
     margin: 20px 0 20px 70px ;
 }
@@ -351,6 +347,14 @@ footer{
 /*----------------------------FOOTER----------------------------*/
     footer{
         background-image: url('https://placehold.co/100x100'); 
+    }
+
+    .serviet-tekst{
+        margin: 20px 0 20px 70px ;
+    }
+    
+    .kontakt-boks{
+        width: 200px;
     }
 
     /*--------------------Tilpasninger----------------------*/
