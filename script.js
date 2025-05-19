@@ -58,11 +58,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const containerId = `alle-${currentSeason}`;
   const seasonContainer = document.getElementById(containerId);
 
+  // Flyt sæson-karussel i tablet og desktop-verison
   if (seasonContainer) {
     const introSection = document.querySelector(".introduktion"); // Den første container er introduktionen
     if (introSection && introSection.parentNode) {
       introSection.parentNode.insertBefore(seasonContainer, introSection.nextSibling);
     }
+  }
+
+    // Flyt sæson-karussel i mobil-verison
+  const currentCarousel = document.getElementById(currentCarouselId);
+  if (currentCarousel) {
+    const body = document.body;
+    body.insertBefore(currentCarousel, body.querySelector(".introduktion")); // Første karusel
   }
 
 
@@ -93,8 +101,3 @@ function addComment() {
 
 });
 
-
-
-
-
-  
