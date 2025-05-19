@@ -187,10 +187,10 @@ footer{
 
 /*----------------------------KONTAKT----------------------------*/
 .container-kontakt{
-    background-image: url('https://placehold.co/1240x400'); 
+    background-image: url('img/ternstor.png'); 
     background-size: cover; 
     background-position: center; 
-    height: 500px;
+    height: 650px;
 }
 
 
@@ -336,8 +336,8 @@ footer{
 
 /*-------------------KONTAKT------------------------------- */
 .container-kontakt{
-    background-image: url('https://placehold.co/100x100'); 
-    margin-bottom: 380px;
+    background-image: url('img/tern.png'); 
+    height: 1000px;
 }
   
 /*----------------------------FOOTER----------------------------*/
