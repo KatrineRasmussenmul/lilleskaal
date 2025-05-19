@@ -8,6 +8,7 @@
 /* -----------------------Farver og Fonte ---------------------- */
 body{
     background-color: var(--primær-orange);
+    padding-top: 60px;
 }
 
 .orange{
