@@ -315,13 +315,25 @@ button {
     width: 80px; /* eller 150px, 200px, alt efter behov */
     height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
+
+.kontakt-tekst h2, p, a{
+    font-family: 'Fuzzy Bubbles';
+}
+
+.kontakt-tekst h2{
+    font-size: 40px ;
+}
+
+.kontakt-tekst p{
+    font-size: 20px;
+}
   
 
 
 
 
 
-    /* Fællesskål siden */
+/*-------------------------- Fællesskål siden ------------------------------------*/
 
     .minicollage{
         position: relative;
