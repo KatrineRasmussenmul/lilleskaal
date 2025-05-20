@@ -109,8 +109,8 @@ img{
 }
 
 .logo img {
-    width: 80px; /* eller 150px, 200px, alt efter behov */
-    height: auto; /* sørger for at billedet ikke bliver forvrænget */
+    width: 80px; 
+    height: auto; 
   }
 
 i{
