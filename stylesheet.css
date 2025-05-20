@@ -219,8 +219,12 @@ footer{
   position: absolute;
   top: 148%;
   right: 15%;
+<<<<<<< HEAD
   min-width: 200px;
   max-width: 300px;
+=======
+  width: 18%;
+>>>>>>> 4f2d4c237fa56d2c9439bb9df8b230ca123f9f54
   background: #5671A7;
   color: #FBEBDE;
   padding: 1.5rem;
@@ -316,13 +320,11 @@ button {
 .logo-hero{ top: 22%; left: 41%;}
 
 .logo-hero img {
-    width: 80px; 
-    height: auto; 
+    width: 80px; /* eller 150px, 200px, alt efter behov */
+    height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
 
-.kontakt-tekst h2,
-.kontakt-tekst a,
-.kontakt-tekst p{
+.kontakt-tekst h2, p, a{
     font-family: 'Fuzzy Bubbles';
 }
 
@@ -334,6 +336,9 @@ button {
     font-size: 20px;
 }
   
+
+
+
 
 
 /*-------------------------- Fællesskål siden ------------------------------------*/
