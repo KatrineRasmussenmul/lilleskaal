@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fælles-skål</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  
+        <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+        <!--Google Fonts: Poppins til <p>-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+
+</head>
+  
+  <body>
+    <!--NAVIGATIONSBAR-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <!-- DROPDOWN MENU -->
+        <li class="nav-item dropdown vores-dropdown">
+          <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
+          <div class="dropdown-content">
+            <a href="sommer.html">Sommer</a>
+            <a href="efteraar.html">Efterår</a>
+            <a href="vinter.html">Vinter</a>
+            <a href="foraar.html">Forår</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="omos.html">Om Os</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!--HERO-SEKTION-->
+<!--BAGGRUNDSBILLEDE-->
+<!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
+<div class="hero-sektion position-relative">
+    <picture>
+      <source media="(min-width: 768px)" srcset="https://placehold.co/1240x400">
+      <img src="https://placehold.co/100x100" alt="">
+    </picture>
+
+
+        <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
+        <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
+        <!--w-100 h-100: gør overlay lige så stort som billedet-->
+        <!--d-flex ....: centrerer tekst midt i billedet-->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center">
+            <h1>Fælles-skål</h1>
+        </div>
+</div>
+
+<!--Første række med 2 kolonner-->
+<div class="container my-5">
+    <div class="row g-md-3 g-lg-5 mx-md-5">
+      <div class="col-12 col-lg-6">
+        <h2>Fokus på Fællesskabet</h2>
+        <p>Vi elsker selv at kræse om maden, men det, der virkelig gør det hele værd, er fællesskabet omkring den. For os handler madlavning ikke kun om, hvad der ligger på tallerkenen, men om dem, man deler det med.
+            <br>
+        Fællesskab kan opstå både i et køkken, omkring et spisebord – og på en skærm. Derfor arbejder vi for at gøre madlavning sjov, nærværende og inspirerende – både digitalt og i virkeligheden.</p>
+      </div>
+
+    
+      <div class="col-12 col-lg-6">
+        
+        <picture>
+            <img class="vinglas" src="img/faellesskaal.png" alt="">
+        </picture>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--Anden række -->
+  <!--Lad os skabe minder sammen-->
+  <div class="container my-5">
+    <div class="row g-md-3 g-lg-5 mx-md-5">
+  
+      <div class="minicollage col-12 col-lg-6">
+        <img class="billede amalie-peber" src="img/stemning/amaliepeber.png" alt="">
+        <img class="billede laerke-pasta" src="img/stemning/spiserpasta.png" alt=""> 
+      </div>
+  
+      <div class="col-12 col-md-6">
+        <h2>Lad os skabe minder</h2>
+        <p>Hos Lille Skål elsker vi at bringe mennesker sammen omkring maden – ikke kun digitalt, men også i virkeligheden. Derfor inviterer vi løbende til fællesspisninger, hyggelige madkurser og sæsonbaserede events, hvor der er plads til både grin, inspiration og kærlighed til hverdagsmad. <br>
+        Vores fysiske fællesskab handler ikke om at være en mesterkok, men om at mødes i øjenhøjde med andre madglade mennesker. Uanset om du kommer alene eller tager en ven med, lover vi god stemning, ægte nærvær og måske en ny ven eller to. <br> Kom og vær med – vi dækker op til fælles-skål.</p>
+      </div>
+  
+    </div>
+  </div>
+
+  <!--Tredje række -->
+  <!--E-magasin tilmelding-->
+<div class="orange container-fluid">
+    <div class="container my-5 py-5 px-sm-5 ">
+        <div class="row g-md-3 g-lg-5">
+            <div class="col-12 col-md-6 tilmelding-boks-faellesskaal">
+            <h2>Bliv inspireret i din indbakke</h2>
+            <p>Et par gange om måneden sender vi inspiration direkte til din indbakke. Her deler vi opskrifter, der følger sæsonen, tips til mad på budget og små historier fra vores madunivers, hvor det hjemmelavede måltid og den gode stemning er i centrum.
+            Du får også første besked, når vi inviterer til events og fællesspisning. Tilmeld dig vores e-magasin</p>
+            
+            <form id="contact-form">
+            <!-- To simplify the tutorial, the value is static. -->
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <input type="submit" value="Send">
+            </form>
+        </div>
+
+      <!--E-magasin fra Indesign-->
+      <div class="col-12 col-md-6 my-3">
+        <div class="container">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe 
+              class="embed-responsive-item"
+              src="https://indd.adobe.com/view/dbe62e7f-2229-48da-bee9-96d6d8065d1f" 
+              allowfullscreen
+              style="border: none; width: 100%; height: 400px;">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+</div>
+
+
+
+
+<!--Fjerde række med 2 kolonner-->
+<!--Digitalt fællesskab m. billeder fra kunder-->
+<div class="container my-5">
+    <div class="row g-md-3 g-lg-5 mx-sm-4">
+
+
+      <!--Carousel-->
+      <div class="col-md-6 col-12">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <picture>
+                    <img src="img/stemning/digital1.png" alt="">
+                </picture>
+
+              </div>
+              <div class="carousel-item">
+
+                <picture>
+                    <img src="img/stemning/digital2.png" alt="">
+                </picture>
+
+              </div>
+              <div class="carousel-item">
+
+                <picture>
+                    <img src="img/stemning/digital3.png" alt="">
+                </picture>
+
+              </div>
+
+              <div class="carousel-item">
+
+                <picture>
+                    <img src="img/stemning/digital4.png" alt="">
+                </picture>
+
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+
+
+      <div class="col-md-6 col-12 pt-5">
+        <h2>Et digitalt fællesskab</h2>
+        <p>Hos Lille Skål vil vi gerne samle alle os, der elsker at nørde med mad – også online. Del dine yndlingsopskrifter, små hverdagsglimt og tips til køkkenhygge med os og andre via vores website og Instagram. <br> Det digitale fællesskab er en vigtig del af vores univers, hvor vi inspirerer og skaber madglæde sammen – på tværs af skærme og køkkener.</p>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+<!--Footer-->
+<footer class="py-4">
+  <div class="container d-flex flex-column align-items-center justify-content-center">
+
+      <!-- Servietbillede som baggrund -->
+      <div class="position-relative py-5 py-md-5">
+          <picture>
+              <source media="(min-width: 768px)" srcset="img/storserviet.png">
+              <img src="img/lilleserviet.png" alt="Serviet" >
+          </picture>
+
+          <!-- Tekst ovenpå billedet -->
+          <div class="kontakt-boks position-absolute top-50 start-50 translate-middle">
+              <h3>Kontakt os:</h3>
+
+              <div class="row justify-content-center">
+                  <div class="telefon col-12 col-md-6">
+                      <p>Telefon.nr.:</p>
+                      <a href="tel:+45 27 14 78">+45 27 14 78 **</a>
+                  </div>
+
+                  <div class="mail col-12 col-md-6">
+                      <p>Mail:</p>
+                      <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
+                  </div>
+              </div>
+
+              <div class="row mt-3 justify-content-center">
+                  <div class="hjerte col-6 text-end">
+                      <p>&lt;3</p>
+                  </div>
+                  <div class="some col-6 text-end">
+                      <i class="bi bi-instagram me-2"></i>
+                      <i class="bi bi-tiktok"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>

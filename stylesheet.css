@@ -118,6 +118,7 @@ i{
   }
   
 
+
 /*----------------------------FOOTER----------------------------*/
 footer{
     background-image: url('img/ternstor.png'); 
@@ -128,6 +129,14 @@ footer{
 
 .kontakt-boks{
     width: 400px;
+}
+
+
+
+
+/*--------------------------------------------------FORSIDE--------------------------------------------------*/
+.logo-forside{
+  width: 18%;
 }
 
 /*----------------------------OPSKRIFTER PÅ FORSIDEN----------------------------*/
@@ -177,7 +186,7 @@ footer{
 .foraarsbord{ top: 43%; left: 20%; width: 25%;}
 .asparges{ top: 73%; left: 20%; width: 6%; transform: rotate(-20deg);}
 .tomat{ top: 22%; left: 62%; width:10%; z-index: 2;}
-.foraarsmad{ top: 64%; left: 64%; width: 15%; z-index: 2;}
+.foraarsmad{ top: 72%; left: 60%; width: 15%; z-index: 2;}
 .driver{ top: 43%; left: 73%; width: 20%;}
 .vin{ top: 5%; left: 65%; width: 25%;}
 
@@ -194,6 +203,20 @@ footer{
     width: 50%;
 }
 
+
+/*----------------------------STYLING TIL FÆLLESSKÅL----------------------------*/
+
+/*-------------------------- Fællesskål siden ------------------------------------*/
+
+    .minicollage{
+        position: relative;
+    }
+
+    .laerke-pasta{top: -10%; left: -10%; width: 70%; z-index: 2}
+    .amalie-peber{top: -120%; left: 30%; width: 70%;}
+
+
+
 /*----------------------------STYLING TIL ALLE SIDER M. OPSKRIFTER----------------------------*/
 .collage-opskrift-container{
   position: relative;
@@ -205,6 +228,17 @@ footer{
 .opskrift-billede2{ top: 55%; left: 52%; width: 40%; }
 .opskrift-billede3{ top: 75%; left: 20%; width: 50%; transform: rotate(10deg);}
 
+.linje{
+  border: none;
+  /*linjens tykkelse*/
+  height: 2px;
+  /*farve*/
+  background-color: black;
+  width: 100%;
+  max-width: 1000px;
+  /*centrerer streg og giver luft over/under*/
+  margin: 20px auto;
+}
 
 
 .tip-boks{
@@ -284,9 +318,9 @@ button {
 /*----------------------------OM OS----------------------------*/
 .madlavning{
   margin-top: 10%;
-  margin-left: 50%;
+  margin-left: 25%;
   transform: rotate(10deg);
-  width: 60%;
+  width: 80%;
 }
 
 .kokke{
@@ -327,19 +361,6 @@ button {
   
 
 
-/*-------------------------- Fællesskål siden ------------------------------------*/
-
-    .minicollage{
-        position: relative;
-        display: inline-block;
-    }
-
-
-    .overlagt-billede{
-        position: absolute;
-        bottom: 360px; 
-        right: 310px;
-    }
 
 
 
@@ -357,7 +378,7 @@ button {
     .foraarsbord{ top: 42%; left: 17%; width: 25%;}
     .asparges{ top: 71%; left: 17%; width: 6%; transform: rotate(-20deg);}
     .tomat{ top: 18%; left: 62%; width:10%; z-index: 2;}
-    .foraarsmad{ top: 75%; left: 64%; width: 15%; z-index: 2;}
+    .foraarsmad{ top: 80%; left: 64%; width: 15%; z-index: 2;}
     .driver{ top: 55%; left: 74%; width: 20%;}
     .vin{ top: 2%; left: 65%; width: 25%;}
     
@@ -374,6 +395,9 @@ button {
     .opskrift-billede2{ top: 55%; left: 43%; width: 50%; }
     .opskrift-billede3{ top: 73%; left: 11%; width: 60%; transform: rotate(10deg);}
 
+    /*-------------------------- Fællesskål siden ------------------------------------*/
+    .laerke-pasta{top: 40%; left: -10%; width: 70%; z-index: 2}
+    .amalie-peber{top: -25%; left: 30%; width: 70%;}
 
 
 
@@ -392,7 +416,7 @@ button {
   
     .kurv{ top: 8%; left: 10%; width: 27%;}
     .foraarsbord{top: 44%; left: 10%; width: 25%;}
-    .asparges{ top: 65%; left: 80%; width: 6%; transform: rotate(20deg);}
+    .asparges{ top: 75%; left: 85%; width: 6%; transform: rotate(20deg);}
     .tomat{ top: 18%; left: 62%; width:10%; z-index: 2;}
     .foraarsmad{display: none;}
     .driver{display: none;}
@@ -406,26 +430,35 @@ button {
         box-sizing: border-box;
     }
 
-    /* Fællesskål siden */
+    
+    /*------- Fællesskål siden ----------*/
+    .vinglas{width: 70%;}
+    .laerke-pasta{top: -10%; left: 50%; width: 60%;}
+    .amalie-peber{display: none;}
 
-    .minicollage{
-        position: relative;
-        display: inline-block;
-    }
 
 
-    .overlagt-billede{
-        position: absolute;
-        bottom: 300px; 
-        right: 167px;
-    }
-
+/*Styling Om Os*/
+.teknik{
+  transform: rotate(2deg);
+}
 
   
 /*------------Styling til opskrifter----------*/
-  .opskrift-billede1{ top: 2%; left: 10%; width: 60%; transform: rotate(-5deg);}
-  .opskrift-billede2{ top: 12%; left: 52%; width: 50%; }
-  .opskrift-billede3{ top: 3%; left: 90%; width: 60%; transform: rotate(10deg);}
+
+.fremgangsmaade{
+  margin-top: 40px;
+}
+
+.ingredienser{
+  margin-top: 350px;
+}
+
+
+
+  .opskrift-billede1{ top: 2%; left: 8%; width: 50%; transform: rotate(-5deg);}
+  .opskrift-billede2{ top: 15%; left: 52%; width: 40%; transform: rotate(10deg); }
+  .opskrift-billede3{ top: 60%; left: 40%; width: 50%;}
 
 
 
@@ -464,6 +497,13 @@ button {
 @media screen and (max-width: 430px) {
     /* Stylingen gælder kun på mobil */
 
+    /*Styling til forside*/
+    .logo-forside{
+      width: 25%;
+    }
+
+
+
     /*Styling for collage*/
     .collage-container{
         height: 850px;
@@ -492,6 +532,15 @@ button {
             bottom: 50px; 
             right: 200px;
         }
+
+
+  
+/*------------Styling til opskrifter----------*/
+  .opskrift-billede1{ top: 2%; left: 8%; width: 50%; transform: rotate(-5deg);}
+  .opskrift-billede2{ top: 15%; left: 52%; width: 40%; transform: rotate(10deg); }
+  .opskrift-billede3{ top: 28%; left: 18%; width: 50%;}
+
+
 
 /*-------------------KONTAKT------------------------------- */
 .container-kontakt{
