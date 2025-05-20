@@ -252,6 +252,9 @@ footer{
 button {
   padding: 10px;
   cursor: pointer;
+  width: 200px;
+  background-color: var(--primær-blå);
+  color: var(--primær-orange);
 }
 
 .comment-list {
@@ -259,7 +262,7 @@ button {
   padding: 10px;
   max-height: 300px;
   overflow-y: scroll;
-  background-color: #f9f9f9;
+  background-color: var(--sekundær-orange);
 }
 
 .comment {
