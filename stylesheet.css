@@ -220,7 +220,7 @@ footer{
   top: 148%;
   right: 15%;
   min-width: 200px;
-  max-width: 400px;
+  max-width: 300px;
   background: #5671A7;
   color: #FBEBDE;
   padding: 1.5rem;
@@ -256,6 +256,9 @@ footer{
 button {
   padding: 10px;
   cursor: pointer;
+  color: var(--primær-orange);
+  background-color: var(--primær-blå);
+  width: 200px;
 }
 
 .comment-list {
@@ -263,7 +266,7 @@ button {
   padding: 10px;
   max-height: 300px;
   overflow-y: scroll;
-  background-color: #f9f9f9;
+  background-color: var(--sekundær-orange);
 }
 
 .comment {
