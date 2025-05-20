@@ -18,47 +18,43 @@
 </head>
 
 <body>
-    <!--NAVIGATIONSBAR-->
-    <!--LOGO TIL VENSTRE-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+   <!--NAVIGATIONSBAR-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <!--MENU-LINJE TIL HØJRE-->
-            <!--justify-content-end for at sætte elemterne ud til højre-->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <!--DROPDOWN M. SÆSONER-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="opskrifter.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Opskrifter
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="foraar.html">Forår</a></li>
-                            <li><a class="dropdown-item" href="sommer.html">Sommer</a></li>
-                            <li><a class="dropdown-item" href="efteraar.html">Efterår</a></li>
-                            <li><a class="dropdown-item" href="vinter.html">Vinter</a></li>
-                        </ul>
-                    </li>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <!-- DROPDOWN MENU -->
+        <li class="nav-item dropdown vores-dropdown">
+          <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
+          <div class="dropdown-content">
+            <a href="sommer.html">Sommer</a>
+            <a href="efteraar.html">Efterår</a>
+            <a href="vinter.html">Vinter</a>
+            <a href="foraar.html">Forår</a>
+          </div>
+        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="omos.html">Om Os</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <li class="nav-item">
+          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="omos.html">Om Os</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 
     <!--HERO-SEKTION-->
     <!--BAGGRUNDSBILLEDE-->
