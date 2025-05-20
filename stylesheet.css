@@ -210,21 +210,15 @@ footer{
   position: absolute;
   right: 0%;
   width: 45%;
-  background: #5671A7;
-  color: #FBEBDE;
-  padding: 1.5rem;
 }
 
 .tip-boks{
   position: absolute;
   top: 148%;
   right: 15%;
-<<<<<<< HEAD
   min-width: 200px;
   max-width: 300px;
-=======
   width: 18%;
->>>>>>> 4f2d4c237fa56d2c9439bb9df8b230ca123f9f54
   background: #5671A7;
   color: #FBEBDE;
   padding: 1.5rem;
