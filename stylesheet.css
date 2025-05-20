@@ -25,10 +25,6 @@ body{
     color: var(--sekundær-blå);
 }
 
-.dropdown-menu{
-    background-color: var(--sekundær-orange) !important;
-}
-
 h1, h2, h3{
     color: var(--primær-blå);
     font-weight: bold;
@@ -42,6 +38,60 @@ h1{
 p, h2, h3, a{
     font-family: 'Poppins', sans-serif;
 }
+
+/*--------------------Dropdown-menu Vores egen styling----------------------*/
+/* Style for linket "Opskrifter" – gør det klikbart og giver korrekt placering */
+.dropbtn {
+  position: relative;      
+  /* Gør at knappen ikke fylder hele linjen */   
+  display: inline-block;  
+  /* Ændrer musens markør til en hånd, der indikerer klikbarhed */    
+  cursor: pointer;            
+}
+
+/* Containeren omkring dropdown – bruges til at positionere dropdown-indholdet relativt */
+.vores-dropdown {
+  position: relative;       
+}
+
+/*Dropdown vises når man hover*/
+.dropdown-content {
+  /* Skjult som standard */
+  display: none;              
+  position: absolute;         
+  background-color: #f1f1f1; 
+  /* Minimumsbredde */
+  min-width: 160px;
+  /*dropdown vises foran andet indhold*/           
+  z-index: 1000; 
+  /*Placeres lige under knappen*/             
+  top: 100%; 
+  /*Justeres til venstre kant af containeren*/                 
+  left: 0;                    
+}
+
+/* Links i dropdown-menuen */
+.dropdown-content a {
+  color: black;
+  /*padding omkring teksten*/               
+  padding: 12px 16px;
+  /*Gør hvert link til en blok, så hele arealet er klikbart*/         
+  display: block;
+  /*Fjerner understregning*/           
+  text-decoration: none;      
+}
+
+/*Mus holdes over et link i dropdown-menuen */
+.dropdown-content a:hover {
+  /*Ændrer baggrundsfarve for at vise interaktion*/
+  background-color: #ddd;     
+}
+
+/*Ved hover over "Opskrift" vises dropdown-menu*/
+.vores-dropdown:hover .dropdown-content {
+  display: block;      
+}
+
 
 /*-------------------- Tilpasninger----------------------*/
 
@@ -176,7 +226,7 @@ footer{
   border-radius: 3rem;
 }
 
-/*-------------------------------------------------------*/
+/*-----------------KOMMENTARSPOR---------------------*/
 .comment-section {
   display: flex;
   gap: 20px;
