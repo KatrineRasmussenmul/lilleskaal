@@ -39,48 +39,58 @@ p, h2, h3, a{
     font-family: 'Poppins', sans-serif;
 }
 
-/*--------------------Dropdown----------------------*/
-/* Dropdown Button (linken 'Opskrifter') */
+/*--------------------Dropdown-menu Vores egen styling----------------------*/
+/* Style for linket "Opskrifter" – gør det klikbart og giver korrekt placering */
 .dropbtn {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+  position: relative;      
+  /* Gør at knappen ikke fylder hele linjen */   
+  display: inline-block;  
+  /* Ændrer musens markør til en hånd, der indikerer klikbarhed */    
+  cursor: pointer;            
 }
 
-/* Dropdown container */
+/* Containeren omkring dropdown – bruges til at positionere dropdown-indholdet relativt */
 .vores-dropdown {
-  position: relative;
+  position: relative;       
 }
 
-/* Dropdown indhold (skjult til at starte med) */
+/*Dropdown vises når man hover*/
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
+  /* Skjult som standard */
+  display: none;              
+  position: absolute;         
+  background-color: #f1f1f1; 
+  /* Minimumsbredde */
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1000;
-  top: 100%;
-  left: 0;
+  /*dropdown vises foran andet indhold*/           
+  z-index: 1000; 
+  /*Placeres lige under knappen*/             
+  top: 100%; 
+  /*Justeres til venstre kant af containeren*/                 
+  left: 0;                    
 }
 
-/* Links i dropdown */
+/* Links i dropdown-menuen */
 .dropdown-content a {
   color: black;
+  /*padding omkring teksten*/               
   padding: 12px 16px;
+  /*Gør hvert link til en blok, så hele arealet er klikbart*/         
   display: block;
-  text-decoration: none;
+  /*Fjerner understregning*/           
+  text-decoration: none;      
 }
 
-/* Hover-effekter */
+/*Mus holdes over et link i dropdown-menuen */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  /*Ændrer baggrundsfarve for at vise interaktion*/
+  background-color: #ddd;     
 }
 
+/*Ved hover over "Opskrift" vises dropdown-menu*/
 .vores-dropdown:hover .dropdown-content {
-  display: block;
+  display: block;      
 }
-
 
 
 /*-------------------- Tilpasninger----------------------*/
@@ -216,7 +226,7 @@ footer{
   border-radius: 3rem;
 }
 
-/*-------------------------------------------------------*/
+/*-----------------KOMMENTARSPOR---------------------*/
 .comment-section {
   display: flex;
   gap: 20px;
@@ -305,13 +315,25 @@ button {
     width: 80px; /* eller 150px, 200px, alt efter behov */
     height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
+
+.kontakt-tekst h2, p, a{
+    font-family: 'Fuzzy Bubbles';
+}
+
+.kontakt-tekst h2{
+    font-size: 40px ;
+}
+
+.kontakt-tekst p{
+    font-size: 20px;
+}
   
 
 
 
 
 
-    /* Fællesskål siden */
+/*-------------------------- Fællesskål siden ------------------------------------*/
 
     .minicollage{
         position: relative;
