@@ -312,11 +312,13 @@ button {
 .logo-hero{ top: 22%; left: 41%;}
 
 .logo-hero img {
-    width: 80px; /* eller 150px, 200px, alt efter behov */
-    height: auto; /* sørger for at billedet ikke bliver forvrænget */
+    width: 80px; 
+    height: auto; 
   }
 
-.kontakt-tekst h2, p, a{
+.kontakt-tekst h2,
+.kontakt-tekst a,
+.kontakt-tekst p{
     font-family: 'Fuzzy Bubbles';
 }
 
@@ -328,9 +330,6 @@ button {
     font-size: 20px;
 }
   
-
-
-
 
 
 /*-------------------------- Fællesskål siden ------------------------------------*/
