@@ -220,14 +220,17 @@ footer{
 /*----------------------------STYLING TIL FÆLLESSKÅL----------------------------*/
     .minicollage{
         position: relative;
-        height: 300px;
+        height: 350px;
         box-sizing: border-box;
         
     }
 
-    .laerke-pasta{top: -20%; left: 5%; width: 30%; z-index: 2}
-    .amalie-peber{top: -140%; left: 22%; width: 25%;}
-
+    .vinglas{width: 40%;}
+    .amalie-peber{top: 55%; left: 40%; width: 60%;}
+    .laerke-pasta{top: 20%; left: 5%; width: 30%; z-index: 2}
+    .minder-sammen{
+      margin-top: 120px;
+    }
 
 
 
@@ -410,8 +413,18 @@ button {
     .opskrift-billede3{ top: 73%; left: 11%; width: 60%; transform: rotate(10deg);}
 
     /*-------------------------- Fællesskål siden ------------------------------------*/
+        /*------- Fællesskål siden ----------*/
+      .minicollage{
+        height: 350px; 
+    }
+
+    .vinglas{width: 40%;}
+    .amalie-peber{top: 85%; left: 40%; width: 60%;}
     .laerke-pasta{top: 30%; left: 5%; width: 30%; z-index: 2}
-    .amalie-peber{top: -55%; left: 20%; width: 25%;}
+    .minder-sammen{
+      margin-top: 0px;
+    }
+
 
 
 
@@ -445,11 +458,6 @@ button {
     }
 
     
-    /*------- Fællesskål siden ----------*/
-    .vinglas{width: 70%;}
-    .laerke-pasta{top: -10%; left: 50%; width: 60%;}
-    .amalie-peber{display: none;}
-
 
 
 /*Styling Om Os*/
@@ -502,6 +510,22 @@ button {
     width: auto;
     
 }
+
+
+    /*------- Fællesskål siden ----------*/
+      .minicollage{
+        height: 350px; 
+    }
+
+    .vinglas{width: 40%;}
+    .amalie-peber{top: 85%; left: 40%; width: 60%;}
+    .laerke-pasta{top: 30%; left: 5%; width: 30%; z-index: 2}
+    .minder-sammen{
+      margin-top: 0px;
+    }
+
+
+
 
     }
 
