@@ -109,7 +109,7 @@ img{
 }
 
 .logo img {
-    width: 80px; /* eller 150px, 200px, alt efter behov */
+    width: 40px; 
     height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
 
@@ -136,7 +136,7 @@ footer{
 
 /*--------------------------------------------------FORSIDE--------------------------------------------------*/
 .logo-forside{
-  width: 18%;
+  width: 10%;
 }
 
 /*----------------------------OPSKRIFTER PÅ FORSIDEN----------------------------*/
@@ -205,9 +205,6 @@ footer{
 
 
 /*----------------------------STYLING TIL FÆLLESSKÅL----------------------------*/
-
-/*-------------------------- Fællesskål siden ------------------------------------*/
-
     .minicollage{
         position: relative;
     }
