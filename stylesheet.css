@@ -30,6 +30,10 @@ h1, h2, h3{
     font-weight: bold;
 }
 
+h4{
+  color: var(--primær-blå);
+}
+
 h1{
     font-family: 'Fuzzy Bubbles';
     font-size: 4rem;
@@ -38,6 +42,7 @@ h1{
 p, h2, h3, a{
     font-family: 'Poppins', sans-serif;
 }
+
 
 /*--------------------Dropdown-menu Vores egen styling----------------------*/
 /* Style for linket "Opskrifter" – gør det klikbart og giver korrekt placering */
@@ -109,8 +114,8 @@ img{
 }
 
 .logo img {
-    width: 80px; 
-    height: auto; 
+    width: 40px; 
+    height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
 
 i{
@@ -144,7 +149,7 @@ footer{
 
 /*--------------------------------------------------FORSIDE--------------------------------------------------*/
 .logo-forside{
-  width: 18%;
+  width: 10%;
 }
 
 /*----------------------------OPSKRIFTER PÅ FORSIDEN----------------------------*/
@@ -213,9 +218,6 @@ footer{
 
 
 /*----------------------------STYLING TIL FÆLLESSKÅL----------------------------*/
-
-/*-------------------------- Fællesskål siden ------------------------------------*/
-
     .minicollage{
         position: relative;
     }
