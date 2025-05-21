@@ -411,7 +411,7 @@ button {
 
 /*----------------------------TABLET-VERISON----------------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
     /* Styling når det er en tablet */
 
     /*Styling for collage*/
@@ -495,7 +495,7 @@ button {
 
   /*----------------------------MOBIL-VERISON----------------------------*/
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
     /* Stylingen gælder kun på mobil */
 
     /*Styling til forside*/
@@ -532,6 +532,10 @@ button {
   .opskrift-billede1{ top: 2%; left: 8%; width: 50%; transform: rotate(-5deg);}
   .opskrift-billede2{ top: 15%; left: 52%; width: 40%; transform: rotate(10deg); }
   .opskrift-billede3{ top: 28%; left: 18%; width: 50%;}
+
+.ingredienser{
+  margin-top: 350px;
+}
 
 
 
