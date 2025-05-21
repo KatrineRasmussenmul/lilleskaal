@@ -131,6 +131,14 @@ footer{
     width: 400px;
 }
 
+.kontakt-boks h3,
+.kontakt-boks a,
+.kontakt-boks p{
+      font-family: 'Fuzzy Bubbles';
+  }
+
+
+
 
 
 
