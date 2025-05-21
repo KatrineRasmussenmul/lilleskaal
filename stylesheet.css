@@ -24,9 +24,7 @@ body{
     color: var(--sekundær-blå);
 }
 
-.aktuel-sæson {
-  text-decoration: underline !important;
-}
+
 
 
 h1, h2, h3{
@@ -482,11 +480,6 @@ button {
 
 /*--------------------Tilpasninger----------------------*/
 
-/* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
-.mere-padding{
-    padding: 2.5rem !important;
-}
-
 .logo img{
     height: 40px;
     width: auto;
@@ -569,14 +562,7 @@ button {
         width: 200px;
     }
 
-   
 
-    /*--------------------Tilpasninger----------------------*/
-
-/* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
-.mere-padding{
-    padding: 1rem !important;
-}
 
   }
 
