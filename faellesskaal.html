@@ -58,86 +58,73 @@
 <!--HERO-SEKTION-->
 <!--BAGGRUNDSBILLEDE-->
 <!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
-<div class="hero-sektion position-relative">
-    <picture>
-      <source media="(min-width: 768px)" srcset="https://placehold.co/1240x400">
-      <img src="https://placehold.co/100x100" alt="">
-    </picture>
+<div class="container-fluid orange">
+  <div class="hero-sektion position-relative d-flex justify-content-center">
+    <img class="bordhero" src="img/bord.png" alt="">
 
 
-        <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
-        <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
-        <!--w-100 h-100: gør overlay lige så stort som billedet-->
-        <!--d-flex ....: centrerer tekst midt i billedet-->
-        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center">
-            <h1>Fælles-skål</h1>
-        </div>
+      <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
+      <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
+      <!--w-100 h-100: gør overlay lige så stort som billedet-->
+      <!--d-flex ....: centrerer tekst midt i billedet-->
+      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center">
+          <h1>Fælles-skål</h1>
+      </div>
+</div>
 </div>
 
-<!--Første række med 2 kolonner-->
-<div class="container my-5">
-    <div class="row g-md-3 g-lg-5 mx-sm-5">
-      <div class="col-md-6 col-12">
-        <h2>Fokus på Fællesskabet</h2>
-        <p>Vi elsker selv at kræse om maden, men det, der virkelig gør det hele værd, er fællesskabet omkring den. For os handler madlavning ikke kun om, hvad der ligger på tallerkenen, men om dem, man deler det med.
-            <br>
-        Fællesskab kan opstå både i et køkken, omkring et spisebord – og på en skærm. Derfor arbejder vi for at gøre madlavning sjov, nærværende og inspirerende – både digitalt og i virkeligheden.</p>
-      </div>
 
-    
-      <div class="col-md-6 col-12">
-        
-        <picture>
-            <img src="img/faellesskaal.png" alt="">
-        </picture>
-
-      </div>
+  <!--Fællesskab omkring mad + billede m. glas-->
+<div class="container">
+  <div class="row align-items-start mx-md-5 mt-5">
+    <div class="col-12 col-lg-6 offset-lg-1 order-2 order-lg-1">
+      <h2>Fællesskab omkring mad</h2>
+      <p>
+        Hos Lille Skål handler fællesskab om at samles om maden - både fysisk og digitalt. Vi tror på, at madglæde vokser, når vi deler den med andre. Gennem opskrifter, events og inspiration skaber vi et madfællesskab, hvor sæsonens råvarer, hjemmelavet mad og nærvær er i centrum.
+        <br>
+        Her er der plads til ægthed, stemning og det uperfekte - for det bedste måltid er det, vi nyder sammen.
+      </p>
+    </div>
+    <div class="col-12 col-lg-4 order-1 order-lg-2">
+      <img src="img/faellesskaal.png" alt="">
     </div>
   </div>
+</div>
 
 
-  <!--Anden række med 2 kolonner-->
-  <div class="container my-5">
-    <div class="row g-md-3 g-lg-5 mx-sm-5">
-  
-      <div class="minicollage col-md-6 col-12">
-  
-        <!-- Billedet under -->
-        <div class="under-billedet offset-6 col-6 mb-5">
-            <img src="img/stemning/amaliepeber.png" alt="" class="img-fluid d-block">
-        </div>
-  
-        <!-- Overlagt billede -->
-         <div class="overlagt-billede col-6">
-
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/stemning/spiserpasta.png">
-            <img src="img/stemning/spiserpasta.png" alt="Overlagt billede" class="d-block w-100">
-        </picture>
 
 
-         </div>
-         
-      </div>
-  
-      <div class="col-md-6 col-12">
-        <h2>Lad os skabe minder</h2>
-        <p>Hos Lille Skål elsker vi at bringe mennesker sammen omkring maden – ikke kun digitalt, men også i virkeligheden. Derfor inviterer vi løbende til fællesspisninger, hyggelige madkurser og sæsonbaserede events, hvor der er plads til både grin, inspiration og kærlighed til hverdagsmad. <br>
-        Vores fysiske fællesskab handler ikke om at være en mesterkok, men om at mødes i øjenhøjde med andre madglade mennesker. Uanset om du kommer alene eller tager en ven med, lover vi god stemning, ægte nærvær og måske en ny ven eller to. <br> Kom og vær med – vi dækker op til fælles-skål.</p>
-      </div>
-  
+
+
+
+<!--Lad os skabe minder sammen + billede af Lærke og Amalie-->
+<div class="container py-5">
+  <div class=" row align-items-start ">
+    <div class="col-12 col-lg-5">
+      <img src="img/stemning/peberogpasta.png" alt="">
+    </div>
+    <div class="minder-sammen col-12 col-lg-5 offset-lg-1 ">
+      <h2>Lad os skabe minder sammen</h2>
+      <p>Hos Lille Skål elsker vi at samle mennesker om maden i virkeligheden. Derfor inviterer vi jævnligt til fællesspisninger, hyggelige madkurser og små sæsonbaserede events, hvor alle kan være med - uanset erfaring i køkkenet.
+        <br>
+      Her handler det ikke om at præstere, men om at mødes i øjenhøjde og dele smagen af hjemmelavet mad. Vi dækker op til grin, nærvær og gode samtaler - og lover, at du altid går hjem med både mæt mave og varme minder. Om du kommer alene eller tager en ven med, er der plads til dig ved vores fælles bord.</p>
     </div>
   </div>
+</div>
 
-  <!--tredje række med 2 kolonner-->
+
+  <!--Tredje række -->
   <!--E-magasin tilmelding-->
 <div class="orange container-fluid">
     <div class="container my-5 py-5 px-sm-5 ">
         <div class="row g-md-3 g-lg-5">
             <div class="col-12 col-md-6 tilmelding-boks-faellesskaal">
             <h2>Bliv inspireret i din indbakke</h2>
-            <p>Et par gange om måneden sender vi inspiration direkte til din indbakke. Her deler vi opskrifter, der følger sæsonen, tips til mad på budget og små historier fra vores madunivers, hvor det hjemmelavede måltid og den gode stemning er i centrum.
-            Du får også første besked, når vi inviterer til events og fællesspisning. Tilmeld dig vores e-magasin</p>
+            <p>Madglæde stopper ikke ved køkkenbordet - den lever også videre online.
+            Vores digitale fællesskab er til dig, der elsker at nørde med budgetvenlig mad, finde nye idéer med sæsonens råvarer og dele hverdagsglimt fra køkkenet. På både vores website og Instagram skaber vi et ærligt og uformelt madunivers, hvor du kan finde og dele opskrifter, tips og madstemning – sammen med andre, der elsker mad på samme måde som dig.
+            <br>
+            Hos Lille Skål tror vi på, at inspiration og fællesskab sagtens kan leve på tværs af skærme – og vi glæder os til at være fælles med dig, også digitalt.
+            </p>
             
             <form id="contact-form">
             <!-- To simplify the tutorial, the value is static. -->
@@ -148,7 +135,7 @@
         </div>
 
       <!--E-magasin fra Indesign-->
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 my-3">
         <div class="container">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe 
@@ -222,8 +209,12 @@
 
 
       <div class="col-md-6 col-12 pt-5">
-        <h2>Et digitalt fællesskab</h2>
-        <p>Hos Lille Skål vil vi gerne samle alle os, der elsker at nørde med mad – også online. Del dine yndlingsopskrifter, små hverdagsglimt og tips til køkkenhygge med os og andre via vores website og Instagram. <br> Det digitale fællesskab er en vigtig del af vores univers, hvor vi inspirerer og skaber madglæde sammen – på tværs af skærme og køkkener.</p>
+        <h2>Del glæden online</h2>
+        <p>Bliv en del af vores madunivers - direkte fra indbakken.
+        Et par gange om måneden sender vi vores e-magasin fyldt med sæsonbaserede opskrifter, ideer til budgetvenlig madlavning, og små historier fra fællesskabet.
+        <br>
+        Du får også tips til at undgå madspild, nyheder om kommende events og fællesspisninger - og mulighed for at kigge med i tidligere udgaver af magasinet.
+        Tilmeld dig vores e-magasin og få et fast dryp af madinspiration, fællesskab og stemning - lige der, hvor du er.</p>
       </div>
 
 

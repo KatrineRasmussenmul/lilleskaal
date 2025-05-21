@@ -18,12 +18,14 @@ body{
 .navbar, .navbar a{
     background-color: var(--sekundær-orange) !important;
     color: var(--primær-blå);
-    font-weight: bold;
 }
 
 .navbar a:hover{
     color: var(--sekundær-blå);
 }
+
+
+
 
 h1, h2, h3{
     color: var(--primær-blå);
@@ -77,7 +79,7 @@ p, h2, h3, a{
 
 /* Links i dropdown-menuen */
 .dropdown-content a {
-  color: black;
+  color: var(--primær-blå);
   /*padding omkring teksten*/               
   padding: 12px 16px;
   /*Gør hvert link til en blok, så hele arealet er klikbart*/         
@@ -89,7 +91,7 @@ p, h2, h3, a{
 /*Mus holdes over et link i dropdown-menuen */
 .dropdown-content a:hover {
   /*Ændrer baggrundsfarve for at vise interaktion*/
-  background-color: #ddd;     
+  background-color: var(--sekundær-blå);     
 }
 
 /*Ved hover over "Opskrift" vises dropdown-menu*/
@@ -216,14 +218,6 @@ footer{
     width: 50%;
 }
 
-
-/*----------------------------STYLING TIL FÆLLESSKÅL----------------------------*/
-    .minicollage{
-        position: relative;
-    }
-
-    .laerke-pasta{top: -10%; left: -10%; width: 70%; z-index: 2}
-    .amalie-peber{top: -120%; left: 30%; width: 70%;}
 
 
 
@@ -370,6 +364,11 @@ button {
   }
   
 
+  /* ---------FÆLLESSKÅL---------- */
+  .bordhero {
+    width: 55%;
+
+  }
 
 
 
@@ -405,9 +404,7 @@ button {
     .opskrift-billede2{ top: 55%; left: 43%; width: 50%; }
     .opskrift-billede3{ top: 73%; left: 11%; width: 60%; transform: rotate(10deg);}
 
-    /*-------------------------- Fællesskål siden ------------------------------------*/
-    .laerke-pasta{top: 40%; left: -10%; width: 70%; z-index: 2}
-    .amalie-peber{top: -25%; left: 30%; width: 70%;}
+
 
 
 
@@ -416,7 +413,7 @@ button {
 
 /*----------------------------TABLET-VERISON----------------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
     /* Styling når det er en tablet */
 
     /*Styling for collage*/
@@ -441,11 +438,6 @@ button {
     }
 
     
-    /*------- Fællesskål siden ----------*/
-    .vinglas{width: 70%;}
-    .laerke-pasta{top: -10%; left: 50%; width: 60%;}
-    .amalie-peber{display: none;}
-
 
 
 /*Styling Om Os*/
@@ -488,23 +480,19 @@ button {
 
 /*--------------------Tilpasninger----------------------*/
 
-/* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
-.mere-padding{
-    padding: 2.5rem !important;
-}
-
 .logo img{
     height: 40px;
     width: auto;
     
 }
 
+
     }
 
 
   /*----------------------------MOBIL-VERISON----------------------------*/
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
     /* Stylingen gælder kun på mobil */
 
     /*Styling til forside*/
@@ -535,20 +523,16 @@ button {
     }
 
 
-        /* Fællesskål siden */
-    
-        .overlagt-billede{
-            position: absolute;
-            bottom: 50px; 
-            right: 200px;
-        }
-
 
   
 /*------------Styling til opskrifter----------*/
   .opskrift-billede1{ top: 2%; left: 8%; width: 50%; transform: rotate(-5deg);}
   .opskrift-billede2{ top: 15%; left: 52%; width: 40%; transform: rotate(10deg); }
   .opskrift-billede3{ top: 28%; left: 18%; width: 50%;}
+
+.ingredienser{
+  margin-top: 350px;
+}
 
 
 
@@ -578,14 +562,7 @@ button {
         width: 200px;
     }
 
-   
 
-    /*--------------------Tilpasninger----------------------*/
-
-/* Mere padding til de orange bokse da bootstrap ikke tillader mere end p-5 som ikke er nok*/
-.mere-padding{
-    padding: 1rem !important;
-}
 
   }
 
