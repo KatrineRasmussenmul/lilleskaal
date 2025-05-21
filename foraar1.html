@@ -87,10 +87,17 @@
 </div>
 
 
+
 <!--Info-linje om tid og antal per.-->
 <section class="container-fluid orange py-5">
 <section class="text-center">
     <h2>Opskrift</h2>
+
+<!--Linje-->
+<hr class="linje">
+
+
+
     <!--sætter hver p ved siden af hinanden horisontalt-->
     <div class="d-flex justify-content-evenly">
         <p>2 personer</p>
@@ -104,7 +111,7 @@
   <div class="row align-items-start d-flex flex-column flex-md-column flex-lg-row">
 
     <div class="col collage-opskrift-container">
-    	    <div>
+    	    <div class="ingredienser">
                 <h3>Ingredienser</h3>
                     <ul>
                         <li>150g pasta</li>
@@ -199,48 +206,49 @@
 </div>
 
 
+<!-- Footer -->
+<footer class="py-4">
+  <div class="container d-flex flex-column align-items-center justify-content-center">
 
+      <!-- Servietbillede som baggrund -->
+      <div class="position-relative py-5 py-md-5">
+          <picture>
+              <source media="(min-width: 768px)" srcset="img/storserviet.png">
+              <img src="img/lilleserviet.png" alt="Serviet" >
+          </picture>
 
-    <footer class="py-4">
-      <div class="container d-flex flex-column align-items-center justify-content-center">
-    
-          <!-- Servietbillede som baggrund -->
-          <div class="position-relative py-5 py-md-5">
-              <picture>
-                  <source media="(min-width: 768px)" srcset="img/storserviet.png">
-                  <img src="img/lilleserviet.png" alt="Serviet" >
-              </picture>
-    
-              <!-- Tekst ovenpå billedet -->
-              <div class="kontakt-boks position-absolute top-50 start-50 translate-middle">
-                  <h3>Kontakt os:</h3>
-    
-                  <div class="row justify-content-center">
-                      <div class="telefon col-12 col-md-6">
-                          <p>Telefon.nr.:</p>
-                          <a href="tel:+45 27 14 78">+45 27 14 78 **</a>
-                      </div>
-    
-                      <div class="mail col-12 col-md-6">
-                          <p>Mail:</p>
-                          <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
-                      </div>
+          <!-- Tekst ovenpå billedet -->
+          <div class="kontakt-boks position-absolute top-50 start-50 translate-middle">
+              <h3>Kontakt os:</h3>
+
+              <div class="row justify-content-center">
+                  <div class="telefon col-12 col-md-6">
+                      <p>Telefon.nr.:</p>
+                      <a href="tel:+45 27 14 78">+45 27 14 78 **</a>
                   </div>
-    
-                  <div class="row mt-3 justify-content-center">
-                      <div class="hjerte col-6 text-end">
-                          <p>&lt;3</p>
-                      </div>
-                      <div class="some col-6 text-end">
-                          <i class="bi bi-instagram me-2"></i>
-                          <i class="bi bi-tiktok"></i>
-                      </div>
+
+                  <div class="mail col-12 col-md-6">
+                      <p>Mail:</p>
+                      <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
                   </div>
               </div>
+
+              <div class="row mt-5">
+                <div class="hjerte col-4 text-end align-items-between">
+                  <!-- fs-1 gør det størrer -->
+                  <i class="bi bi-suit-heart fs-3"></i>
+                </div>
+                <div class="col-8 text-end ps-5">
+                  <a href=""><i class="bi bi-instagram m-2 fs-3"></i></a>
+                  <a href=""><i class="bi bi-tiktok fs-3"></i></a>
+                </div>
           </div>
-    
       </div>
-    </footer>
+
+  </div>
+</footer>
+
+    
 
 
 
