@@ -18,12 +18,16 @@ body{
 .navbar, .navbar a{
     background-color: var(--sekundær-orange) !important;
     color: var(--primær-blå);
-    font-weight: bold;
 }
 
 .navbar a:hover{
     color: var(--sekundær-blå);
 }
+
+.aktuel-sæson {
+  text-decoration: underline !important;
+}
+
 
 h1, h2, h3{
     color: var(--primær-blå);
@@ -77,7 +81,7 @@ p, h2, h3, a{
 
 /* Links i dropdown-menuen */
 .dropdown-content a {
-  color: black;
+  color: var(--primær-blå);
   /*padding omkring teksten*/               
   padding: 12px 16px;
   /*Gør hvert link til en blok, så hele arealet er klikbart*/         
@@ -89,7 +93,7 @@ p, h2, h3, a{
 /*Mus holdes over et link i dropdown-menuen */
 .dropdown-content a:hover {
   /*Ændrer baggrundsfarve for at vise interaktion*/
-  background-color: #ddd;     
+  background-color: var(--sekundær-blå);     
 }
 
 /*Ved hover over "Opskrift" vises dropdown-menu*/
