@@ -30,6 +30,10 @@ h1, h2, h3{
     font-weight: bold;
 }
 
+h4{
+  color: var(--primær-blå);
+}
+
 h1{
     font-family: 'Fuzzy Bubbles';
     font-size: 4rem;
@@ -38,6 +42,7 @@ h1{
 p, h2, h3, a{
     font-family: 'Poppins', sans-serif;
 }
+
 
 /*--------------------Dropdown-menu Vores egen styling----------------------*/
 /* Style for linket "Opskrifter" – gør det klikbart og giver korrekt placering */

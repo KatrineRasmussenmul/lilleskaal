@@ -25,7 +25,7 @@ function updateCurrentSeason() {
         vinter: "Vinter"
     };
 
-    /*Sætter akutelt sæsonbillede i banneret */
+    /*Sætter aktuelt sæsonbillede i banneret */
     banner.style.backgroundImage = `url('${seasonImages[season]}')`;
     banner.textContent = seasonText[season];
 
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const containerId = `alle-${currentSeason}`;
   const seasonContainer = document.getElementById(containerId);
 
-  // Flyt sæson-karussel i tablet og desktop-verison
+  // Flyt sæson i tablet og desktop-verison
   if (seasonContainer) {
     const introSection = document.querySelector(".introduktion"); // Den første container er introduktionen
     if (introSection && introSection.parentNode) {
