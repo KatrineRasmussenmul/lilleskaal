@@ -83,6 +83,7 @@ a{
   color: var(--sekundær-blå);
 }
 
+#spring a:hover,
 #alle-foraar a h3:hover,
 #alle-sommer a h3:hover,
 #alle-efteraar a h3:hover,
@@ -90,6 +91,7 @@ a{
   color: var(--sekundær-blå);
 }
 
+#spring a img:hover,
 #alle-foraar a img:hover,
 #alle-sommer a img:hover,
 #alle-efteraar a img:hover,
