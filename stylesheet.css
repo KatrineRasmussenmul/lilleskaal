@@ -69,9 +69,13 @@ a{
 
 
 .alle-foraar a h3:hover,
+.alle-foraar a p:hover,
 .alle-sommer a h3:hover,
+.alle-sommer a p:hover,
 .alle-efteraar a h3:hover,
-.alle-vinter a h3:hover{
+.alle-efteraar a p:hover,
+.alle-vinter a h3:hover,
+.alle-vinter a p:hover{
   color: var(--sekundær-blå);
 }
 
