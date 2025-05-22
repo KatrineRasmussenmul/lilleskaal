@@ -24,9 +24,6 @@ body{
     color: var(--sekundær-blå);
 }
 
-
-
-
 h1, h2, h3{
     color: var(--primær-blå);
     font-weight: bold;
@@ -43,6 +40,15 @@ h1{
 
 p, h2, h3, a{
     font-family: 'Poppins', sans-serif;
+}
+
+a{
+  color: var(--primær-blå);
+  text-decoration: none;
+}
+
+.telefon a, .mail a, .bi-suit-heart, .bi-instagram, .bi-tiktok{
+  color: black;
 }
 
 
