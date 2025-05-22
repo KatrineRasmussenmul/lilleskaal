@@ -29,44 +29,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //FORSIDE//
-document.addEventListener('DOMContentLoaded', function () {
-  const month = new Date().getMonth();
+function getCurrentSeason() {
+  const month = new Date().getMonth() + 1; // 1-12
+  if (month >= 3 && month <= 5) return "spring";   // marts-maj
+  if (month >= 6 && month <= 8) return "summer";   // juni-august
+  if (month >= 9 && month <= 11) return "autumn";  // september-november
+  return "winter";                                  // december-februar
+}
 
-  const seasons = [
-    { name: "vinter", months: [11, 0, 1] },
-    { name: "foraar", months: [2, 3, 4] },
-    { name: "sommer", months: [5, 6, 7] },
-    { name: "efteraar", months: [8, 9, 10] }
-  ];
+function showCurrentSeason() {
+  const season = getCurrentSeason();
+  const containers = document.querySelectorAll(".season-container");
+  
+  containers.forEach(div => {
+    if (div.id === season) {
+      div.classList.remove("d-none");
+    } else {
+      div.classList.add("d-none");
+    }
+  });
+}
 
-  const currentSeason = seasons.find(season => season.months.includes(month))?.name;
+document.addEventListener("DOMContentLoaded", showCurrentSeason);
 
-  const container = document.getElementById("seasons-container");
-  const otherSeasons = document.getElementById("other-seasons");
-
-  if (!container || !otherSeasons || !currentSeason) return;
-
-  // Find det element i containeren som matcher sæsonen
-  const currentSeasonElement = container.querySelector(`.season-banner[data-season="${currentSeason}"]`);
-  if (currentSeasonElement) {
-    // Flyt det element øverst i containeren
-    container.prepend(currentSeasonElement);
-  }
-
-  // Ryd evt. gamle links
-  otherSeasons.innerHTML = "";
-
-  // Lav links til alle andre sæsoner
-  seasons
-    .filter(season => season.name !== currentSeason)
-    .forEach(season => {
-      const link = document.createElement("a");
-      link.href = `${season.name}.html`;
-      link.className = "season-link";
-      link.textContent = season.name.charAt(0).toUpperCase() + season.name.slice(1);
-      otherSeasons.appendChild(link);
-    });
-});
 
 
 
