@@ -90,7 +90,10 @@ a{
   transition: transform 0.3s ease;
 }
 
-.alle-foraar a img:hover {
+.alle-foraar a img:hover,
+.alle-efteraar a img:hover,
+.alle-vinter a img:hover,
+.alle-sommer a img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
@@ -547,6 +550,12 @@ button {
   font-size: 15px;
 }
 
+.alle-foraar a h3,
+.alle-sommer a h3,
+.alle-efteraar a h3,
+.alle-vinter a h3{
+  font-size: 15px;
+}
 
 
 
