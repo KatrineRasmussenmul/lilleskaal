@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentCarousel = carousels[currentSeason];
 
   if (currentCarousel) {
-    const container = document.querySelector(".season-container");
+    const container = document.querySelector("carousel-container");
     container.insertBefore(currentCarousel, container.firstElementChild);
   }
 });
