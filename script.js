@@ -28,52 +28,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+//FORSIDE//
+document.addEventListener('DOMContentLoaded', function () {
+  const month = new Date().getMonth();
 
+  const seasons = [
+    { name: "vinter", months: [11, 0, 1] },
+    { name: "foraar", months: [2, 3, 4] },
+    { name: "sommer", months: [5, 6, 7] },
+    { name: "efteraar", months: [8, 9, 10] }
+  ];
 
+  const currentSeason = seasons.find(season => season.months.includes(month))?.name;
 
-//FORSIDE - nuværende sæson kommer øverst som det største billede//
-function getCurrentSeason() {
-  const month = new Date().getMonth() + 1;
-  if (month >= 3 && month <=5) return "foraar";
-  else if  (month >= 6 && month <=8) return "sommer";
-  else if  (month >= 9 && month <=11) return "efteraar";
-  else return "vinter";
-}
-
-function updateCurrentSeason() {
-  const season = getCurrentSeason();
-  const banner = document.getElementById("current-season");
-
-  const seasonImages = {
-      foraar: "img/eksempel.jpg",
-      sommer: "img/eksempel.jpg",
-      efteraar: "img/eksempel.jpg",
-      vinter: "img/eksempel.jpg"
-  };
-
-  const seasonText = {
-      foraar: "Forår",
-      sommer: "Sommer",
-      efteraar: "Efterår",
-      vinter: "Vinter"
-  };
-
-  /*Sætter aktuelt sæsonbillede i banneret */
-  banner.style.backgroundImage = `url('${seasonImages[season]}')`;
-  banner.textContent = seasonText[season];
-
-  /*Tilføj de andre sæsoner nedenunder*/
+  const container = document.getElementById("seasons-container");
   const otherSeasons = document.getElementById("other-seasons");
-  for (const key in seasonImages){
-      if (key !==season) {
-          const card = document.createElement("div");
-          card.className = "season-card";
-          card.style.backgroundImage = `url('${seasonImages[key]}')`;
-          card.textContent = seasonText[key];
-          otherSeasons.appendChild(card)
-      }
+
+  if (!container || !otherSeasons || !currentSeason) return;
+
+  // Find det element i containeren som matcher sæsonen
+  const currentSeasonElement = container.querySelector(`.season-banner[data-season="${currentSeason}"]`);
+  if (currentSeasonElement) {
+    // Flyt det element øverst i containeren
+    container.prepend(currentSeasonElement);
   }
-}
+
+  // Ryd evt. gamle links
+  otherSeasons.innerHTML = "";
+
+  // Lav links til alle andre sæsoner
+  seasons
+    .filter(season => season.name !== currentSeason)
+    .forEach(season => {
+      const link = document.createElement("a");
+      link.href = `${season.name}.html`;
+      link.className = "season-link";
+      link.textContent = season.name.charAt(0).toUpperCase() + season.name.slice(1);
+      otherSeasons.appendChild(link);
+    });
+});
+
 
 
 

@@ -100,21 +100,41 @@
 
 <!--ÅRSTIDENS OPSKRIFTER-AFSNIT-->
 <div class="container-fluid orange">
-    <div class="container py-5">
-        <div class="mx-sm-5">
-          <h2>Årstidens Opskrifter</h2>
+  <div class="container py-5">
+    <div class="mx-sm-5">
+      <h2>Årstidens Opskrifter</h2>
 
-          <!--Aktuel årstid-->
-          <!--JS tilføjer billede og tekst-->
-          <div id="current-season" class="season-banner">
-          </div>
-          <br>
-          <!--Andre årstider-->
-          <h3>Udforsk andre årstider</h3>
-          <div id="other-seasons" class="season-row" ></div>
+      <!-- Alle sæson-billeder + tekst ligger her -->
+      <div id="seasons-container">
+        <div class="season-banner" data-season="foraar">
+          <img class src="img/foraar.png" alt="Forår" >
+          <img src="img/sommer.png" alt="Sommer">
+          
+        
         </div>
+        <div class="season-banner" data-season="sommer">
+          <img src="img/sommer.png" alt="Sommer" class="img-fluid mb-3">
+          <p>Sommer: Lige nu er det sommer, og vi har samlet sæsonens bedste opskrifter til dig.</p>
+        </div>
+        <div class="season-banner" data-season="efteraar">
+          <img src="img/efteraar.png" alt="Efterår" class="img-fluid mb-3">
+          <p>Efterår: Lige nu er det efterår, og vi har samlet sæsonens bedste opskrifter til dig.</p>
+        </div>
+        <div class="season-banner" data-season="vinter">
+          <img src="img/vinter.png" alt="Vinter" class="img-fluid mb-3">
+          <p>Vinter: Lige nu er det vinter, og vi har samlet sæsonens bedste opskrifter til dig.</p>
+        </div>
+      </div>
+
+      <br>
+
+      <h3>Udforsk andre årstider</h3>
+      <div id="other-seasons" class="season-row"></div>
     </div>
+  </div>
 </div>
+
+
 
 <!--E-MAGASIN-AFSNIT-->
 <section class="collage-container">
