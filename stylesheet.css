@@ -69,6 +69,11 @@ a{
   color: black;
 }
 
+
+.saeson-overskrift{
+  font-size: 9em;
+}
+
 /*--------------skriftstørrelse--------------------*/
 
 #alle-foraar a h3,
@@ -440,7 +445,7 @@ button {
 .madlavning{
   margin-top: 10%;
   margin-left: 25%;
-  transform: rotate(10deg);
+  transform: rotate(2deg);
   width: 80%;
 }
 
@@ -448,7 +453,9 @@ button {
   transform: rotate(-5deg);
 }
 
-
+.teknik{
+  transform: rotate(4deg);
+}
 
 
 
