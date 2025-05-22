@@ -51,6 +51,54 @@ a{
   color: black;
 }
 
+#alle-foraar a h3,
+#alle-sommer a h3,
+#alle-efteraar a h3,
+#alle-vinter a h3{
+  font-size: 20px;
+}
+
+.alle-foraar a h3,
+.alle-sommer a h3,
+.alle-efteraar a h3,
+.alle-vinter a h3{
+  font-size: 20px;
+}
+
+/*---------------------Links hover-------------------*/
+
+
+.alle-foraar a h3:hover,
+.alle-sommer a h3:hover,
+.alle-efteraar a h3:hover,
+.alle-vinter a h3:hover{
+  color: var(--sekundær-blå);
+}
+
+#alle-foraar a h3:hover,
+#alle-sommer a h3:hover,
+#alle-efteraar a h3:hover,
+#alle-vinter a h3:hover{
+  color: var(--sekundær-blå);
+}
+
+#alle-foraar a img:hover,
+#alle-sommer a img:hover,
+#alle-efteraar a img:hover,
+#alle-vinter a img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.alle-foraar a img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
 
 /*--------------------Dropdown-menu Vores egen styling----------------------*/
 /* Style for linket "Opskrifter" – gør det klikbart og giver korrekt placering */
@@ -489,8 +537,18 @@ button {
 .logo img{
     height: 40px;
     width: auto;
-    
 }
+
+/*--------------------Skriftstørrelser-----------------------*/
+#alle-foraar a h3,
+#alle-sommer a h3,
+#alle-efteraar a h3,
+#alle-vinter a h3{
+  font-size: 15px;
+}
+
+
+
 
 
     }
@@ -567,7 +625,6 @@ button {
     .kontakt-boks{
         width: 200px;
     }
-
 
 
   }
