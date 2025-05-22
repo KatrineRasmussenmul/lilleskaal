@@ -5,15 +5,33 @@
     --sekundær-blå: #5671A7;
 }
 
+
+/* -----------------------EGEN CONTAINER / CUSTOM CONTAINER ---------------------- */
+.custom-container{
+  max-width: 1440px;
+  /*automatisk centrering*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.orange{
+    background-color:var(--sekundær-orange);  
+    width: 100%;  
+}
+
+
+
+
 /* -----------------------Farver og Fonte ---------------------- */
 body{
     background-color: var(--primær-orange);
     padding-top: 60px;
 }
 
-.orange{
-    background-color:var(--sekundær-orange);
-}
+
+
 
 .navbar, .navbar a{
     background-color: var(--sekundær-orange) !important;
@@ -81,6 +99,10 @@ a{
   color: var(--sekundær-blå);
 }
 
+#spring a:hover,
+#summer a:hover,
+#autumn a:hover,
+#winter a:hover,
 #alle-foraar a h3:hover,
 #alle-sommer a h3:hover,
 #alle-efteraar a h3:hover,
@@ -88,6 +110,10 @@ a{
   color: var(--sekundær-blå);
 }
 
+#spring a img:hover,
+#summer a img:hover,
+#autumn a img:hover,
+#winter a img:hover,
 #alle-foraar a img:hover,
 #alle-sommer a img:hover,
 #alle-efteraar a img:hover,
@@ -206,6 +232,14 @@ img{
 i{
     color: #093A9D;
   }
+
+
+/*-------------------- Hero-sektion----------------------*/
+/*Hero-sektion skal fylde hele bredden af siden. Fjerner det automatiske margin*/
+.hero-sektion{
+  padding: 0;
+  margin: 0;
+}
   
 
 
@@ -280,13 +314,13 @@ footer{
     object-fit: cover;
 }
 
-.kurv{ top: 8%; left: 10%; width: 27%;}
+.kurv{ top: 8%; left: 10%; width: 27%; transform: rotate(-5deg)}
 .foraarsbord{ top: 43%; left: 20%; width: 25%;}
 .asparges{ top: 73%; left: 16%; width: 15%; transform: rotate(-60deg);}
 .tomat{ top: 22%; left: 62%; width:10%; z-index: 2;}
-.foraarsmad{ top: 72%; left: 60%; width: 15%; z-index: 2;}
-.driver{ top: 43%; left: 73%; width: 20%;}
-.vin{ top: 5%; left: 65%; width: 25%;}
+.foraarsmad{ top: 73%; left: 63%; width: 15%; z-index: 2;}
+.driver{ top: 45%; left: 73%; width: 20%; transform: rotate(8deg)}
+.vin{ top: 5%; left: 65%; width: 25%; transform: rotate(3deg)}
 
 .tilmelding-boks{
     position: absolute;
@@ -499,6 +533,18 @@ button {
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     /* Styling når det er en tablet */
 
+    .custom-container{
+    max-width: 1440px;
+    /*automatisk centrering*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+
+
     /*Styling for collage*/
     .collage-container{
         height: 550px;
@@ -593,6 +639,20 @@ button {
 
 @media screen and (max-width: 767px) {
     /* Stylingen gælder kun på mobil */
+  
+    .custom-container{
+    max-width: 1440px;
+    /*automatisk centrering*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+
+
+
 
     /*Styling til forside*/
     .logo-forside{
@@ -607,10 +667,10 @@ button {
     }
   
     .kurv{ top: 0%; left: 20%; width: 35%;}
-    .foraarsbord{top: 75%; left: 10%; width: 37%; z-index: 4;}
+    .foraarsbord{top: 70%; left: 10%; width: 37%; z-index: 4; transform: rotate(-6deg);}
     .asparges{display: none;}
     .tomat{ top: 8%; left: 53%; width:17%; z-index: 2;}
-    .foraarsmad{ top: 70%; left: 37%; width: 40%; display: block;}
+    .foraarsmad{ top: 75%; left: 40%; width: 40%; display: block;}
     .driver{display: none;}
     .vin{top: 12%; left: 45%; width: 35%;}
     

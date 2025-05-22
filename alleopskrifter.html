@@ -18,7 +18,7 @@
   
   <body>
     <!--NAVIGATIONSBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-4">
   <div class="container-fluid">
     <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,17 +53,15 @@
   </div>
 </nav>
 
-
 <!--OVERSKRIFT-->
-
-<div class="container my-sm-5 px-sm-5">
+<div class="custom-container my-sm-5">
   <h1>Alle opskrifter</h1>
   <h4>Gør mere med mindre – lækre måltider til små budgetter.</h4>
 </div>
 
 <!--INTRODUKTIONS-AFSNIT-->
-<div class="container introduktion">
-  <div class="row align-items-start my-5 mx-4 mx-sm-4">
+<div class="custom-container">
+  <div class="row align-items-start my-5">
     <!--Tekstfelt m. introduktion til side-->
     <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
     <div class="col-12 col-sm-6">
@@ -78,10 +76,10 @@
 </div>
 
 <!--Forår opskrifter-->
-<div id="alle-foraar" class="container-fluid orange d-none d-md-block">
-  <div class="container py-5 ">
-    <div class="row align-items-start px-5">
-        <h2>Forår</h2>
+<div id="alle-foraar" class="orange d-none d-md-block">
+  <div class="custom-container py-5 ">
+    <div class="row align-items-start">
+        <a href="foraar.html"><h2>Forår</h2></a>
              <div class="col text-center">
             <a href="foraar1.html"><img src="img/foraar/foraaropskrift1.png" alt=""></a>
             <a href="foraar1.html"><h3>Pasta med tomat, spidskål og ramsløgspesto</h3></a>
@@ -100,9 +98,9 @@
 </div>
 
 <!--Sommer opskrifter-->
-<div id="alle-sommer" class="container d-none d-md-block">
-  <div class="row align-items-start py-5 px-5">
-    <h2>Sommer</h2>
+<div id="alle-sommer" class="custom-container d-none d-md-block">
+  <div class="row align-items-start py-5">
+    <a href="sommer.html"><h2>Sommer</h2></a>
     <div class="col text-center">
       <a href="sommer1.html"><img src="img/sommer/sommer1billede1.png" alt=""></a>
       <a href="sommer1.html"><h3>Sommersalat med jordbær, burrata og nem focaccia</h3></a>
@@ -119,10 +117,10 @@
 </div>
 
 <!--Efterår opskrifter-->
-<div id="alle-efteraar" class="container-fluid orange mere-padding d-none d-md-block">
-  <div class="container py-5">
-        <div class="row align-items-start px-5">
-            <h2>Efterår</h2>
+<div id="alle-efteraar" class="orange mere-padding d-none d-md-block">
+  <div class="custom-container py-5">
+        <div class="row align-items-start">
+            <a href="efteraar.html"><h2>Efterår</h2></a>
             <div class="col text-center">
                 <a href="efteraar1.html"><img src="img/efteraar/efteraar1billede2.png" alt=""></a>
                 <a href="efteraar1.html"><h3>Efterårssuppe med Hokkaido, gulerod og ingefær</h3></a>
@@ -139,10 +137,11 @@
   </div>
 </div>
 
+
 <!--Vinter opskrifter-->
-<div id="alle-vinter" class="container d-none d-md-block">
-  <div class="row align-items-start my-5 px-5">
-    <h2>Vinter</h2>
+<div id="alle-vinter" class="custom-container d-none d-md-block">
+  <div class="row align-items-start my-5">
+    <a href="vinter.html"><h2>Vinter</h2></a>
     <div class="col text-center">
       <a href="vinter1.html"><img src="img/vinter/vinter1.png" alt=""></a>
       <a href="vinter1.html"><h3>Vinter-nudler med porre, kål og cremet sesamsauce</h3></a>
@@ -160,14 +159,14 @@
 
 <!--Karussel til mobil-verison-->
 <!--Karussel Forår-->
-<main class="container my-5 d-block d-md-none">
+<main class="custom-container my-5 d-block d-md-none">
   <div class="row carousel-container">
 
     <!-- Forår -->
     <div class="alle-foraar col-12 col-md-6 col-lg-3 mb-4 container-fluid orange py-4">
       <div id="carousel-foraar" class="carousel slide" data-bs-touch="false">
         <div class="carousel-inner">
-          <h2 class="px-3">Forår</h2>
+          <a href="foraar.html"><h2 class="px-3">Forår</h2></a>
           <div class="carousel-item active text-center">
             <a href="foraar1.html">
               <img src="img/foraar/foraaropskrift1.png" class="d-block w-100" alt="Forår opskrift 1">
@@ -199,7 +198,7 @@
     <!-- Sommer -->
     <div class="alle-sommer col-12 col-md-6 col-lg-3 mb-4">
       <div id="carousel-sommer" class="carousel slide" data-bs-touch="false">
-        <h2 class="px-3">Sommer</h2>
+        <a href="sommer.html"><h2 class="px-3">Sommer</h2></a>
         <div class="carousel-inner">
           <div class="carousel-item active text-center">
             <a href="sommer1.html">
@@ -232,7 +231,7 @@
     <!-- Efterår -->
     <div class="alle-efteraar col-12 col-md-6 col-lg-3 mb-4 container-fluid orange py-4">
       <div id="carousel-efteraar" class="carousel slide" data-bs-touch="false">
-        <h2 class="px-3">Efterår</h2>
+        <a href="efteraar.html"><h2 class="px-3">Efterår</h2></a>
         <div class="carousel-inner">
           <div class="carousel-item active text-center">
             <a href="efteraar1.html">
@@ -265,7 +264,7 @@
     <!-- Vinter -->
     <div class="alle-vinter col-12 col-md-6 col-lg-3 mb-4">
       <div id="carousel-vinter" class="carousel slide" data-bs-touch="false">
-        <h2 class="px-3">Vinter</h2>
+        <a href="vinter.html"><h2 class="px-3">Vinter</h2></a>
         <div class="carousel-inner">
           <div class="carousel-item active text-center">
             <a href="vinter1.html">
@@ -332,13 +331,8 @@
               </div>
 
               <div class="row mt-5">
-                <div class="hjerte col-4 text-end align-items-between">
-                  <!-- fs-1 gør det størrer -->
-                  <i class="bi bi-suit-heart fs-3"></i>
-                </div>
                 <div class="col-8 text-end ps-5">
                   <a href=""><i class="bi bi-instagram m-2 fs-3"></i></a>
-                  <a href=""><i class="bi bi-tiktok fs-3"></i></a>
                 </div>
           </div>
       </div>
