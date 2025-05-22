@@ -4,29 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vinter</title>
+    <title>Forår</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
-    <!--Google Fonts: Poppins til <p>-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+        <!--Google Fonts: Poppins til <p>-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
 
 </head>
 
 <body>
     <!--NAVIGATIONSBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-4">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-4">
   <div class="container-fluid">
     <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNav">
       <ul class="navbar-nav">
         
         <!-- DROPDOWN MENU -->
@@ -58,10 +59,10 @@
     <!--HERO-SEKTION-->
     <!--BAGGRUNDSBILLEDE-->
     <!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
-    <div class="hero-sektion position-relative">
+    <div class="container-fluid hero-sektion position-relative">
         <picture>
-            <source media="(min-width: 768px)" srcset="img/vinter/vinterhero.png">
-            <img src="img/vinter/vinterheromobil.png" alt="">
+            <source media="(min-width: 768px)" srcset="img/foraar/foraarhero.png">
+            <img src="img/foraar/foraarheromobil.png" alt="">
         </picture>
 
 
@@ -71,54 +72,54 @@
         <!--d-flex ....: centrerer tekst midt i billedet-->
         <div
             class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
-            <h1>Vinter</h1>
+            <h1>Forår</h1>
         </div>
     </div>
 
     <!--INTRODUKTIONS-AFSNIT-->
     <div class="custom-container">
-        <div class="row align-items-start my-5">
+        <div class="row align-items-start my-5 ">
             <!--Tekstfelt m. introduktion til side-->
             <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
             <div class="col-12 col-sm-6">
-                <p>Vinteren har lagt sig over byen, og køkkenet bliver et naturligt samlingspunkt. Det er sæson for varme måltider, dybe smage og råvarer, der kan lidt mere end man tror – også selvom de ser rustikke ud.</p>
+                <p>Foråret er her, og det samme er alle de sprøde, friske råvarer, vi har savnet gennem vinteren. Det er
+                    tid til at slippe lyset ind i køkkenet og lade årstidens grønt spille hovedrollen i enkle og lækre
+                    retter.</p>
             </div>
             <!--Illustration til højre-->
             <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
             <div class="d-none d-sm-block col-sm-2 offset-sm-4">
-                <img src="img/illustrationer/porre.png" alt="illustration">
+                <img src="img/illustrationer/vin.png" alt="illustration">
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-container alle-foraar">
+        <div class="col-12 col-lg-6">
+                <h2>Smagen af forår</h2>
+                <p>Her finder du opskrifter med alt det bedste fra foråret – som asparges, spinat, radiser og nye kartofler.
+                Retter, der smager af solskin, spirende altaner og middage med åbne vinduer.</p>
+        </div>
+
+        <div class="row align-items-start text-center">
+            <div class="col-12 col-sm-4 py-3 text-center">
+                <a href="foraar1.html"><img src="img/foraar/foraaropskrift1.png" alt=""></a>
+                <a href="foraar1.html"><h3>Pasta med tomat, spidskål og ramsløgspesto</h3></a>
+              </div>
+            <div class="col-12 col-sm-4 py-3 text-center">
+                <a href="foraar2.html"><img src="img/foraar/foraar2billede1.png" alt=""></a>
+                <a href="foraar2.html"><h3>Forårs-orzo med tomater og citron</h3></a>
+            </div>
+
+            <div class="col-12 col-sm-4 text-center">
+                <a href="foraar3.html"><img src="img/foraar/foraar3billede2.png" alt=""></a>
+                <a href="foraar3.html"><h3>Forårsnudler med radiser, porre og sesam</h3></a>
             </div>
         </div>
     </div>
 
 
-    <!-- Mad med vinterstemning - orange container -->
-        <div class="orange">
-        <div class="custom-container py-5">
-            <div class="col-12 py-4 col-lg-6">
-                <h2>Mad med Vinterstemning</h2>
-                <p>Her finder du opskrifter med vinterens råvarer som rødkål, pastinak, jordskok og græskar. Retter, der luner, mætter og giver ro midt i mørket – perfekte til både hverdagsmad og hyggelige aftener med venner.
-                </p>
-            </div>
-        <div class="alle-vinter row align-items-start px-sm-5 text-center">
-            <div class="col-12 col-sm-4 py-3">
-              <a href="vinter1.html"><img src="img/vinter/vinter1.png" alt=""></a>
-              <a href="vinter1.html"><h3>Vinter-nudler med porre, kål og cremet sesamsauce</h3></a>
-            </div>
-            <div class="col-12 col-sm-4 py-3">
-              <a href="vinter2.html"><img src="img/vinter/vinter2billede2.png" alt=""></a>
-              <a href="vinter2.html"><h3>Vinterpasta med grønkålssauce og citron</h3></a>
-            </div>
-        <div class="col-12 col-sm-4 py-3">
-          <a href="vinter3.html"><img src="img/vinter/vinter3billede1.png" alt=""></a>
-          <a href="vinter3.html"><h3>Vinterpande med grønkål, svampe og flødestuvet perlebyg</h3></a>
-        </div>
-        </div>
-    </div>
-    </div>
 
-    <!--Footer-->
-    
     <footer class="py-4">
         <div class="container d-flex flex-column align-items-center justify-content-center">
       
@@ -146,22 +147,25 @@
                     </div>
       
                     <div class="row mt-5">
+                      <div class="hjerte col-4 text-end align-items-between">
+                        <!-- fs-1 gør det størrer -->
+                        <i class="bi bi-suit-heart fs-3"></i>
+                      </div>
                       <div class="col-8 text-end ps-5">
                         <a href=""><i class="bi bi-instagram m-2 fs-3"></i></a>
+                        <a href=""><i class="bi bi-tiktok fs-3"></i></a>
                       </div>
                 </div>
             </div>
       
         </div>
       </footer>
-
-
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
      <script src="script.js"></script>
-
 </body>
 
 </html>

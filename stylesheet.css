@@ -5,15 +5,31 @@
     --sekundær-blå: #5671A7;
 }
 
+
+/* -----------------------EGEN CONTAINER / CUSTOM CONTAINER ---------------------- */
+.custom-container{
+  max-width: 1440px;
+  /*automatisk centrering*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.orange{
+    background-color:var(--sekundær-orange);  
+    width: 100%;  
+}
+
+
+
+
 /* -----------------------Farver og Fonte ---------------------- */
 body{
     background-color: var(--primær-orange);
     padding-top: 60px;
 }
 
-.orange{
-    background-color:var(--sekundær-orange);
-}
 
 
 
@@ -216,6 +232,14 @@ img{
 i{
     color: #093A9D;
   }
+
+
+/*-------------------- Hero-sektion----------------------*/
+/*Hero-sektion skal fylde hele bredden af siden. Fjerner det automatiske margin*/
+.hero-sektion{
+  padding: 0;
+  margin: 0;
+}
   
 
 
@@ -290,7 +314,7 @@ footer{
     object-fit: cover;
 }
 
-.kurv{ top: 8%; left: 10%; width: 27%;}
+.kurv{ top: 8%; left: 10%; width: 27%; transform: rotate(-5deg)}
 .foraarsbord{ top: 43%; left: 20%; width: 25%;}
 .asparges{ top: 73%; left: 16%; width: 15%; transform: rotate(-60deg);}
 .tomat{ top: 22%; left: 62%; width:10%; z-index: 2;}
@@ -509,6 +533,18 @@ button {
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     /* Styling når det er en tablet */
 
+    .custom-container{
+    max-width: 1440px;
+    /*automatisk centrering*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+
+
     /*Styling for collage*/
     .collage-container{
         height: 550px;
@@ -603,6 +639,20 @@ button {
 
 @media screen and (max-width: 767px) {
     /* Stylingen gælder kun på mobil */
+  
+    .custom-container{
+    max-width: 1440px;
+    /*automatisk centrering*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+
+
+
 
     /*Styling til forside*/
     .logo-forside{
