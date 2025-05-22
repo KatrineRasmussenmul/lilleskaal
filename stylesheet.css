@@ -51,6 +51,8 @@ a{
   color: black;
 }
 
+/*--------------skriftstørrelse--------------------*/
+
 #alle-foraar a h3,
 #alle-sommer a h3,
 #alle-efteraar a h3,
@@ -69,9 +71,13 @@ a{
 
 
 .alle-foraar a h3:hover,
+.alle-foraar a p:hover,
 .alle-sommer a h3:hover,
+.alle-sommer a p:hover,
 .alle-efteraar a h3:hover,
-.alle-vinter a h3:hover{
+.alle-efteraar a p:hover,
+.alle-vinter a h3:hover,
+.alle-vinter a p:hover{
   color: var(--sekundær-blå);
 }
 
@@ -98,6 +104,26 @@ a{
   transition: transform 0.3s ease;
 }
 
+.telefon a:hover, 
+.mail a:hover, 
+.bi-instagram:hover,
+.bi-tiktok:hover{
+  color: var(--sekundær-blå);
+}
+
+/* Gør <a>-elementet til inline-block, så transform virker */
+.call-to-action a {
+  display: inline-block;
+
+  /* Gør overgangen glidende, så det ikke hopper ved hover */
+  transition: transform 0.3s ease;
+}
+
+/* Når musen holdes over linket */
+.call-to-action a:hover {
+  /* Forstør linket en smule */
+  transform: scale(1.05);
+}
 
 
 
