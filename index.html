@@ -22,7 +22,6 @@
     <!--Google Fonts: Poppins til <p>-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-
   </head>
   
   <body>
@@ -62,7 +61,6 @@
   </div>
 </nav>
 
-
 <!--HERO-SEKTION-->
 <!--BAGGRUNDSBILLEDE-->
 <!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
@@ -100,41 +98,21 @@
 
 <!--ÅRSTIDENS OPSKRIFTER-AFSNIT-->
 <div class="container-fluid orange">
-  <div class="container py-5">
-    <div class="mx-sm-5">
-      <h2>Årstidens Opskrifter</h2>
+    <div class="container py-5">
+        <div class="mx-sm-5">
+          <h2>Årstidens Opskrifter</h2>
 
-      <!-- Alle sæson-billeder + tekst ligger her -->
-      <div id="seasons-container">
-        <div class="season-banner" data-season="foraar">
-          <img class src="img/foraar.png" alt="Forår" >
-          <img src="img/sommer.png" alt="Sommer">
-          
-        
+          <!--Aktuel årstid-->
+          <!--JS tilføjer billede og tekst-->
+          <div id="current-season" class="season-banner">
+          </div>
+          <br>
+          <!--Andre årstider-->
+          <h3>Udforsk andre årstider</h3>
+          <div id="other-seasons" class="season-row" ></div>
         </div>
-        <div class="season-banner" data-season="sommer">
-          <img src="img/sommer.png" alt="Sommer" class="img-fluid mb-3">
-          <p>Sommer: Lige nu er det sommer, og vi har samlet sæsonens bedste opskrifter til dig.</p>
-        </div>
-        <div class="season-banner" data-season="efteraar">
-          <img src="img/efteraar.png" alt="Efterår" class="img-fluid mb-3">
-          <p>Efterår: Lige nu er det efterår, og vi har samlet sæsonens bedste opskrifter til dig.</p>
-        </div>
-        <div class="season-banner" data-season="vinter">
-          <img src="img/vinter.png" alt="Vinter" class="img-fluid mb-3">
-          <p>Vinter: Lige nu er det vinter, og vi har samlet sæsonens bedste opskrifter til dig.</p>
-        </div>
-      </div>
-
-      <br>
-
-      <h3>Udforsk andre årstider</h3>
-      <div id="other-seasons" class="season-row"></div>
     </div>
-  </div>
 </div>
-
-
 
 <!--E-MAGASIN-AFSNIT-->
 <section class="collage-container">
@@ -167,7 +145,6 @@
    
 </section>
 
-
 <!--FÆLLESSKAB-AFSNIT-->
 <section class="container-fluid orange position-relative faelles-bord">
   <a href="faellesskaal.html">
@@ -177,7 +154,6 @@
     </picture>
   </a>
 </section>
-
 
 <!-- footer -->
 <footer class="py-4">
@@ -221,10 +197,11 @@
   </div>
 </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
     <script src="script.js"></script>
 
   </body>
 </html>
+
+
