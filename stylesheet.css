@@ -51,6 +51,8 @@ a{
   color: black;
 }
 
+/*--------------skriftstørrelse--------------------*/
+
 #alle-foraar a h3,
 #alle-sommer a h3,
 #alle-efteraar a h3,
@@ -100,6 +102,13 @@ a{
 .alle-sommer a img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+.telefon a:hover, 
+.mail a:hover, 
+.bi-instagram:hover, 
+.bi-tiktok:hover{
+  color: var(--sekundær-blå);
 }
 
 
