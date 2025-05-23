@@ -20,7 +20,7 @@
 
 <body>
     <!--NAVIGATIONSBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-4">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
   <div class="container-fluid">
     <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,41 +55,20 @@
   </div>
 </nav>
 
-
-    <!--HERO-SEKTION-->
-    <!--BAGGRUNDSBILLEDE-->
-    <!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
-    <div class="container-fluid hero-sektion position-relative">
-        <picture>
-            <source media="(min-width: 768px)" srcset="img/foraar/foraarhero.png">
-            <img src="img/foraar/foraarheromobil.png" alt="">
-        </picture>
-
-
-        <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
-        <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
-        <!--w-100 h-100: gør overlay lige så stort som billedet-->
-        <!--d-flex ....: centrerer tekst midt i billedet-->
-        <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
-            <h1>Forår</h1>
-        </div>
-    </div>
-
     <!--INTRODUKTIONS-AFSNIT-->
     <div class="custom-container">
         <div class="row align-items-start my-5 ">
             <!--Tekstfelt m. introduktion til side-->
             <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
-            <div class="col-12 col-sm-6">
-                <p>Foråret er her, og det samme er alle de sprøde, friske råvarer, vi har savnet gennem vinteren. Det er
-                    tid til at slippe lyset ind i køkkenet og lade årstidens grønt spille hovedrollen i enkle og lækre
-                    retter.</p>
+            <div class="col-12 col-sm-7">
+              <h1>Forår</h1>
+              <p>Foråret er her, og det samme er alle de sprøde, friske råvarer, vi har savnet gennem vinteren. Det er tid til at slippe lyset ind i køkkenet og lade årstidens grønt spille hovedrollen i enkle og lækre
+              retter.</p>
             </div>
             <!--Illustration til højre-->
             <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
-            <div class="d-none d-sm-block col-sm-2 offset-sm-4">
-                <img src="img/illustrationer/vin.png" alt="illustration">
+            <div class="d-none d-sm-block col-sm-3 offset-md-1">
+                <img src="img/illustrationer/basilikum.png" alt="illustration">
             </div>
         </div>
     </div>
