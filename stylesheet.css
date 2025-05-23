@@ -249,12 +249,16 @@ i{
   padding: 0;
   margin: 0;
 }
-  
 
+
+.illustration-introduktion-sommer1{
+  transform: rotate(-25deg);
+}
 
 /*----------------------------FOOTER----------------------------*/
 footer{
-    background-image: url('img/ternstor.png'); 
+    background-image: url('img/ternstor.png');
+    /*background-color: var(--sekundær-blå);*/
     background-size: cover; 
     background-position: center; 
     height: 400px;
@@ -365,7 +369,7 @@ footer{
   /*farve*/
   background-color: black;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1440px;
   /*centrerer streg og giver luft over/under*/
   margin: 20px auto;
 }
@@ -464,8 +468,8 @@ button {
 
 
 /*----------------------------KONTAKT----------------------------*/
-.container-kontakt{
-    background-image: url('img/ternstor.png'); 
+.container-kontakt{ 
+    background-color: var(--sekundær-orange);
     background-size: cover; 
     background-position: center; 
     height: 650px;
