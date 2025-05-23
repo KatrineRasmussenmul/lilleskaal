@@ -594,6 +594,10 @@ button {
 
 
 
+.overskrift-kontakt{
+    font-size: 1.7rem;
+  }
+  
 
 
 
@@ -698,6 +702,8 @@ button {
     width: 80px; /* eller 150px, 200px, alt efter behov */
     height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
+
+
   
 /*----------------------------FOOTER----------------------------*/
     footer{
