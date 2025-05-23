@@ -263,12 +263,13 @@ footer{
     /*background-color: var(--sekundær-blå);*/
     background-size: cover; 
     background-position: center; 
-    height: 400px;
+    height: 350px;
 }
 
-.kontakt-boks{
-    width: 400px;
+.overskrift-footer{
+  font-size: 1.7rem;
 }
+
 
 
 /*--------------------------------------------------FORSIDE--------------------------------------------------*/
@@ -622,8 +623,6 @@ button {
 }
 
 
-
-
     }
 
 
@@ -705,15 +704,11 @@ button {
 /*----------------------------FOOTER----------------------------*/
     footer{
         background-image: url('img/tern.png'); 
-        height: 570px;
+        height: 450px;
     }
 
     .serviet-tekst{
         margin: 20px 0 20px 70px ;
-    }
-    
-    .kontakt-boks{
-        width: 200px;
     }
 
 
