@@ -464,14 +464,7 @@ button {
 
 
 /*----------------------------KONTAKT----------------------------*/
-.container-kontakt{ 
-    background-color: var(--sekundær-orange);
-    background-size: cover; 
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/*Logo i bunden af siden*/
 .logo-hero{ top: 22%; left: 41%;}
 
 .logo-hero img {
@@ -479,10 +472,13 @@ button {
     height: auto; 
   }
   
+.kontakt-billede{
+  transform: rotate(3deg);
+}
 
   
 
-  /* ---------FÆLLESSKÅL---------- */
+ /*----------------------------FÆLLESSKÅL----------------------------*/
   .bordhero {
     width: 55%;
 
@@ -692,16 +688,17 @@ button {
 
 
 /*-------------------KONTAKT------------------------------- */
-.container-kontakt{
-    background-image: url('img/ternkontakt.png'); 
-    height: 1000px;
-}
-
-
+/*Logo i bunden af siden*/
 .logo-hero img {
-    width: 80px; /* eller 150px, 200px, alt efter behov */
+    width: 80px; 
     height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
+
+  /*Overskrift på serviet skal være mindre*/
+  .overskrift-kontakt{
+    font-size: 1.7rem;
+  }
+  
 
 
   
