@@ -268,16 +268,6 @@ footer{
     width: 400px;
 }
 
-.kontakt-boks h3,
-.kontakt-boks a,
-.kontakt-boks p{
-      font-family: 'Fuzzy Bubbles';
-  }
-
-
-
-
-
 
 /*--------------------------------------------------FORSIDE--------------------------------------------------*/
 .logo-forside{
@@ -481,14 +471,10 @@ button {
     width: 80px; 
     height: auto; 
   }
-  .kontakt-tekst h2,
-  .kontakt-tekst a,
-  .kontakt-tekst p{
-      font-family: 'Fuzzy Bubbles';
-  }
   
   .kontakt-tekst h2{
-      font-size: 40px ;
+    font-family:Fuzzy Bubbles;
+    font-size: 40px ;
   }
   
   .kontakt-tekst p{
