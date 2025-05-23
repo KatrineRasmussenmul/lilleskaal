@@ -255,6 +255,8 @@ i{
   transform: rotate(-25deg);
 }
 
+
+
 /*----------------------------FOOTER----------------------------*/
 footer{
     background-image: url('img/ternstor.png');
@@ -465,8 +467,9 @@ button {
 .container-kontakt{ 
     background-color: var(--sekundær-orange);
     background-size: cover; 
-    background-position: center; 
-    height: 650px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-hero{ top: 22%; left: 41%;}
@@ -476,14 +479,7 @@ button {
     height: auto; 
   }
   
-  .kontakt-tekst h2{
-    font-family:Fuzzy Bubbles;
-    font-size: 40px ;
-  }
-  
-  .kontakt-tekst p{
-      font-size: 20px;
-  }
+
   
 
   /* ---------FÆLLESSKÅL---------- */
@@ -598,17 +594,12 @@ button {
 
 
 
+.overskrift-kontakt{
+    font-size: 1.7rem;
+  }
+  
 
 
-/* -------------------KONTAKT--------------------------- */
-
-.container-kontakt{    
-    height: 400px;
-}
-
-.kontakt-tekst{
-    width: 170px;
-}
 
 
 
@@ -711,6 +702,8 @@ button {
     width: 80px; /* eller 150px, 200px, alt efter behov */
     height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
+
+
   
 /*----------------------------FOOTER----------------------------*/
     footer{
