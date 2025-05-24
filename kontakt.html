@@ -1,60 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Skabelon</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  
-      <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
-      <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
-      <!--Google Fonts: Poppins til <p>-->
-      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-      
-  </head>
-  
-  <body>
-    <!--NAVIGATIONSBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-4">
-  <div class="container-fluid">
-    <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        
-        <!-- DROPDOWN MENU -->
-        <li class="nav-item dropdown vores-dropdown">
-          <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
-          <div class="dropdown-content">
-            <a href="sommer.html">Sommer</a>
-            <a href="efteraar.html">Efterår</a>
-            <a href="vinter.html">Vinter</a>
-            <a href="foraar.html">Forår</a>
-          </div>
-        </li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt os</title>
 
-        <li class="nav-item">
-          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="omos.html">Om Os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
-        </li>
-      </ul>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!--Eget ekstern stylesheet-->
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!--Bootstrap ikoner-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===========================
+       NAVIGATIONSBAR
+       =========================== -->
+  <!--Fixed navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
+
+      <!--Burger-menu til mobil-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Links i navbar-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <!-- Custom dropdown-menu til sæsoner-->
+          <li class="nav-item dropdown vores-dropdown">
+            <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
+            <div class="dropdown-content">
+              <a href="sommer.html">Sommer</a>
+              <a href="efteraar.html">Efterår</a>
+              <a href="vinter.html">Vinter</a>
+              <a href="foraar.html">Forår</a>
+            </div>
+          </li>
+
+          <!--Andre links-->
+          <li class="nav-item">
+            <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="omos.html">Om Os</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
+
+  <!-- ===========================
+       BAGGRUND SOM ER ET PAPIR
+       =========================== -->
 
 <div class="custom-container py-5">
   <div class="row position-relative align-items-start">
+     <!-- Kolonne: 12 på mobil, 8 på medium skærme (≥768px) og op -->
     <div class="col-12 col-md-8">
       <picture>
         <source media="(min-width: 768px)" srcset="img/lilleserviet.png">
@@ -63,14 +83,18 @@
     
       
     
-   <!-- teksten ovenpå "serviet" -->
+  <!-- ===========================
+        TEKST OVENPÅ PAPIR
+       =========================== -->
     <div class="position-absolute top-0 start-0 p-5">
       <div>
         <h1 class="overskrift-kontakt">Kontakt os:</h1>
         <div class="row">
+          <!-- Kolonne: 12 på mobil, 6 på large skærme (≥992px) og op -->
           <p class="col-12 col-lg-6">Telefon.nr.:
             <a href="tel:+45271478**">+45 27 14 78 **</a>
           </p>
+          <!-- Kolonne: 12 på mobil, 6 på large skærme (≥992px) og op -->
           <p class="col-12 col-lg-6">Mail:
             <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
           </p>
@@ -94,6 +118,7 @@
     </div>
 
     <div class="col-12 col-md-4 pt-3">
+      <!-- Kolonne: 12 på mobil, 4 på medium skærme (≥768px) og op -->
       <img src="img/faellesskaal.png" alt="" class="kontakt-billede img-fluid">
     </div>
   </div>
@@ -101,7 +126,10 @@
 
 
 
-<!--logo-kontakt-->
+
+  <!-- ===========================
+       LOGO I BUNDEN
+       =========================== -->
 <div class="orange py-5">
     <div class="logo-hero d-flex justify-content-center">
         <img src="img/logo.png" alt="logo">
@@ -110,14 +138,6 @@
         <h1>Lille skål</h1>
     </div>
 </div>
-
-    
-
-
-
-
-
-
 
 
 

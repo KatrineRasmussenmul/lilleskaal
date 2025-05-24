@@ -1,219 +1,290 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Forside</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "3LdleP9UAzHffR-I7",
-            });
-        })();
-    </script>
-    <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
-    <!--Google Fonts: Poppins til <p>-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lille Skål: et madunivers</title>
 
-  </head>
-  
-  <body>
-    <!--NAVIGATIONSBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
-  <div class="container-fluid">
-    <a class="navbar-brand logo" href="index.html"><img src="img/logo-vand-2.png" alt="logo skål"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!--Eget ekstern stylesheet-->
+  <link rel="stylesheet" href="stylesheet.css">
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        
-        <!-- DROPDOWN MENU -->
-        <li class="nav-item dropdown vores-dropdown">
-          <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
-          <div class="dropdown-content">
-            <a href="sommer.html">Sommer</a>
-            <a href="efteraar.html">Efterår</a>
-            <a href="vinter.html">Vinter</a>
-            <a href="foraar.html">Forår</a>
-          </div>
-        </li>
+  <!--Bootstrap ikoner-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-        <li class="nav-item">
-          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="omos.html">Om Os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
-        </li>
-      </ul>
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===========================
+       NAVIGATIONSBAR
+       =========================== -->
+  <!--Fixed navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
+
+      <!--Burger-menu til mobil-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Links i navbar-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <!-- Custom dropdown-menu til sæsoner-->
+          <li class="nav-item dropdown vores-dropdown">
+            <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
+            <div class="dropdown-content">
+              <a href="sommer.html">Sommer</a>
+              <a href="efteraar.html">Efterår</a>
+              <a href="vinter.html">Vinter</a>
+              <a href="foraar.html">Forår</a>
+            </div>
+          </li>
+
+          <!--Andre links-->
+          <li class="nav-item">
+            <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="omos.html">Om Os</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!--HERO-SEKTION-->
-<!--BAGGRUNDSBILLEDE-->
-<!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
-<div class="hero-sektion position-relative">
+
+  <!-- ===========================
+       HERO-SEKTION
+       =========================== -->
+  <!--ØVERSTE BILLEDE AF RET-->
+  <!--To forskellige billeder ud fra om det er mobil eller tablet/desktop -->
+  <div class="hero-sektion position-relative">
     <picture>
       <source media="(min-width: 768px)" srcset="img/forsidebillede.png">
       <img src="img/forsidemobil.png" alt="">
     </picture>
-        <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
-        <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
-        <!--w-100 h-100: gør overlay lige så stort som billedet-->
-        <!--d-flex ....: centrerer tekst midt i billedet-->
-        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
-            <img class="logo-forside" src="img/logovandmaling.png" alt="">
-            <h4 class="call-to-action"><a href="alleopskrifter.html">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/opskriftknapstor.png">
-                <img src="img/opskriftknapmobil.png" alt="">
-              </picture>
-              </a></h4>
-        </div>
-</div>
-
-<!--INTRODUKTIONS-AFSNIT-->
-<div class="custom-container">
-  <div class="row align-items-start my-5">
-    <!--Tekstfelt m. introduktion til side-->
-    <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
-    <div class="col-12 col-sm-6">
-      <p>LILLE SKÅL ønsker at skabe et fællesskab omkring budgetvenlig hverdagsmad lavet med omtanke – med sæsonens råvarer og simple opskrifter til dig med et lille køkken og stor appetit på smag.</p>
-    </div>
-    <!--Illustration til højre-->
-    <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
-    <div class="d-none d-sm-block col-sm-2 offset-sm-2">
-      <img src="img/illustrationer/basilikum.png" alt="illustration">
+    <!--Tekst & logo over baggrundsbillede-->
+    <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
+    <!--w-100 h-100: gør overlay lige så stort som billedet-->
+    <!--d-flex ....: centrerer tekst midt i billedet-->
+    <div
+      class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
+      <img class="logo-forside" src="img/logovandmaling.png" alt="">
+      <h4 class="call-to-action"><a href="alleopskrifter.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/opskriftknapstor.png">
+            <img src="img/opskriftknapmobil.png" alt="">
+          </picture>
+        </a></h4>
     </div>
   </div>
-</div>
 
+  <!--UPS!!!!!!!!! der kommer fejlkode ved linje 88:  Empty heading.
 
+From line 88, column 7; to line 88, column 33
 
+"">↩      <h4 class="call-to-action"><a hre-->
+  
 
-<div class="orange py-5">
+  <!-- ===========================
+       INTRO-SEKTION
+       =========================== -->
   <div class="custom-container">
-        <!-- Sommer -->
-    <div id="summer" class="season-container row d-none">
-      <div class="col-12 col-md-6">
-        <h2>Velkommen til sommeren!</h2>
-        <p>
-          Sommeren er højsæson for solmodne råvarer som jordbær, tomater, majs og friske bær. Det er den perfekte tid til lette retter, kolde salater og søde desserter, der giver energi på varme dage. Sommermaden er ligesom årstiden selv - frisk, farverig og fuld af liv.
-          <br>
-          Vi samles om maden i det gode vejr og nyder de råvarer, der kun findes i denne sæson.
-        </p>
-        <a href="sommer.html">Se sommerens opskrifter her</a>
+    <div class="row align-items-start my-5">
+      <!--Tekstfelt m. introduktion til side-->
+      <!-- Kolonne: 12 på mobil, 6 på små skærme (≥576px) og op -->
+      <div class="col-12 col-sm-6">
+        <p>LILLE SKÅL ønsker at skabe et fællesskab omkring budgetvenlig hverdagsmad lavet med omtanke – med sæsonens
+          råvarer og simple opskrifter til dig med et lille køkken og stor appetit på smag.</p>
       </div>
-
-      <div class="col-12 col-md-6">
-        <a href="sommer.html"><img src="img/sommer/sommer2billede2.png" alt="Sommer" class="img-fluid rounded" /></a>
-      </div>
-    </div>
-
-    <!-- Forår -->
-    <div id="spring" class=" season-container row d-none">
-      <div class="col-12 col-md-6">
-        <h2>Velkommen til foråret!</h2>
-        <p>
-          Når foråret melder sin ankomst, åbner naturen sig op med nye grønne skud og friske råvarer. Det er       tiden, hvor asparges, rabarber og ærter kommer på bordet og giver maden et let og sprødt pust.Foråret handler om friskhed og fornyelse - både i naturen og i køkkenet.
-          <br>
-          Vi elsker de enkle retter, der lader råvarernes naturlige smag stå i centrum og samler os om spisebordet efter en lang vinter.
-        </p>
-        <a href="foraar.html">Find forårets opskrifter her</a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="foraar.html"><img src="img/foraar/foraar1billede2.png" alt="Forår" class="img-fluid rounded"/></a>
-      </div>
-    </div>
-
-    <!-- Efterår -->
-    <div id="autumn" class="season-container row d-none">
-      <div class="col-12 col-md-6">
-        <h2>Velkommen til efteråret!</h2>
-        <p>Efteråret bringer dybe farver og mere robuste råvarer som græskar, rodfrugter, kål og svampe. Det er sæson for varme og mættende retter, der giver både energi og hygge, når dagene bliver kortere og køligere. 
-          <br>
-          Vi tager imod årstidens overflod og bruger råvarerne til at skabe mad, der samler os og giver ro og nærvær.
-        </p>
-        <a href="efteraar.html">Oplev efterårets opskrifter her</a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="efteraar.html"><img src="img/efteraar/efteraar2billede1ny.png" alt="Efterår" class="img-fluid rounded"/></a>
-      </div>
-    </div>
-
-    <!-- Vinter -->
-    <div id="winter" class="season-container d-none">
-      <div class="col-12 col-md-6">
-        <h2>Velkommen til vinteren!</h2>
-        <p>
-          Vinteren er tid til at trække sig lidt tilbage og nyde mad, der varmer og mætter. Rodfrugter, kål og æbler er nogle af de råvarer, der holder os i gang, når det er koldt og mørkt udenfor. Vintermaden er enkel, nærende og fyldt med traditioner, der samler os om bordet og giver energi til hverdagens udfordringer.
-          <br>
-          Vi samles om maden i vinterens stille ro og varme, og nyder råvarerne, der sætter deres særlige præg på denne tid.
-        </p>
-        <a href="vinter.html">Find vinterens opskrifter her</a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="vinter.html"><img src="img/vinter/vinter1billede1.png" alt="Vinter" class="img-fluid rounded" /></a>
+      <!--Illustration til højre-->
+      <!--Illustration vises ikke på mobil-->
+      <!-- Kolonne: 2 på små skærme (≥576px) og op; forskydning til venstre: 2 kolonner -->
+      <div class="d-none d-sm-block col-sm-2 offset-sm-2">
+        <img src="img/illustrationer/basilikum.png" alt="illustration">
       </div>
     </div>
   </div>
 
+
+  <!-- ===========================
+       NUVÆRENDE SÆSON - JS 
+       =========================== -->
+
+  <!--Oversigt over alle sæsoner, som kan komme på forsiden. UPS der bliver kun vist den nuværende sæson, som man er i-->
+  <div class="orange py-5">
+    <div class="custom-container">
+      <!-- Sommer -->
+      <div id="summer" class="season-container row d-none">
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
+        <div class="col-12 col-md-6">
+
+          <!--Tekst om sæson-->
+          <h2>Velkommen til sommeren!</h2>
+          <p>
+            Sommeren er højsæson for solmodne råvarer som jordbær, tomater, majs og friske bær. Det er den perfekte tid
+            til lette retter, kolde salater og søde desserter, der giver energi på varme dage. Sommermaden er ligesom
+            årstiden selv - frisk, farverig og fuld af liv.
+            <br>
+            Vi samles om maden i det gode vejr og nyder de råvarer, der kun findes i denne sæson.
+          </p>
+          <!--Linkt til opskrifter fra sæson-->
+          <a href="sommer.html">Se sommerens opskrifter her</a>
+        </div>
+
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
+        <div class="col-12 col-md-6">
+          <!--Billede af sæson som link-->
+          <a href="sommer.html"><img src="img/sommer/sommer2billede2.png" alt="Sommer" class="img-fluid rounded" /></a>
+        </div>
+      </div>
+
+      <!-- Forår -->
+      <div id="spring" class=" season-container row d-none">
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
+        <div class="col-12 col-md-6">
+
+          <!--Tekst om sæson-->
+          <h2>Velkommen til foråret!</h2>
+          <p>
+            Når foråret melder sin ankomst, åbner naturen sig op med nye grønne skud og friske råvarer. Det er tiden,
+            hvor asparges, rabarber og ærter kommer på bordet og giver maden et let og sprødt pust.Foråret handler om
+            friskhed og fornyelse - både i naturen og i køkkenet.
+            <br>
+            Vi elsker de enkle retter, der lader råvarernes naturlige smag stå i centrum og samler os om spisebordet
+            efter en lang vinter.
+          </p>
+          <!--Linkt til opskrifter fra sæson-->
+          <a href="foraar.html">Find forårets opskrifter her</a>
+        </div>
+
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
+        <div class="col-12 col-md-6">
+          <!--Billede af sæson som link-->
+          <a href="foraar.html"><img src="img/foraar/foraar1billede2.png" alt="Forår" class="img-fluid rounded" /></a>
+        </div>
+      </div>
+
+      <!-- Efterår -->
+      <div id="autumn" class="season-container row d-none">
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
+        <div class="col-12 col-md-6">
+
+          <!--Tekst om sæson-->
+          <h2>Velkommen til efteråret!</h2>
+          <p>Efteråret bringer dybe farver og mere robuste råvarer som græskar, rodfrugter, kål og svampe. Det er sæson
+            for varme og mættende retter, der giver både energi og hygge, når dagene bliver kortere og køligere.
+            <br>
+            Vi tager imod årstidens overflod og bruger råvarerne til at skabe mad, der samler os og giver ro og nærvær.
+          </p>
+          <!--Linkt til opskrifter fra sæson-->
+          <a href="efteraar.html">Oplev efterårets opskrifter her</a>
+        </div>
+
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
+        <div class="col-12 col-md-6">
+          <!--Billede af sæson som link-->
+          <a href="efteraar.html"><img src="img/efteraar/efteraar2billede1ny.png" alt="Efterår"
+              class="img-fluid rounded" /></a>
+        </div>
+      </div>
+
+      <!-- Vinter -->
+      <div id="winter" class="season-container d-none">
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
+        <div class="col-12 col-md-6">
+
+          <!--Tekst om sæson-->
+          <h2>Velkommen til vinteren!</h2>
+          <p>
+            Vinteren er tid til at trække sig lidt tilbage og nyde mad, der varmer og mætter. Rodfrugter, kål og æbler
+            er nogle af de råvarer, der holder os i gang, når det er koldt og mørkt udenfor. Vintermaden er enkel,
+            nærende og fyldt med traditioner, der samler os om bordet og giver energi til hverdagens udfordringer.
+            <br>
+            Vi samles om maden i vinterens stille ro og varme, og nyder råvarerne, der sætter deres særlige præg på
+            denne tid.
+          </p>
+          <!--Linkt til opskrifter fra sæson-->
+          <a href="vinter.html">Find vinterens opskrifter her</a>
+        </div>
+
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
+        <div class="col-12 col-md-6">
+          <!--Billede af sæson som link-->
+          <a href="vinter.html"><img src="img/vinter/vinter1billede1.png" alt="Vinter" class="img-fluid rounded" /></a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
+  <!-- ===========================
+       E-MAGASIN TILMELDING M. COLLAGE 
+       =========================== -->
 
-<!--E-MAGASIN-AFSNIT-->
-<section class="collage-container custom-container">
-        <img src="img/kurv.png" class="billede kurv" alt="">
-        <img src="img/foraarsbord.png" class="billede foraarsbord" alt="">
-        <img src="img/illustrationer/porre.png" class="billede asparges" alt="">
-        <img src="img/illustrationer/tomat.png" class="billede tomat" alt="">
-        <img src="img/foraarsmad.png" class="billede foraarsmad" alt="">
-        <img src="img/driver.png" class="billede driver" alt="">
-        <img src="img/vin.png" class="billede vin" alt="">
+  <!--Collage m. billeder-->
+  <section class="collage-container custom-container">
+    <img src="img/kurv.png" class="billede kurv" alt="">
+    <img src="img/foraarsbord.png" class="billede foraarsbord" alt="">
+    <img src="img/illustrationer/porre.png" class="billede asparges" alt="">
+    <img src="img/illustrationer/tomat.png" class="billede tomat" alt="">
+    <img src="img/foraarsmad.png" class="billede foraarsmad" alt="">
+    <img src="img/driver.png" class="billede driver" alt="">
+    <img src="img/vin.png" class="billede vin" alt="">
 
-<div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center">
 
-  <div class="tilmelding-boks">
-    <h2>Bliv inspireret i din indbakke</h2>
-    <p>Et par gange om måneden sender vi inspiration direkte til din indbakke. Her deler vi opskrifter, der følger sæsonen, tips til mad på budget og små historier fra vores madunivers, hvor det hjemmelavede måltid og den gode stemning er i centrum.
-    Du får også første besked, når vi inviterer til events og fællesspisning. 
-    <br> <br>
-    Tilmeld dig vores e-magasin</p>
-    
-    <form id="contact-form">
-    <!-- To simplify the tutorial, the value is static. -->
-    <label>Email</label>
-    <input type="email" name="email" required>
-    <input type="submit" value="Send">
-    </form>
-  </div>
+      <!--Tilmelding til e-magasin-->
+      <div class="tilmelding-boks">
+        <h2>Bliv inspireret i din indbakke</h2>
+        <p>Et par gange om måneden sender vi inspiration direkte til din indbakke. Her deler vi opskrifter, der følger
+          sæsonen, tips til mad på budget og små historier fra vores madunivers, hvor det hjemmelavede måltid og den
+          gode stemning er i centrum.
+          Du får også første besked, når vi inviterer til events og fællesspisning.
+          <br> <br>
+          Tilmeld dig vores e-magasin
+        </p>
 
-</div>
-   
-</section>
+        <!--Kan skrive sin mail vha. js og få mail m. e-magasin-->
+        <form id="contact-form">
+          <label>Email</label>
+          <input type="email" name="email" required>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
 
-<!--FÆLLESSKAB-AFSNIT-->
-<section class="orange position-relative faelles-bord">
-  <a href="faellesskaal.html">
-        <picture class="d-flex justify-content-center">
+  </section>
+
+  <!-- ===========================
+       FÆLLESSKAB-AFSNIT M. BORD - LINKER TIL FÆLLES-SKÅL SIDEN 
+       =========================== -->
+  <div class="orange position-relative faelles-bord">
+    <a href="faellesskaal.html">
+      <picture class="d-flex justify-content-center">
         <source media="(min-width: 768px)" srcset="img/deskfaellesskaal.png">
         <img src="img/mobilfaellesskaal.png" alt="">
-    </picture>
-  </a>
-</section>
+      </picture>
+    </a>
+  </div>
+
+
 
   <!-- ===========================
        FOOTER
@@ -269,11 +340,13 @@
     </div>
   </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
-    <script src="script.js"></script>
 
-  </body>
+  <!--JavaScript benyttes til at navigationsbar: nuværende sæson øverst ved dropdown menu + tilmelding til e-magasin (mail)-->
+  <script src="script.js"></script>
+
+</body>
+
 </html>
-
-

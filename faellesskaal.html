@@ -1,220 +1,274 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fælles-skål</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  
-        <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
-        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
-        <!--Google Fonts: Poppins til <p>-->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fælles-skål</title>
+
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!--Eget ekstern stylesheet-->
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!--Bootstrap ikoner-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-  
-  <body>
-    <!--NAVIGATIONSBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
-  <div class="container-fluid">
-    <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        
-        <!-- DROPDOWN MENU -->
-        <li class="nav-item dropdown vores-dropdown">
-          <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
-          <div class="dropdown-content">
-            <a href="sommer.html">Sommer</a>
-            <a href="efteraar.html">Efterår</a>
-            <a href="vinter.html">Vinter</a>
-            <a href="foraar.html">Forår</a>
-          </div>
-        </li>
+<body>
 
-        <li class="nav-item">
-          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="omos.html">Om Os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
-        </li>
-      </ul>
+  <!-- ===========================
+       NAVIGATIONSBAR
+       =========================== -->
+  <!--Fixed navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
+
+      <!--Burger-menu til mobil-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Links i navbar-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <!-- Custom dropdown-menu til sæsoner-->
+          <li class="nav-item dropdown vores-dropdown">
+            <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
+            <div class="dropdown-content">
+              <a href="sommer.html">Sommer</a>
+              <a href="efteraar.html">Efterår</a>
+              <a href="vinter.html">Vinter</a>
+              <a href="foraar.html">Forår</a>
+            </div>
+          </li>
+
+          <!--Andre links-->
+          <li class="nav-item">
+            <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="omos.html">Om Os</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
-
-<!--HERO-SEKTION-->
-<!--BAGGRUNDSBILLEDE-->
-<!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
-<div class="container-fluid orange">
-  <div class="hero-sektion position-relative d-flex justify-content-center">
-    <img class="bordhero" src="img/bord.png" alt="">
+  <!--UPS skal dette ikke laves om ift. hvad vi vælger i stedet for bordet. Laver ingen kommentar på denne del indtil vi ved hvad der skal være :)-->
+  <!--HERO-SEKTION-->
+  <!--BAGGRUNDSBILLEDE-->
+  <!--position-relative: gør container til ref. for det, som skal placeres ovenpå-->
+  <div class="container-fluid orange">
+    <div class="hero-sektion position-relative d-flex justify-content-center">
+      <img class="bordhero" src="img/bord.png" alt="">
 
 
       <!--TEKST/LOGO OVER BAGGRUNDSBILLEDE-->
       <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
       <!--w-100 h-100: gør overlay lige så stort som billedet-->
       <!--d-flex ....: centrerer tekst midt i billedet-->
-      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center">
-          <h1>Fælles-skål</h1>
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center">
+        <h1>Fælles-skål</h1>
       </div>
-</div>
-</div>
-
-
-  <!--Fællesskab omkring mad + billede m. glas-->
-<div class="custom-container">
-  <div class="row align-items-start mt-5">
-    <div class="col-12 col-lg-6 order-2 order-lg-1">
-      <h2>Fællesskab omkring mad</h2>
-      <p>
-        Hos Lille Skål handler fællesskab om at samles om maden - både fysisk og digitalt. Vi tror på, at madglæde vokser, når vi deler den med andre. Gennem opskrifter, events og inspiration skaber vi et madfællesskab, hvor sæsonens råvarer, hjemmelavet mad og nærvær er i centrum.
-        <br>
-        Her er der plads til ægthed, stemning og det uperfekte - for det bedste måltid er det, vi nyder sammen.
-      </p>
-    </div>
-    <div class="col-12 col-lg-6 order-1 order-lg-2">
-      <img src="img/faellesskaal.png" alt="">
     </div>
   </div>
-</div>
 
 
 
-
-
-
-
-<!--Lad os skabe minder sammen + billede af Lærke og Amalie-->
-<div class="custom-container py-5">
-  <div class=" row align-items-start ">
-    <div class="col-12 col-lg-6">
-      <img src="img/stemning/peberogpasta.png" alt="">
-    </div>
-    <div class="minder-sammen col-12 col-lg-6">
-      <h2>Lad os skabe minder sammen</h2>
-      <p>Hos Lille Skål elsker vi at samle mennesker om maden i virkeligheden. Derfor inviterer vi jævnligt til fællesspisninger, hyggelige madkurser og små sæsonbaserede events, hvor alle kan være med - uanset erfaring i køkkenet.
-        <br>
-      Her handler det ikke om at præstere, men om at mødes i øjenhøjde og dele smagen af hjemmelavet mad. Vi dækker op til grin, nærvær og gode samtaler - og lover, at du altid går hjem med både mæt mave og varme minder. Om du kommer alene eller tager en ven med, er der plads til dig ved vores fælles bord.</p>
+  <!-- ===========================
+       FÆLLESSKAB TEKST M. BILLEDE AF AT DER BLIVER SKÅLET TIL HØJRE
+       =========================== -->
+  <div class="custom-container">
+    <div class="row align-items-start mt-5">
+      <!-- Kolonne: 12 på mobil, 6 på store skærme (≥992px)-->
+      <!--Rækkefølge: 2 på mobil, 1 på store skærme-->
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <h2>Fællesskab omkring mad</h2>
+        <p>
+          Hos Lille Skål handler fællesskab om mad - både fysisk og digitalt. Madglæde vokser, når vi deler den, og
+          madlavning bliver bedre, når vi inspirerer og støtter hinanden - også når vi laver mad alene. Derfor har vi
+          skabt fælles.skål: vores varme og ærlige univers, hvor unge kan kræse om maden, selv med stramt budget, og
+          være en del af et fællesskab, der skåler for madglæde sammen.
+          <br>
+          <br>
+          Gennem opskrifter, events og stemningsfuldt indhold hylder vi sæsonens danske råvarer og enkle, bæredygtige
+          retter, der er nemme at gå til og fulde af smag. Hos Lille Skål er der plads til det uperfekte og det ægte –
+          for her handler mad om mere end måltidet i sig selv. Det handler om stemning, nærvær og fællesskab – uanset om
+          du laver mad alene eller sammen med andre.
+        </p>
+      </div>
+      <!-- Kolonne: 12 på mobil, 6 på store skærme (≥992px)-->
+      <!--Rækkefølge: 1 på mobil, 2 på store skærme-->
+      <div class="col-12 col-lg-6 order-1 order-lg-2">
+        <img src="img/faellesskaal.png" alt="">
+      </div>
     </div>
   </div>
-</div>
 
 
-  <!--Tredje række -->
-  <!--E-magasin tilmelding-->
-<div class="orange">
+
+
+
+
+
+  <!-- ===========================
+       LAD OS SKABE MINDER SAMMEN TEKST M. BILLEDE LÆRKE & AMALIE TIL VENSTRE
+       =========================== -->
+  <div class="custom-container py-5">
+    <div class=" row align-items-start ">
+      <!-- Kolonne: 12 på mobil, 6 på store skærme (≥992px) -->
+      <div class="col-12 col-lg-6">
+        <img src="img/stemning/peberogpasta.png" alt="">
+      </div>
+      <div class="minder-sammen col-12 col-lg-6">
+        <h2>Lad os skabe minder sammen</h2>
+        <p>Hos Lille Skål elsker vi at samle mennesker om maden i virkeligheden. Derfor inviterer vi jævnligt til
+          fællesspisninger, hyggelige madkurser og små sæsonbaserede events, hvor alle kan være med - uanset erfaring i
+          køkkenet.
+          <br>
+          <br>
+          Her handler det ikke om at præstere, men om at mødes i øjenhøjde og dele smagen af hjemmelavet mad. Vi dækker
+          op til grin, nærvær og gode samtaler - og lover, at du altid går hjem med både mæt mave og varme minder. Om du
+          kommer alene eller tager en ven med, er der plads til dig ved vores fælles bord.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===========================
+       E-MAGASIN TILMELDING
+       =========================== -->
+  <div class="orange">
     <div class="custom-container py-5">
-        <div class="row g-md-3 g-lg-5">
-            <div class="col-12 col-md-6 tilmelding-boks-faellesskaal">
-            <h2>Bliv inspireret i din indbakke</h2>
-            <p>Madglæde stopper ikke ved køkkenbordet - den lever også videre online.
-            Vores digitale fællesskab er til dig, der elsker at nørde med budgetvenlig mad, finde nye idéer med sæsonens råvarer og dele hverdagsglimt fra køkkenet. På både vores website og Instagram skaber vi et ærligt og uformelt madunivers, hvor du kan finde og dele opskrifter, tips og madstemning – sammen med andre, der elsker mad på samme måde som dig.
+      <!-- Gutter: 3 på mellemstore skærme (≥768px), 5 på store skærme (≥992px)-->
+      <div class="row g-md-3 g-lg-5">
+        <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px)-->
+        <div class="col-12 col-md-6 tilmelding-boks-faellesskaal">
+          <h2>Bliv inspireret i din indbakke</h2>
+          <p>Madglæde stopper ikke ved køkkenbordet - den lever også videre online.
+            Vores digitale fællesskab er til dig, der elsker at nørde med budgetvenlig mad, finde nye idéer med sæsonens
+            råvarer og dele hverdagsglimt fra køkkenet. På både vores website og Instagram skaber vi et ærligt og
+            uformelt madunivers, hvor du kan finde og dele opskrifter, tips og madstemning – sammen med andre, der
+            elsker mad på samme måde som dig.
             <br>
-            Hos Lille Skål tror vi på, at inspiration og fællesskab sagtens kan leve på tværs af skærme – og vi glæder os til at være fælles med dig, også digitalt.
-            </p>
-            
-            <form id="contact-form">
-            <!-- To simplify the tutorial, the value is static. -->
+            Hos Lille Skål tror vi på, at inspiration og fællesskab sagtens kan leve på tværs af skærme – og vi glæder
+            os til at være fælles med dig, også digitalt.
+          </p>
+
+          <!--Kan skrive sin mail vha. js og få mail m. e-magasin-->
+          <form id="contact-form">
             <label>Email</label>
             <input type="email" name="email" required>
             <input type="submit" value="Send">
-            </form>
+          </form>
         </div>
 
-      <!--E-magasin fra Indesign-->
-      <div class="col-12 col-md-6">
-        <div class="container">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe 
-              class="embed-responsive-item"
-              src="https://indd.adobe.com/view/dbe62e7f-2229-48da-bee9-96d6d8065d1f" 
-              allowfullscreen
-              style="border: none; width: 100%; height: 400px;">
-            </iframe>
+        <!--E-magasin fra Indesign / Sneak-peek-->
+        <div class="col-12 col-md-6">
+          <div class="container">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                src="https://indd.adobe.com/view/dbe62e7f-2229-48da-bee9-96d6d8065d1f" allowfullscreen
+                style="border: none; width: 100%; height: 400px;">
+              </iframe>
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
     </div>
-</div>
+  </div>
 
 
 
 
-<!--Fjerde række med 2 kolonner-->
-<!--Digitalt fællesskab m. billeder fra kunder-->
-<div class="custom-container my-5">
+  <!-- ===========================
+       ANMELDELSE FRA BRUGERE / FÆLLESSKAB-FØLELSEN
+       =========================== -->
+  <div class="custom-container my-5">
+    <!-- Gutter: 3 på mellemstore skærme (≥768px), 5 på store skærme (≥992px) -->
     <div class="row g-md-3 g-lg-5">
-
-
       <!--Carousel-->
       <div class="col-md-6 col-12">
         <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                
-                <picture>
-                    <img src="img/stemning/digital1.png" alt="">
-                </picture>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
 
-              </div>
-              <div class="carousel-item">
-
-                <picture>
-                    <img src="img/stemning/digital2.png" alt="">
-                </picture>
-
-              </div>
-              <div class="carousel-item">
-
-                <picture>
-                    <img src="img/stemning/digital3.png" alt="">
-                </picture>
-
-              </div>
-
-              <div class="carousel-item">
-
-                <picture>
-                    <img src="img/stemning/digital4.png" alt="">
-                </picture>
-
-              </div>
+              <picture>
+                <img src="img/stemning/digital1.png" alt="">
+              </picture>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+
+              <picture>
+                <img src="img/stemning/digital2.png" alt="">
+              </picture>
+
+            </div>
+            <div class="carousel-item">
+
+              <picture>
+                <img src="img/stemning/digital3.png" alt="">
+              </picture>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <picture>
+                <img src="img/stemning/digital4.png" alt="">
+              </picture>
+
+            </div>
+
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
 
 
+
+      <!-- ===========================
+       DEL GLÆDEN ONLLINE - TEKST
+       =========================== -->
+      <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) -->
       <div class="col-md-6 col-12 pt-5">
         <h2>Del glæden online</h2>
         <p>Bliv en del af vores madunivers - direkte fra indbakken.
-        Et par gange om måneden sender vi vores e-magasin fyldt med sæsonbaserede opskrifter, ideer til budgetvenlig madlavning, og små historier fra fællesskabet.
-        <br>
-        Du får også tips til at undgå madspild, nyheder om kommende events og fællesspisninger - og mulighed for at kigge med i tidligere udgaver af magasinet.
-        Tilmeld dig vores e-magasin og få et fast dryp af madinspiration, fællesskab og stemning - lige der, hvor du er.</p>
+          Et par gange om måneden sender vi vores e-magasin fyldt med sæsonbaserede opskrifter, ideer til budgetvenlig
+          madlavning, og små historier fra fællesskabet.
+          <br>
+          Du får også tips til at undgå madspild, nyheder om kommende events og fællesspisninger - og mulighed for at
+          høre om afholdte events.
+          <br>
+          <br>
+          Tilmeld dig vores e-magasin og få et fast dryp af madinspiration, fællesskab og stemning - lige der, hvor du
+          er.
+        </p>
       </div>
 
 
@@ -280,8 +334,12 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
 
-     <script src="script.js"></script>
-  </body>
+  <!--JavaScript benyttes til at navigationsbar: nuværende sæson øverst ved dropdown menu + tilmelding til e-magasin (mail)-->
+  <script src="script.js"></script>
+</body>
+
 </html>
