@@ -1,297 +1,409 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alle opskrifter</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  
-        <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
-        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
-        <!--Google Fonts: Poppins til <p>-->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
-  </head>
-  
-  <body>
-    <!--NAVIGATIONSBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
-  <div class="container-fluid">
-    <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        
-        <!-- DROPDOWN MENU -->
-        <li class="nav-item dropdown vores-dropdown">
-          <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
-          <div class="dropdown-content">
-            <a href="sommer.html">Sommer</a>
-            <a href="efteraar.html">Efterår</a>
-            <a href="vinter.html">Vinter</a>
-            <a href="foraar.html">Forår</a>
-          </div>
-        </li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alle opskrifter</title>
 
-        <li class="nav-item">
-          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="omos.html">Om Os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!--Eget ekstern stylesheet-->
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!--Bootstrap ikoner-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 
-<!--INTRODUKTIONS-AFSNIT-->
-<div class="custom-container">
-  <div class="row align-items-start my-5">
-    <!--Tekstfelt m. introduktion til side-->
-    <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
-    <div class="col-12 col-sm-7">
-      <h1>Alle opskrifter</h1>
-      <h4>Gør mere med mindre - lækre måltider til små budgetter.</h4>
-      <p>Frisk forår, let sommer, varm vinter eller smagfuldt efterår? Her finder du nemme opskrifter med sæsonens danske råvarer - perfekt til både hverdagsmad og hyggelige måltider.</p>
-    </div>
-    <!--Illustration til højre-->
-    <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
-    <div class="d-none d-sm-block col-sm-3 offset-md-1">
-      <img src="img/illustrationer/rodlog.png" alt="illustration">
-    </div>
-  </div>
-</div>
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
 
-<!--Forår opskrifter-->
-<div id="alle-foraar" class="orange d-none d-md-block">
-  <div class="custom-container py-5 ">
-    <div class="row align-items-start">
-        <a href="foraar.html"><h2>Forår</h2></a>
-             <div class="col text-center">
-            <a href="foraar1.html"><img src="img/foraar/foraaropskrift1.png" alt=""></a>
-            <a href="foraar1.html"><h3>Pasta med tomat, spidskål og ramsløgspesto</h3></a>
+<body>
+
+    <!-- ===========================
+       NAVIGATIONSBAR
+       =========================== -->
+  <!--Fixed navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
+
+      <!--Burger-menu til mobil-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Links i navbar-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <!-- Custom dropdown-menu til sæsoner-->
+          <li class="nav-item dropdown vores-dropdown">
+            <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
+            <div class="dropdown-content">
+              <a href="sommer.html">Sommer</a>
+              <a href="efteraar.html">Efterår</a>
+              <a href="vinter.html">Vinter</a>
+              <a href="foraar.html">Forår</a>
             </div>
+          </li>
+
+          <!--Andre links-->
+          <li class="nav-item">
+            <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="omos.html">Om Os</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- ===========================
+       INTRO-SEKTION
+       =========================== -->
+  <div class="custom-container">
+    <!--Grid-række fra BS-->
+    <div class="row align-items-start my-5">
+      <!--Tekstfelt til venstre-->
+      <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
+      <div class="col-12 col-sm-7">
+        <h1>Alle opskrifter</h1>
+        <h4>Gør mere med mindre - lækre måltider til små budgetter.</h4>
+        <p>Frisk forår, let sommer, varm vinter eller smagfuldt efterår? Her finder du nemme opskrifter med sæsonens
+          danske råvarer - perfekt til både hverdagsmad og hyggelige måltider.</p>
+      </div>
+
+      <!--Illustration til højre-->
+      <!--Illustration vises ikke på mobil-->
+      <!-- Kolonne: 3 på små skærme (576px) og op. + forkydes 1 kol. på medium skærme (768px) og op -->
+      <div class="d-none d-sm-block col-sm-3 offset-md-1">
+        <img src="img/illustrationer/rodlog.png" alt="illustration">
+      </div>
+    </div>
+  </div>
+
+
+  
+    <!-- ===========================
+       FORÅRS-OPSKRIFTER
+       =========================== -->
+        <!--Orange baggrund-->
+        <!--Skjules fra medium skærm (768px) og ned-->
+  <div id="alle-foraar" class="orange d-none d-md-block">
+    <div class="custom-container py-5 ">
+      <div class="row align-items-start">
+        <!--Overskrift m. link til forårssiden-->
+        <a href="foraar.html">
+          <h2>Forår</h2>
+        </a>
+        <!--Første opskrift-->
         <div class="col text-center">
-        <a href="foraar2.html"><img src="img/foraar/foraar2billede1.png" alt=""></a>
-        <a href="foraar2.html"><h3>Forårs-orzo med tomater og citron</h3></a>
+          <a href="foraar1.html"><img src="img/foraar/foraaropskrift1.png" alt=""></a>
+          <a href="foraar1.html">
+            <h3>Pasta med tomat, spidskål og ramsløgspesto</h3>
+          </a>
         </div>
-    <div class="col text-center">
-      <a href="foraar3.html"><img src="img/foraar/foraar3billede2.png" alt=""></a>
-      <a href="foraar3.html"><h3>Forårsnudler med radiser, porre og sesam</h3></a>
-    </div>
-    </div>
-   
-  </div>
-</div>
+        <!--Anden opskrift-->
+        <div class="col text-center">
+          <a href="foraar2.html"><img src="img/foraar/foraar2billede1.png" alt=""></a>
+          <a href="foraar2.html">
+            <h3>Forårs-orzo med tomater og citron</h3>
+          </a>
+        </div>
+        <!--Tredje opskrift-->
+        <div class="col text-center">
+          <a href="foraar3.html"><img src="img/foraar/foraar3billede2.png" alt=""></a>
+          <a href="foraar3.html">
+            <h3>Forårsnudler med radiser, porre og sesam</h3>
+          </a>
+        </div>
+      </div>
 
-<!--Sommer opskrifter-->
-<div id="alle-sommer" class="custom-container d-none d-md-block">
-  <div class="row align-items-start py-5">
-    <a href="sommer.html"><h2>Sommer</h2></a>
-    <div class="col text-center">
-      <a href="sommer1.html"><img src="img/sommer/sommer1billede1.png" alt=""></a>
-      <a href="sommer1.html"><h3>Sommersalat med jordbær, burrata og nem focaccia</h3></a>
-    </div>
-    <div class="col text-center">
-      <a href="sommer2.html"><img src="img/sommer1.png" alt=""></a>
-      <a href="sommer2.html"><h3>Sommer-tacos med ærtemos og grillede grøntsager</h3></a>
-    </div>
-    <div class="col text-center">
-      <a href="sommer3.html"><img src="img/sommer/sommer3billede1.png" alt=""></a>
-      <a href="sommer3.html"><h3>Sommerpizza med sæsonens grønt og sprød bund</h3></a>
     </div>
   </div>
-</div>
 
-<!--Efterår opskrifter-->
-<div id="alle-efteraar" class="orange mere-padding d-none d-md-block">
-  <div class="custom-container py-5">
-        <div class="row align-items-start">
-            <a href="efteraar.html"><h2>Efterår</h2></a>
-            <div class="col text-center">
-                <a href="efteraar1.html"><img src="img/efteraar/efteraar1billede2.png" alt=""></a>
-                <a href="efteraar1.html"><h3>Efterårssuppe med Hokkaido, gulerod og ingefær</h3></a>
+  
+    <!-- ===========================
+       SOMMER-OPSKRIFTER
+       =========================== -->
+       <!--Skjules fra medium skærm (768px) og ned-->
+  <div id="alle-sommer" class="custom-container d-none d-md-block">
+    <div class="row align-items-start py-5">
+      <!--Overskrift m. link til sommersiden-->
+      <a href="sommer.html">
+        <h2>Sommer</h2>
+      </a>
+      <!--Første opskrift-->
+      <div class="col text-center">
+        <a href="sommer1.html"><img src="img/sommer/sommer1billede1.png" alt=""></a>
+        <a href="sommer1.html">
+          <h3>Sommersalat med jordbær, burrata og nem focaccia</h3>
+        </a>
+      </div>
+      <!--Anden opskrift-->
+      <div class="col text-center">
+        <a href="sommer2.html"><img src="img/sommer1.png" alt=""></a>
+        <a href="sommer2.html">
+          <h3>Sommer-tacos med ærtemos og grillede grøntsager</h3>
+        </a>
+      </div>
+      <!--Tredje opskrft-->
+      <div class="col text-center">
+        <a href="sommer3.html"><img src="img/sommer/sommer3billede1.png" alt=""></a>
+        <a href="sommer3.html">
+          <h3>Sommerpizza med sæsonens grønt og sprød bund</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  
+    <!-- ===========================
+       EFTERÅRS-OPSKRIFTER
+       =========================== -->
+       <!--Orange baggrund-->
+       <!--Skjules fra medium skærm (768px) og ned-->
+  <div id="alle-efteraar" class="orange d-none d-md-block">
+    <div class="custom-container py-5">
+      <div class="row align-items-start">
+        <!--Overskrift m. link til efterårssiden-->
+        <a href="efteraar.html">
+          <h2>Efterår</h2>
+        </a>
+        <!--Første opskrift-->
+        <div class="col text-center">
+          <a href="efteraar1.html"><img src="img/efteraar/efteraar1billede2.png" alt=""></a>
+          <a href="efteraar1.html">
+            <h3>Efterårssuppe med Hokkaido, gulerod og ingefær</h3>
+          </a>
+        </div>
+        <!--Anden opskrift-->
+        <div class="col text-center">
+          <a href="efteraar2.html"><img src="img/efteraar/efteraar2billede1.png" alt=""></a>
+          <a href="efteraar2.html">
+            <h3>Efterårs-gnocchi med tomat, salvie og karamelliseret løg</h3>
+          </a>
+        </div>
+        <!--Tredje opskrift-->
+        <div class="col text-center">
+          <a href="efteraar3.html"><img src="img/efteraar/efteraarbillede.png" alt=""></a>
+          <a href="efteraar3.html">
+            <h3>Efterårspande med karamelliserede porrer og gulerødder</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+    <!-- ===========================
+       VINTER-OPSKRIFTER
+       =========================== -->
+       <!--Skjules fra medium skærm (768px) og ned-->
+  <div id="alle-vinter" class="custom-container d-none d-md-block">
+    <div class="row align-items-start my-5">
+      <a href="vinter.html">
+        <h2>Vinter</h2>
+      </a>
+      <div class="col text-center">
+        <a href="vinter1.html"><img src="img/vinter/vinter1.png" alt=""></a>
+        <a href="vinter1.html">
+          <h3>Vinter-nudler med porre, kål og cremet sesamsauce</h3>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a href="vinter2.html"><img src="img/vinter/vinter2billede2.png" alt=""></a>
+        <a href="vinter2.html">
+          <h3>Vinterpasta med grønkålssauce og citron</h3>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a href="vinter3.html"><img src="img/vinter/vinter3billede1.png" alt=""></a>
+        <a href="vinter3.html">
+          <h3>Vinterpande med grønkål, svampe og flødestuvet perlebyg</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- ===========================
+       KARUSSEL TIL MOBIL-VERISON
+       =========================== -->
+  <!--Karussel Forår-->
+  <main class="custom-container my-5 d-block d-md-none">
+    <div class="row carousel-container">
+
+      <!-- Forår -->
+       <!--Kolonne: 12 / fylder hele siden-->
+      <div class="alle-foraar col-12 custom-container orange py-4">
+        <div id="carousel-foraar" class="carousel slide" data-bs-touch="false">
+          <div class="carousel-inner">
+            <a href="foraar.html">
+              <h2 class="px-3">Forår</h2>
+            </a>
+            <!-- Aktiv: bliver vist som første opskrift-->
+            <div class="carousel-item active text-center">
+              <a href="foraar1.html">
+                <img src="img/foraar/foraaropskrift1.png" class="d-block w-100" alt="Forår opskrift 1">
+                <h3>Pasta med tomat, spidskål og ramsløgspesto</h3>
+              </a>
             </div>
-            <div class="col text-center">
-                <a href="efteraar2.html"><img src="img/efteraar/efteraar2billede1.png" alt=""></a>
-                <a href="efteraar2.html"><h3>Efterårs-gnocchi med tomat, salvie og karamelliseret løg</h3></a>
+            <!-- Næste opskrift i karussel -->
+            <div class="carousel-item text-center">
+              <a href="foraar2.html">
+                <img src="img/foraar/foraar2billede1.png" class="d-block w-100" alt="Forår opskrift 2">
+                <h3>Forårs-orzo med tomater og citron</h3>
+              </a>
             </div>
-            <div class="col text-center">
-                <a href="efteraar3.html"><img src="img/efteraar/efteraarbillede.png" alt=""></a>
-                <a href="efteraar3.html"><h3>Efterårspande med karamelliserede porrer og gulerødder</h3></a>
+            <!-- Næste opskrift i karussel -->
+            <div class="carousel-item text-center">
+              <a href="foraar3.html">
+                <img src="img/foraar/foraar3billede2.png" class="d-block w-100" alt="Forår opskrift 3">
+                <h3>Forårsnudler med radiser, porre og sesam</h3>
+              </a>
             </div>
+          </div>
+          <button class="carousel-control-prev" data-bs-target="#carousel-foraar" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" data-bs-target="#carousel-foraar" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-  </div>
-</div>
-
-
-<!--Vinter opskrifter-->
-<div id="alle-vinter" class="custom-container d-none d-md-block">
-  <div class="row align-items-start my-5">
-    <a href="vinter.html"><h2>Vinter</h2></a>
-    <div class="col text-center">
-      <a href="vinter1.html"><img src="img/vinter/vinter1.png" alt=""></a>
-      <a href="vinter1.html"><h3>Vinter-nudler med porre, kål og cremet sesamsauce</h3></a>
-    </div>
-    <div class="col text-center">
-      <a href="vinter2.html"><img src="img/vinter/vinter2billede2.png" alt=""></a>
-      <a href="vinter2.html"><h3>Vinterpasta med grønkålssauce og citron</h3></a>
-    </div>
-    <div class="col text-center">
-      <a href="vinter3.html"><img src="img/vinter/vinter3billede1.png" alt=""></a>
-      <a href="vinter3.html"><h3>Vinterpande med grønkål, svampe og flødestuvet perlebyg</h3></a>
-    </div>
-  </div>
-</div>
-
-<!--Karussel til mobil-verison-->
-<!--Karussel Forår-->
-<main class="custom-container my-5 d-block d-md-none">
-  <div class="row carousel-container">
-
-    <!-- Forår -->
-    <div class="alle-foraar col-12 col-md-6 col-lg-3 mb-4 container-fluid orange py-4">
-      <div id="carousel-foraar" class="carousel slide" data-bs-touch="false">
-        <div class="carousel-inner">
-          <a href="foraar.html"> <h2 class="px-3">Forår</h2> </a>
-          <div class="carousel-item active text-center">
-            <a href="foraar1.html">
-              <img src="img/foraar/foraaropskrift1.png" class="d-block w-100" alt="Forår opskrift 1">
-              <h3>Pasta med tomat, spidskål og ramsløgspesto</h3>
-            </a>
-          </div>
-          <div class="carousel-item text-center">
-            <a href="foraar2.html">
-              <img src="img/foraar/foraar2billede1.png" class="d-block w-100" alt="Forår opskrift 2">
-              <h3>Forårs-orzo med tomater og citron</h3>
-            </a>
-          </div>
-          <div class="carousel-item text-center">
-            <a href="foraar3.html">
-              <img src="img/foraar/foraar3billede2.png" class="d-block w-100" alt="Forår opskrift 3">
-              <h3>Forårsnudler med radiser, porre og sesam</h3>
-            </a>
-          </div>
-        </div>
-        <button class="carousel-control-prev" data-bs-target="#carousel-foraar" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" data-bs-target="#carousel-foraar" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
-    </div>
 
-    <!-- Sommer -->
-    <div class="alle-sommer col-12 col-md-6 col-lg-3 mb-4">
-      <div id="carousel-sommer" class="carousel slide" data-bs-touch="false">
-        <a href="sommer.html"><h2 class="px-3">Sommer</h2></a>
-        <div class="carousel-inner">
-          <div class="carousel-item active text-center">
-            <a href="sommer1.html">
-              <img src="img/sommer/sommer1billede1.png" class="d-block w-100" alt="Sommer opskrift 1">
-              <h3>Sommersalat med jordbær, burrata og nem focaccia</h3>
-            </a>
+      <!-- Sommer -->
+       <!--Kolonne: 12 / fylder hele siden-->
+      <div class="alle-sommer col-12 py-4 custom-container">
+        <div id="carousel-sommer" class="carousel slide" data-bs-touch="false">
+          <a href="sommer.html">
+            <h2 class="px-3">Sommer</h2>
+          </a>
+          <div class="carousel-inner">
+            <!-- Aktiv: bliver vist som første opskrift-->
+            <div class="carousel-item active text-center">
+              <a href="sommer1.html">
+                <img src="img/sommer/sommer1billede1.png" class="d-block w-100" alt="Sommer opskrift 1">
+                <h3>Sommersalat med jordbær, burrata og nem focaccia</h3>
+              </a>
+            </div>
+            <!-- Næste opskrift i karussel -->
+            <div class="carousel-item text-center">
+              <a href="sommer2.html">
+                <img src="img/sommer1.png" class="d-block w-100" alt="Sommer opskrift 2">
+                <h3>OSommer-tacos med ærtemos og grillede grøntsager</h3>
+              </a>
+            </div>
+            <!-- Næste opskrift i karussel -->
+            <div class="carousel-item text-center">
+              <a href="sommer3.html">
+                <img src="img/sommer/sommer3billede1.png" class="d-block w-100" alt="Sommer opskrift 3">
+                <h3>Sommerpizza med sæsonens grønt og sprød bund</h3>
+              </a>
+            </div>
           </div>
-          <div class="carousel-item text-center">
-            <a href="sommer2.html">
-              <img src="img/sommer1.png" class="d-block w-100" alt="Sommer opskrift 2">
-              <h3>OSommer-tacos med ærtemos og grillede grøntsager</h3>
-            </a>
-          </div>
-          <div class="carousel-item text-center">
-            <a href="sommer3.html">
-              <img src="img/sommer/sommer3billede1.png" class="d-block w-100" alt="Sommer opskrift 3">
-              <h3>Sommerpizza med sæsonens grønt og sprød bund</h3>
-            </a>
-          </div>
+          <button class="carousel-control-prev" data-bs-target="#carousel-sommer" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" data-bs-target="#carousel-sommer" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-        <button class="carousel-control-prev" data-bs-target="#carousel-sommer" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" data-bs-target="#carousel-sommer" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
-    </div>
 
-    <!-- Efterår -->
-    <div class="alle-efteraar col-12 col-md-6 col-lg-3 mb-4 container-fluid orange py-4">
-      <div id="carousel-efteraar" class="carousel slide" data-bs-touch="false">
-        <a href="efteraar.html"><h2 class="px-3">Efterår</h2></a>
-        <div class="carousel-inner">
-          <div class="carousel-item active text-center">
-            <a href="efteraar1.html">
-              <img src="img/efteraar/efteraar1billede2.png" class="d-block w-100" alt="Efterår opskrift 1">
-              <h3>Efterårssuppe med Hokkaido, gulerod og ingefær</h3>
-            </a>
+      <!-- Efterår -->
+       <!--Kolonne: 12 / fylder hele siden-->
+      <div class="alle-efteraar col-12 py-4 custom-container orange">
+        <div id="carousel-efteraar" class="carousel slide" data-bs-touch="false">
+          <a href="efteraar.html">
+            <h2 class="px-3">Efterår</h2>
+          </a>
+          <div class="carousel-inner">
+            <!-- Aktiv: bliver vist som første opskrift-->
+            <div class="carousel-item active text-center">
+              <a href="efteraar1.html">
+                <img src="img/efteraar/efteraar1billede2.png" class="d-block w-100" alt="Efterår opskrift 1">
+                <h3>Efterårssuppe med Hokkaido, gulerod og ingefær</h3>
+              </a>
+            </div>
+            <!-- Næste opskrift i karussel -->
+            <div class="carousel-item text-center">
+              <a href="efteraar2.html">
+                <img src="img/efteraar/efteraar1billede2.png" class="d-block w-100" alt="Efterår opskrift 2">
+                <h3>Efterårs-gnocchi med tomat, salvie og karamelliseret løg</h3>
+              </a>
+            </div>
+            <!-- Næste opskrift i karussel -->
+            <div class="carousel-item text-center">
+              <a href="efteraar3.html">
+                <img src="img/efteraar/efteraar1billede2.png" class="d-block w-100" alt="Efterår opskrift 3">
+                <h3>Efterårspande med karamelliserede porrer og gulerødder</h3>
+              </a>
+            </div>
           </div>
-          <div class="carousel-item text-center">
-            <a href="efteraar2.html">
-              <img src="img/efteraar/efteraar1billede2.png" class="d-block w-100" alt="Efterår opskrift 2">
-              <h3>Efterårs-gnocchi med tomat, salvie og karamelliseret løg</h3>
-            </a>
-          </div>
-          <div class="carousel-item text-center">
-            <a href="efteraar3.html">
-              <img src="img/efteraar/efteraar1billede2.png" class="d-block w-100" alt="Efterår opskrift 3">
-              <h3>Efterårspande med karamelliserede porrer og gulerødder</h3>
-            </a>
-          </div>
+          <button class="carousel-control-prev" data-bs-target="#carousel-efteraar" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" data-bs-target="#carousel-efteraar" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-        <button class="carousel-control-prev" data-bs-target="#carousel-efteraar" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" data-bs-target="#carousel-efteraar" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
-    </div>
 
-    <!-- Vinter -->
-    <div class="alle-vinter col-12 col-md-6 col-lg-3 mb-4">
-      <div id="carousel-vinter" class="carousel slide" data-bs-touch="false">
-        <a href="vinter.html"><h2 class="px-3">Vinter</h2></a>
-        <div class="carousel-inner">
-          <div class="carousel-item active text-center">
-            <a href="vinter1.html">
-              <img src="img/vinter/vinter1.png" class="d-block w-100" alt="Vinter opskrift 1">
-              <h3>Vinter-nudler med porre, kål og cremet sesamsauce</h3>
-            </a>
+      <!-- Vinter -->
+       <!--Kolonne: 12 / fylder hele siden-->
+      <div class="alle-vinter col-12 py-4 custom-container">
+        <div id="carousel-vinter" class="carousel slide" data-bs-touch="false">
+          <a href="vinter.html">
+            <h2 class="px-3">Vinter</h2>
+          </a>
+          <div class="carousel-inner">
+            <!-- Aktiv: bliver vist som første opskrift-->
+            <div class="carousel-item active text-center">
+              <a href="vinter1.html">
+                <img src="img/vinter/vinter1.png" class="d-block w-100" alt="Vinter opskrift 1">
+                <h3>Vinter-nudler med porre, kål og cremet sesamsauce</h3>
+              </a>
+            </div>
+            <!-- Næste opskrift i karussel -->
+            <div class="carousel-item text-center">
+              <a href="vinter2.html">
+                <img src="img/vinter/vinter2billede2.png" class="d-block w-100" alt="Vinter opskrift 2">
+                <h3>Vinterpasta med grønkålssauce og citron</h3>
+              </a>
+            </div>
+            <!-- Næste opskrift i karussel -->
+            <div class="carousel-item text-center">
+              <a href="vinter3.html">
+                <img src="img/vinter/vinter3billede1.png" class="d-block w-100" alt="Vinter opskrift 3">
+                <h3>Vinterpande med grønkål, svampe og flødestuvet perlebyg</h3>
+              </a>
+            </div>
           </div>
-          <div class="carousel-item text-center">
-            <a href="vinter2.html">
-              <img src="img/vinter/vinter2billede2.png" class="d-block w-100" alt="Vinter opskrift 2">
-              <h3>Vinterpasta med grønkålssauce og citron</h3>
-            </a>
-          </div>
-          <div class="carousel-item text-center">
-            <a href="vinter3.html">
-              <img src="img/vinter/vinter3billede1.png" class="d-block w-100" alt="Vinter opskrift 3">
-              <h3>Vinterpande med grønkål, svampe og flødestuvet perlebyg</h3>
-            </a>
-          </div>
+          <button class="carousel-control-prev" data-bs-target="#carousel-vinter" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" data-bs-target="#carousel-vinter" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-        <button class="carousel-control-prev" data-bs-target="#carousel-vinter" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" data-bs-target="#carousel-vinter" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
+
     </div>
-
-  </div>
-</main>
+  </main>
 
 
 
@@ -299,61 +411,67 @@
 
 
 
-<!-- Footer -->
-<footer class="py-4">
-  <div class="container d-flex flex-column align-items-center justify-content-center">
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
 
       <!-- Servietbillede som baggrund -->
       <div class="position-relative">
-          <picture>
-              <source media="(min-width: 768px)" srcset="img/storserviet.png">
-              <img src="img/lilleservietmobil.png" alt="Serviet" >
-          </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/storserviet.png">
+          <img src="img/lilleservietmobil.png" alt="Serviet">
+        </picture>
 
-          <!-- Tekst ovenpå billedet -->
-          <div class="position-absolute top-0 start-0 p-5 pt-5">
-            <div>
-              <h1 class="overskrift-footer">Kontakt os:</h1>
-                <div class="row">
-                  <p class="col-12 col-sm-7">Telefon.nr.:
-                    <a href="tel:+45271478**">+45 27 14 78 **</a>
-                  </p>
-                  <p class=" col-12 col-sm-5">Mail:
-                    <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
-                  </p>
-                </div>
+        <!-- Tekst ovenpå billedet -->
+        <div class="position-absolute top-0 start-0 p-5 pt-5">
+          <div>
+            <h1 class="overskrift-footer">Kontakt os:</h1>
+            <div class="row">
+              <p class="col-12 col-sm-7">Telefon.nr.:
+                <a href="tel:+45271478**">+45 27 14 78 **</a>
+              </p>
+              <p class=" col-12 col-sm-5">Mail:
+                <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
+              </p>
+            </div>
 
-                <div class="row">
-                  <p class="col-7">Find os her:
-                    <br>
-                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">Firskovvej 18, <br> 2800 Kongens Lyngby</a>
-                  </p>
-                  
-                  <div class="col-5 instagram">
-                    <p> 
-                      Oplev mere af vores univers her
-                      <a href="https://www.instagram.com/lille_skaal/" target="_blank">
-                        <i class="bi bi-instagram fs-4"></i>
-                      </a> 
-                    </p>
-                  </div>
-                </div>
-                
-                
-                </div>
+            <div class="row">
+              <p class="col-7">Find os her:
+                <br>
+                <a
+                  href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">Firskovvej
+                  18, <br> 2800 Kongens Lyngby</a>
+              </p>
+
+              <div class="col-5 instagram">
+                <p>
+                  Oplev mere af vores univers her
+                  <a href="https://www.instagram.com/lille_skaal/" target="_blank">
+                    <i class="bi bi-instagram fs-4"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+
+
           </div>
-          </div>
+        </div>
       </div>
+    </div>
 
-  </div>
-</footer>
+    </div>
+  </footer>
 
 
 
+<!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<!--JavaScript benyttes til at nuværende sæson altid vil stå øverst på siden-->
+  <script src="script.js"></script>
 
-     <script src="script.js"></script>
+</body>
 
-  </body>
 </html>

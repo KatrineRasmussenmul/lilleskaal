@@ -2,159 +2,205 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Efterår</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    
-    <!--Google Fonts: Fuzzy Bubbles til H1,H2-->
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
-    <!--Google Fonts: Poppins til <p>-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Efterårs Opskrifter</title>
 
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!--Eget ekstern stylesheet-->
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!--Bootstrap ikoner-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--NAVIGATIONSBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
-  <div class="container-fluid">
-    <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        
-        <!-- DROPDOWN MENU -->
-        <li class="nav-item dropdown vores-dropdown">
-          <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
-          <div class="dropdown-content">
-            <a href="sommer.html">Sommer</a>
-            <a href="efteraar.html">Efterår</a>
-            <a href="vinter.html">Vinter</a>
-            <a href="foraar.html">Forår</a>
-          </div>
-        </li>
+  <!-- ===========================
+       NAVIGATIONSBAR
+       =========================== -->
+  <!--Fixed navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
 
-        <li class="nav-item">
-          <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="omos.html">Om Os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
-        </li>
-      </ul>
+      <!--Burger-menu til mobil-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Links i navbar-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <!-- Custom dropdown-menu til sæsoner-->
+          <li class="nav-item dropdown vores-dropdown">
+            <a class="nav-link dropbtn dropdown-toggle" href="alleopskrifter.html">Opskrifter</a>
+            <div class="dropdown-content">
+              <a href="sommer.html">Sommer</a>
+              <a href="efteraar.html">Efterår</a>
+              <a href="vinter.html">Vinter</a>
+              <a href="foraar.html">Forår</a>
+            </div>
+          </li>
+
+          <!--Andre links-->
+          <li class="nav-item">
+            <a class="nav-link" href="faellesskaal.html">Fælles-skål</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="omos.html">Om Os</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ===========================
+       INTRO-SEKTION
+       =========================== -->
+  <div class="custom-container">
+    <div class="row align-items-start my-5">
+      <!--Tekstfelt til venstre-->
+      <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
+      <div class="col-12 col-sm-7">
+        <h1>Efterår</h1>
+        <p>Efteråret er tiden, hvor køkkenet bliver fyldt med de varme, dybe smage fra sæsonens råvarer. Det er en tid
+          til både at lave mad for sig selv, når det er koldt udenfor, og til at samle vennerne omkring et måltid, der
+          varmer både krop og sjæl.</p>
+      </div>
+      
+      <!--Illustration til højre-->
+      <!--Illustration vises ikke på mobil-->
+      <!--Kolonne: 3 kol på små skærme (576px) og op + forskydes 1 kol efter medium skærm (768px)-->
+      <div class="d-none d-sm-block col-sm-3 offset-md-1">
+        <img src="img/illustrationer/gulerod.png" alt="illustration">
+      </div>
     </div>
   </div>
-</nav>
 
-    <!--INTRODUKTIONS-AFSNIT-->
-    <div class="custom-container">
-        <div class="row align-items-start my-5">
-            <!--Tekstfelt m. introduktion til side-->
-            <!--Tekst skal fylde 12 kol. på mobil og op efter 8 kol. -->
-            <div class="col-12 col-sm-7">
-                <h1>Efterår</h1>
-                <p>Efteråret er tiden, hvor køkkenet bliver fyldt med de varme, dybe smage fra sæsonens råvarer. Det er en tid til både at lave mad for sig selv, når det er koldt udenfor, og til at samle vennerne omkring et måltid, der varmer både krop og sjæl.</p>
-            </div>
-            <!--Illustration til højre-->
-            <!--Illustration skal ikke vises på mobil. Op efter fylder den 2 kol. og har 2 tomme kol. til venstre-->
-            <div class="d-none d-sm-block col-sm-3 offset-md-1">
-                <img src="img/illustrationer/gulerod.png" alt="illustration">
-            </div>
+  <!-- ===========================
+       3 OPSKRIFTER
+       =========================== -->
+  <!--Introduktion til de 3 opskrifter-->
+  <!--Orange baggrund-->
+  <div class="orange">
+    <div class="custom-container py-5">
+      <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
+      <div class="col-12 col-md-6 py-4">
+        <h2>Efterårets Lune Retter</h2>
+        <p>Her finder du opskrifter med alt det bedste fra efteråret – som græskar, rødbeder, pastinak og æbler. Retter,
+          der smager af stearinlys, tæpper og lange, hyggelige middage med dem, du holder af.
+        </p>
+      </div>
+
+      <!--3 opskrifter m.billede og tekst-->
+      <div class="alle-efteraar row align-items-start px-sm-5 text-center">
+      <!--Opskrift 1-->
+      <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
+        <div class="col-12 col-sm-4 py-3">
+          <a href="efteraar1.html"><img src="img/efteraar/efteraar1billede2.png" alt=""></a>
+          <a href="efteraar1.html">
+            <h3>Efterårssuppe med Hokkaido, gulerod og ingefær</h3>
+          </a>
         </div>
-    </div>
-
-
-    <!-- Efterårets lune retter - organge container -->
-        <div class="orange">
-        <div class="custom-container py-5">
-            <div class="col-12 py-4 col-lg-6">
-                <h2>Efterårets Lune Retter</h2>
-                <p>Her finder du opskrifter med alt det bedste fra efteråret – som græskar, rødbeder, pastinak og æbler. Retter, der smager af stearinlys, tæpper og lange, hyggelige middage med dem, du holder af.
-                </p>
-            </div>
-        <div class="alle-efteraar row align-items-start px-sm-5 text-center">
-            <div class="col-12 col-sm-4 py-3">
-              <a href="efteraar1.html"><img src="img/efteraar/efteraar1billede2.png" alt=""></a>
-              <a href="efteraar1.html"><h3>Efterårssuppe med Hokkaido, gulerod og ingefær</h3></a>
-            </div>
-            <div class="col-12 col-sm-4 py-3">
-              <a href="efteraar2.html"><img src="img/efteraar/efteraar2billede1.png" alt=""></a>
-              <a href="efteraar2.html"><h3>Efterårs-gnocchi med tomat, salvie og karamelliseret løg</h3></a>
-            </div>
+      <!--Opskrift 2-->
+      <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
+        <div class="col-12 col-sm-4 py-3">
+          <a href="efteraar2.html"><img src="img/efteraar/efteraar2billede1.png" alt=""></a>
+          <a href="efteraar2.html">
+            <h3>Efterårs-gnocchi med tomat, salvie og karamelliseret løg</h3>
+          </a>
+        </div>
+      <!--Opskrift 3-->
+      <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
         <div class="col-12 col-sm-4 py-3">
           <a href="efteraar3.html"><img src="img/efteraar/efteraarbillede.png" alt=""></a>
-          <a href="efteraar3.html"><h3>Efterårspande med karamelliserede porrer og gulerødder</h3></a>
+          <a href="efteraar3.html">
+            <h3>Efterårspande med karamelliserede porrer og gulerødder</h3>
+          </a>
         </div>
-        </div>
-    </div>
-    </div>
-
-
-
-
-    <!--Footer-->
-    <footer class="py-4">
-      <div class="container d-flex flex-column align-items-center justify-content-center">
-    
-          <!-- Servietbillede som baggrund -->
-          <div class="position-relative">
-              <picture>
-                  <source media="(min-width: 768px)" srcset="img/storserviet.png">
-                  <img src="img/lilleservietmobil.png" alt="Serviet" >
-              </picture>
-    
-              <!-- Tekst ovenpå billedet -->
-              <div class="position-absolute top-0 start-0 p-5 pt-5">
-                <div>
-                  <h1 class="overskrift-footer">Kontakt os:</h1>
-                    <div class="row">
-                      <p class="col-12 col-sm-7">Telefon.nr.:
-                        <a href="tel:+45271478**">+45 27 14 78 **</a>
-                      </p>
-                      <p class=" col-12 col-sm-5">Mail:
-                        <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
-                      </p>
-                    </div>
-    
-                    <div class="row">
-                      <p class="col-7">Find os her:
-                        <br>
-                        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">Firskovvej 18, <br> 2800 Kongens Lyngby</a>
-                      </p>
-                      
-                      <div class="col-5 instagram">
-                        <p> 
-                          Oplev mere af vores univers her
-                          <a href="https://www.instagram.com/lille_skaal/" target="_blank">
-                            <i class="bi bi-instagram fs-4"></i>
-                          </a> 
-                        </p>
-                      </div>
-                    </div>
-                    
-                    
-                    </div>
-              </div>
-              </div>
-          </div>
-    
       </div>
-    </footer>
-    
+    </div>
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
-     <script src="script.js"></script>
+
+
+    <!-- ===========================
+       FOOTER
+       =========================== -->
+  <footer class="py-4">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+
+      <!-- Servietbillede som baggrund -->
+      <div class="position-relative">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/storserviet.png">
+          <img src="img/lilleservietmobil.png" alt="Serviet">
+        </picture>
+
+        <!-- Tekst ovenpå billedet -->
+        <div class="position-absolute top-0 start-0 p-5 pt-5">
+          <div>
+            <h1 class="overskrift-footer">Kontakt os:</h1>
+            <div class="row">
+              <p class="col-12 col-sm-7">Telefon.nr.:
+                <a href="tel:+45271478**">+45 27 14 78 **</a>
+              </p>
+              <p class=" col-12 col-sm-5">Mail:
+                <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
+              </p>
+            </div>
+
+            <div class="row">
+              <p class="col-7">Find os her:
+                <br>
+                <a
+                  href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">Firskovvej
+                  18, <br> 2800 Kongens Lyngby</a>
+              </p>
+
+              <div class="col-5 instagram">
+                <p>
+                  Oplev mere af vores univers her
+                  <a href="https://www.instagram.com/lille_skaal/" target="_blank">
+                    <i class="bi bi-instagram fs-4"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+
+    <!--JavaScript benyttes til at navigationsbar: nuværende sæson øverst ved dropdown menu-->
+  <script src="script.js"></script>
 </body>
 
 </html>
