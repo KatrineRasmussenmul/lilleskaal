@@ -139,56 +139,57 @@
 
 
 
-    <!-- ===========================
+  <!-- ===========================
        FOOTER
        =========================== -->
-  <footer class="py-4">
-    <div class="container d-flex flex-column align-items-center justify-content-center">
+  <footer>
+    <!-- Wrapper til både billede og tekst -->
+    <!-- Gør det muligt at placere teksten ovenpå billedet -->
+    <div class="position-relative d-flex justify-content-center align-items-center py-4">
+      <!--Papir-->
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/storserviet.png">
+        <img src="img/lilleservietmobil.png" alt="Serviet">
+      </picture>
 
-      <!-- Servietbillede som baggrund -->
-      <div class="position-relative">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/storserviet.png">
-          <img src="img/lilleservietmobil.png" alt="Serviet">
-        </picture>
+      <!-- Tekst ovenpå papir-->
+      <!-- position-absolute gør, at teksten kan placeres ovenpå billedet -->
+      <div class="position-absolute p-4">
+        <h1 class="overskrift-footer">Kontakt os:</h1>
 
-        <!-- Tekst ovenpå billedet -->
-        <div class="position-absolute top-0 start-0 p-5 pt-5">
-          <div>
-            <h1 class="overskrift-footer">Kontakt os:</h1>
-            <div class="row">
-              <p class="col-12 col-sm-7">Telefon.nr.:
-                <a href="tel:+45271478**">+45 27 14 78 **</a>
-              </p>
-              <p class=" col-12 col-sm-5">Mail:
-                <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
-              </p>
-            </div>
+        <!-- Første række med telefon og mail -->
+        <div class="row">
+          <!--Kolonne: 12 kol;fylder hele bredden på mobil, col-sm-7: fylder 7/12 på små og større skærme -->
+          <p class="col-12 col-sm-7">Telefon.nr.:
+            <a href="tel:+45271478**">+45 27 14 78 **</a>
+          </p>
+          <!-- col-sm-5: resten af rækken på små og større skærme -->
+          <p class="col-12 col-sm-5">Mail:
+            <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
+          </p>
+        </div>
 
-            <div class="row">
-              <p class="col-7">Find os her:
-                <br>
-                <a
-                  href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">Firskovvej
-                  18, <br> 2800 Kongens Lyngby</a>
-              </p>
-
-              <div class="col-5 instagram">
-                <p>
-                  Oplev mere af vores univers her
-                  <a href="https://www.instagram.com/lille_skaal/" target="_blank">
-                    <i class="bi bi-instagram fs-4"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-
-
+        <!-- Anden række med adresse og Instagram -->
+        <div class="row">
+          <p class="col-7">Find os her:
+            <br>
+            <!-- Link til Google Maps med adressen -->
+            <a
+              href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">
+              Firskovvej 18, <br> 2800 Kongens Lyngby</a>
+          </p>
+          <!-- Instagram link i højre side -->
+          <div class="col-5 instagram">
+            <!-- Instagram-ikon med Bootstrap icons og lidt større skriftstørrelse -->
+            <p>
+              Oplev mere af vores univers her
+              <a href="https://www.instagram.com/lille_skaal/" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </p>
           </div>
         </div>
       </div>
-    </div>
-
     </div>
   </footer>
 

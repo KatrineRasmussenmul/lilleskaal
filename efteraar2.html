@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
   <!-- ===========================
        NAVIGATIONSBAR
        =========================== -->
@@ -79,6 +78,7 @@
       <source media="(min-width: 768px)" srcset="img/efteraar/heroefteraarstor3.png">
       <img src="img/efteraar/heroefteraarlille3.png" alt="">
     </picture>
+  </div>
 
 
     <!-- ===========================
@@ -91,7 +91,8 @@
         <div class="col-12 col-sm-7">
           <h2>Efterårs-gnocchi med tomat, salvie og karamelliseret løg</h2>
           <p>Blød gnocchi møder søde løg, syrlige tomater og sprød salvie. En varm skål efterår på under 30 minutter
-            <br>- perfekt til dovne hverdagsaftener.</p>
+            <br>- perfekt til dovne hverdagsaftener.
+          </p>
         </div>
         <!--Illustration til højre-->
         <!--Illustration vises ikke på mobil-->
@@ -101,6 +102,7 @@
         </div>
       </div>
     </div>
+
 
 
     <!-- ===========================
@@ -114,9 +116,6 @@
 
           <!--Info-linje om tid og antal per. til opskrift-->
           <hr class="linje">
-
-
-
           <!--sætter hver p ved siden af hinanden horisontalt-->
           <div class="d-flex justify-content-evenly">
             <p>2 personer</p>
@@ -126,12 +125,11 @@
         </section>
 
         <!--Sektion m. collage-billeder og fremgangsmåde-->
-        <div class="custom-container my-5 px-sm-5">
+        <div class="custom-container my-5">
           <!--- 
-          På små skærme (mobil): vis indholdet under hinanden (flex-column)
-          På store skærme og op (fra 992px): vis indholdet ved siden af hinanden (flex-lg-row)-->
-          <div class="row align-items-start d-flex flex-column flex-md-column flex-lg-row">
-
+        På små skærme (mobil): vis indholdet under hinanden (flex-column)
+        På store skærme og op (fra 992px): vis indholdet ved siden af hinanden (flex-lg-row)-->
+          <div class="row align-items-start d-flex flex-column flex-lg-row">
             <div class="col collage-opskrift-container">
               <!--Ingredienser til opskrift-->
               <div class="ingredienser">
@@ -145,12 +143,11 @@
                   <li>Saft fra 1/2 citron</li>
                   <li>Revet parmesan, ristede nødder eller frø på toppen</li>
                 </ul>
-
               </div>
 
               <!--Billeder-->
               <img src="img/efteraar/efteraar2billede1ny.png" class="billede opskrift-billede1" alt="">
-              <img src="img/efteraar/efteraar2billede2.png" class="billede opskrift-billede2" alt="">
+              <img src="img/efteraar/efteraar2billede2ny.png" class="billede opskrift-billede2" alt="">
               <img src="img/illustrationer/tomat.png" class="billede opskrift-billede3" alt="">
             </div>
 
@@ -204,13 +201,14 @@
             </div>
           </div>
         </div>
-
+      </div>
     </section>
 
 
 
 
-     <!-- ===========================
+
+    <!-- ===========================
        MUSIK
        =========================== -->
     <section class="custom-container playlist-section my-5">
@@ -251,85 +249,82 @@
           <img src="img/efteraar/efteraar1billede1ny.png" alt="">
           <p>Efterårssuppe med Hokkaido, gulerod og ingefær</p>
         </a>
-
-
       </div>
-  </div>
-  </section>
+    </section>
 
 
-    <!-- ===========================
+  <!-- ===========================
        KOMMENTARSPOR
        =========================== -->
-    <!--
+  <!--
     På små skærme (mobil): vis indholdet under hinanden (flex-column)
     Fra små skærme (576px) og op: vis dem ved siden af hinanden (flex-sm-row)-->
-    <div class="comment-form">
-      <h2>Har du spørgsmål til opskriften?</h2>
-      <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i
-        kommentarfeltet herunder.</p>
-      <input type="text" id="nameInput" placeholder="Dit navn" />
-      <textarea id="commentInput" placeholder="Din kommentar"></textarea>
-      <button onclick="addComment()">Send</button>
-    </div>
+  <div class="comment-form">
+    <h2>Har du spørgsmål til opskriften?</h2>
+    <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i
+      kommentarfeltet herunder.</p>
+    <input type="text" id="nameInput" placeholder="Dit navn" />
+    <textarea id="commentInput" placeholder="Din kommentar"></textarea>
+    <button onclick="addComment()">Send</button>
+  </div>
 
-    <div class="comment-list">
-      <h2>Kommentarer</h2>
-      <div id="commentsContainer"></div>
-    </div>
+  <div class="comment-list">
+    <h2>Kommentarer</h2>
+    <div id="commentsContainer"></div>
   </div>
 
 
   <!-- ===========================
        FOOTER
        =========================== -->
-  <footer class="py-4">
-    <div class="container d-flex flex-column align-items-center justify-content-center">
+  <footer>
+    <!-- Wrapper til både billede og tekst -->
+    <!-- Gør det muligt at placere teksten ovenpå billedet -->
+    <div class="position-relative d-flex justify-content-center align-items-center py-4">
+      <!--Papir-->
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/storserviet.png">
+        <img src="img/lilleservietmobil.png" alt="Serviet">
+      </picture>
 
-      <!-- Servietbillede som baggrund -->
-      <div class="position-relative">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/storserviet.png">
-          <img src="img/lilleservietmobil.png" alt="Serviet">
-        </picture>
+      <!-- Tekst ovenpå papir-->
+      <!-- position-absolute gør, at teksten kan placeres ovenpå billedet -->
+      <div class="position-absolute p-4">
+        <h1 class="overskrift-footer">Kontakt os:</h1>
 
-        <!-- Tekst ovenpå billedet -->
-        <div class="position-absolute top-0 start-0 p-5 pt-5">
-          <div>
-            <h1 class="overskrift-footer">Kontakt os:</h1>
-            <div class="row">
-              <p class="col-12 col-sm-7">Telefon.nr.:
-                <a href="tel:+45271478**">+45 27 14 78 **</a>
-              </p>
-              <p class=" col-12 col-sm-5">Mail:
-                <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
-              </p>
-            </div>
+        <!-- Første række med telefon og mail -->
+        <div class="row">
+          <!--Kolonne: 12 kol;fylder hele bredden på mobil, col-sm-7: fylder 7/12 på små og større skærme -->
+          <p class="col-12 col-sm-7">Telefon.nr.:
+            <a href="tel:+45271478**">+45 27 14 78 **</a>
+          </p>
+          <!-- col-sm-5: resten af rækken på små og større skærme -->
+          <p class="col-12 col-sm-5">Mail:
+            <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
+          </p>
+        </div>
 
-            <div class="row">
-              <p class="col-7">Find os her:
-                <br>
-                <a
-                  href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">Firskovvej
-                  18, <br> 2800 Kongens Lyngby</a>
-              </p>
-
-              <div class="col-5 instagram">
-                <p>
-                  Oplev mere af vores univers her
-                  <a href="https://www.instagram.com/lille_skaal/" target="_blank">
-                    <i class="bi bi-instagram fs-4"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-
-
+        <!-- Anden række med adresse og Instagram -->
+        <div class="row">
+          <p class="col-7">Find os her:
+            <br>
+            <!-- Link til Google Maps med adressen -->
+            <a
+              href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">
+              Firskovvej 18, <br> 2800 Kongens Lyngby</a>
+          </p>
+          <!-- Instagram link i højre side -->
+          <div class="col-5 instagram">
+            <!-- Instagram-ikon med Bootstrap icons og lidt større skriftstørrelse -->
+            <p>
+              Oplev mere af vores univers her
+              <a href="https://www.instagram.com/lille_skaal/" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </p>
           </div>
         </div>
       </div>
-    </div>
-
     </div>
   </footer>
 
@@ -347,6 +342,7 @@
 
   <!--JavaScript benyttes til at navigationsbar: nuværende sæson øverst ved dropdown menu-->
   <script src="script.js"></script>
+  
 </body>
 
 </html>

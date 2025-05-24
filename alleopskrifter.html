@@ -23,7 +23,7 @@
 
 <body>
 
-    <!-- ===========================
+  <!-- ===========================
        NAVIGATIONSBAR
        =========================== -->
   <!--Fixed navbar-->
@@ -68,7 +68,7 @@
   </nav>
 
 
-    <!-- ===========================
+  <!-- ===========================
        INTRO-SEKTION
        =========================== -->
   <div class="custom-container">
@@ -93,12 +93,12 @@
   </div>
 
 
-  
-    <!-- ===========================
+
+  <!-- ===========================
        FORÅRS-OPSKRIFTER
        =========================== -->
-        <!--Orange baggrund-->
-        <!--Skjules fra medium skærm (768px) og ned-->
+  <!--Orange baggrund-->
+  <!--Skjules fra medium skærm (768px) og ned-->
   <div id="alle-foraar" class="orange d-none d-md-block">
     <div class="custom-container py-5 ">
       <div class="row align-items-start">
@@ -132,11 +132,11 @@
     </div>
   </div>
 
-  
-    <!-- ===========================
+
+  <!-- ===========================
        SOMMER-OPSKRIFTER
        =========================== -->
-       <!--Skjules fra medium skærm (768px) og ned-->
+  <!--Skjules fra medium skærm (768px) og ned-->
   <div id="alle-sommer" class="custom-container d-none d-md-block">
     <div class="row align-items-start py-5">
       <!--Overskrift m. link til sommersiden-->
@@ -167,13 +167,13 @@
     </div>
   </div>
 
-  
-  
-    <!-- ===========================
+
+
+  <!-- ===========================
        EFTERÅRS-OPSKRIFTER
        =========================== -->
-       <!--Orange baggrund-->
-       <!--Skjules fra medium skærm (768px) og ned-->
+  <!--Orange baggrund-->
+  <!--Skjules fra medium skærm (768px) og ned-->
   <div id="alle-efteraar" class="orange d-none d-md-block">
     <div class="custom-container py-5">
       <div class="row align-items-start">
@@ -207,11 +207,11 @@
   </div>
 
 
-  
-    <!-- ===========================
+
+  <!-- ===========================
        VINTER-OPSKRIFTER
        =========================== -->
-       <!--Skjules fra medium skærm (768px) og ned-->
+  <!--Skjules fra medium skærm (768px) og ned-->
   <div id="alle-vinter" class="custom-container d-none d-md-block">
     <div class="row align-items-start my-5">
       <a href="vinter.html">
@@ -238,8 +238,8 @@
     </div>
   </div>
 
-  
-    <!-- ===========================
+
+  <!-- ===========================
        KARUSSEL TIL MOBIL-VERISON
        =========================== -->
   <!--Karussel Forår-->
@@ -247,7 +247,7 @@
     <div class="row carousel-container">
 
       <!-- Forår -->
-       <!--Kolonne: 12 / fylder hele siden-->
+      <!--Kolonne: 12 / fylder hele siden-->
       <div class="alle-foraar col-12 custom-container orange py-4">
         <div id="carousel-foraar" class="carousel slide" data-bs-touch="false">
           <div class="carousel-inner">
@@ -286,7 +286,7 @@
       </div>
 
       <!-- Sommer -->
-       <!--Kolonne: 12 / fylder hele siden-->
+      <!--Kolonne: 12 / fylder hele siden-->
       <div class="alle-sommer col-12 py-4 custom-container">
         <div id="carousel-sommer" class="carousel slide" data-bs-touch="false">
           <a href="sommer.html">
@@ -325,7 +325,7 @@
       </div>
 
       <!-- Efterår -->
-       <!--Kolonne: 12 / fylder hele siden-->
+      <!--Kolonne: 12 / fylder hele siden-->
       <div class="alle-efteraar col-12 py-4 custom-container orange">
         <div id="carousel-efteraar" class="carousel slide" data-bs-touch="false">
           <a href="efteraar.html">
@@ -364,7 +364,7 @@
       </div>
 
       <!-- Vinter -->
-       <!--Kolonne: 12 / fylder hele siden-->
+      <!--Kolonne: 12 / fylder hele siden-->
       <div class="alle-vinter col-12 py-4 custom-container">
         <div id="carousel-vinter" class="carousel slide" data-bs-touch="false">
           <a href="vinter.html">
@@ -406,70 +406,67 @@
   </main>
 
 
+  <!-- ===========================
+       FOOTER
+       =========================== -->
+  <footer>
+    <!-- Wrapper til både billede og tekst -->
+    <!-- Gør det muligt at placere teksten ovenpå billedet -->
+    <div class="position-relative d-flex justify-content-center align-items-center py-4">
+      <!--Papir-->
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/storserviet.png">
+        <img src="img/lilleservietmobil.png" alt="Serviet">
+      </picture>
 
+      <!-- Tekst ovenpå papir-->
+      <!-- position-absolute gør, at teksten kan placeres ovenpå billedet -->
+      <div class="position-absolute p-4">
+        <h1 class="overskrift-footer">Kontakt os:</h1>
 
+        <!-- Første række med telefon og mail -->
+        <div class="row">
+          <!--Kolonne: 12 kol;fylder hele bredden på mobil, col-sm-7: fylder 7/12 på små og større skærme -->
+          <p class="col-12 col-sm-7">Telefon.nr.:
+            <a href="tel:+45271478**">+45 27 14 78 **</a>
+          </p>
+          <!-- col-sm-5: resten af rækken på små og større skærme -->
+          <p class="col-12 col-sm-5">Mail:
+            <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
+          </p>
+        </div>
 
-
-
-  <!-- Footer -->
-  <footer class="py-4">
-    <div class="container d-flex flex-column align-items-center justify-content-center">
-
-      <!-- Servietbillede som baggrund -->
-      <div class="position-relative">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/storserviet.png">
-          <img src="img/lilleservietmobil.png" alt="Serviet">
-        </picture>
-
-        <!-- Tekst ovenpå billedet -->
-        <div class="position-absolute top-0 start-0 p-5 pt-5">
-          <div>
-            <h1 class="overskrift-footer">Kontakt os:</h1>
-            <div class="row">
-              <p class="col-12 col-sm-7">Telefon.nr.:
-                <a href="tel:+45271478**">+45 27 14 78 **</a>
-              </p>
-              <p class=" col-12 col-sm-5">Mail:
-                <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
-              </p>
-            </div>
-
-            <div class="row">
-              <p class="col-7">Find os her:
-                <br>
-                <a
-                  href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">Firskovvej
-                  18, <br> 2800 Kongens Lyngby</a>
-              </p>
-
-              <div class="col-5 instagram">
-                <p>
-                  Oplev mere af vores univers her
-                  <a href="https://www.instagram.com/lille_skaal/" target="_blank">
-                    <i class="bi bi-instagram fs-4"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-
-
+        <!-- Anden række med adresse og Instagram -->
+        <div class="row">
+          <p class="col-7">Find os her:
+            <br>
+            <!-- Link til Google Maps med adressen -->
+            <a
+              href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46524e6d778cb02b:0x7e3ab7668df86d7c?sa=X&ved=1t:8290&ictx=111">
+              Firskovvej 18, <br> 2800 Kongens Lyngby</a>
+          </p>
+          <!-- Instagram link i højre side -->
+          <div class="col-5 instagram">
+            <!-- Instagram-ikon med Bootstrap icons og lidt større skriftstørrelse -->
+            <p>
+              Oplev mere af vores univers her
+              <a href="https://www.instagram.com/lille_skaal/" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </p>
           </div>
         </div>
       </div>
     </div>
-
-    </div>
   </footer>
 
 
-
-<!--Bootstrap-->
+  <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
 
-<!--JavaScript benyttes til at nuværende sæson altid vil stå øverst på siden-->
+  <!--JavaScript benyttes til at nuværende sæson altid vil stå øverst på siden-->
   <script src="script.js"></script>
 
 </body>
