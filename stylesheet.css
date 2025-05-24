@@ -485,8 +485,14 @@ button {
 
  /*----------------------------FÆLLESSKÅL----------------------------*/
   .bordhero {
-    width: 55%;
+    width: 35%;
+    min-width: 200px;
+    max-width: 300px;
 
+  }
+
+  .skaal{
+    padding-bottom: 80px;
   }
 
 
