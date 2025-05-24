@@ -473,7 +473,7 @@ button {
 .logo-hero{ top: 22%; left: 41%;}
 
 .logo-hero img {
-    width: 80px; 
+    width: 400px; 
     height: auto; 
   }
   
@@ -695,7 +695,7 @@ button {
 /*-------------------KONTAKT------------------------------- */
 /*Logo i bunden af siden*/
 .logo-hero img {
-    width: 80px; 
+    width: 300px; 
     height: auto; /* sørger for at billedet ikke bliver forvrænget */
   }
 
