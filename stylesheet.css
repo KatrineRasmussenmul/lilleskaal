@@ -1,183 +1,115 @@
+/* ============================================================================================================================= */
+/* ===   VARIABLER    === */
+/* ============================================================================================================================= */
 :root {
-    --primær-orange: #FBEBDE;
-    --sekundær-orange: #FFDBBE;
-    --primær-blå: #093A9D;
-    --sekundær-blå: #5671A7;
+  --primær-orange: #FBEBDE; 
+  --sekundær-orange: #FFDBBE;
+  --primær-blå: #093A9D;
+  --sekundær-blå: #5671A7;
 }
 
-
-/* -----------------------EGEN CONTAINER / CUSTOM CONTAINER ---------------------- */
-.custom-container{
+/* ============================================================================================================================= */
+/* ===   EGEN CONTAINER - EGEN STYLING    === */
+/* ============================================================================================================================= */
+.custom-container {
   max-width: 1440px;
-  /*automatisk centrering*/
+  /*automatisk centreret på siden*/
   margin-left: auto;
   margin-right: auto;
+  /*100x padding på hver side*/
   padding-left: 100px;
   padding-right: 100px;
 }
 
-.orange{
-    background-color:var(--sekundær-orange);  
-    width: 100%;  
+
+
+/* ============================================================================================================================= */
+/* ===   GENERELT FOR ALLE SIDER / FARVE & IMG-STYLING   === */
+/* ============================================================================================================================= */
+body {
+  /*baggrundsfarve på hele siden*/
+  background-color: var(--primær-orange);
+  /*luft øverst– så noget indhold ikke sidder helt oppe i toppen*/
+  padding-top: 60px;
+}
+
+.orange {
+  /*områder på siden (container) med mørkere orange farve*/
+  background-color: var(--sekundær-orange);
+  width: 100%;
 }
 
 
-
-
-/* -----------------------Farver og Fonte ---------------------- */
-body{
-    background-color: var(--primær-orange);
-    padding-top: 60px;
+/*gælder alle billeder på websitet*/
+/*bevarer proportionerne*/
+img{
+    width: 100%;
+    height: auto;
 }
 
-
-
-
-.navbar, .navbar a{
-    background-color: var(--sekundær-orange) !important;
-    color: var(--primær-blå);
-}
-
-.navbar a:hover{
-    color: var(--sekundær-blå);
-}
-
-h1, h2, h3{
-    color: var(--primær-blå);
-    font-weight: bold;
-}
-
-h4{
+/* ============================================================================================================================= */
+/* ===  TYPOGRAFI   === */
+/* ============================================================================================================================= */
+h1, h2, h3, h4 {
+  /*alle overskrifter har mørk blå farve*/
   color: var(--primær-blå);
 }
 
-h1{
-    font-family: 'Fuzzy Bubbles';
-    font-size: 4rem;
+h1 {
+  font-family: 'Fuzzy Bubbles';
+  /*4 gange-standardstr.*/
+  font-size: 4rem;
+  /*tekst bliver tyk/kraftig*/
+  font-weight: bold;
 }
 
-p, h2, h3, a{
-    font-family: 'Poppins', sans-serif;
+h2, h3 {
+  /*tekst bliver tyk/kraftig*/
+  font-weight: bold;
 }
 
-a{
+p, h2, h3, a {
+  /*skrifttype til brødtekst samt mindre overskrifter end h1*/
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
   color: var(--primær-blå);
+  /*fjerner steg under links*/
   text-decoration: none;
 }
 
-.telefon a, .mail a, .bi-suit-heart, .bi-instagram, .bi-tiktok{
-  color: black;
+
+
+
+/* ============================================================================================================================= */
+/* ===   NAVIGATIONSBAR   === */
+/* ============================================================================================================================= */
+.navbar, 
+.navbar a {
+  /*får den mørke orange farve*/
+  background-color: var(--sekundær-orange) !important;
+  /*tekst/links skal være mørkeblåt*/
+  color: var(--primær-blå);
 }
 
-
-.saeson-overskrift{
-  font-size: 9em;
-}
-
-/*--------------skriftstørrelse--------------------*/
-
-#alle-foraar a h3,
-#alle-sommer a h3,
-#alle-efteraar a h3,
-#alle-vinter a h3{
-  font-size: 20px;
-}
-
-.alle-foraar a h3,
-.alle-sommer a h3,
-.alle-efteraar a h3,
-.alle-vinter a h3{
-  font-size: 20px;
-}
-
-/*---------------------Links hover-------------------*/
-
-
-.alle-foraar a h3:hover,
-.alle-foraar a p:hover,
-.alle-sommer a h3:hover,
-.alle-sommer a p:hover,
-.alle-efteraar a h3:hover,
-.alle-efteraar a p:hover,
-.alle-vinter a h3:hover,
-.alle-vinter a p:hover{
+.navbar a:hover {
+  /*hover over links: lyseblå farve*/
   color: var(--sekundær-blå);
 }
 
-#spring a:hover,
-#summer a:hover,
-#autumn a:hover,
-#winter a:hover,
-#alle-foraar a h3:hover,
-#alle-sommer a h3:hover,
-#alle-efteraar a h3:hover,
-#alle-vinter a h3:hover,
-#alle-foraar a h2:hover,
-#alle-sommer a h2:hover,
-#alle-efteraar a h2:hover,
-#alle-vinter a h2:hover{
-  color: var(--sekundær-blå);
-}
-
-#spring a img:hover,
-#summer a img:hover,
-#autumn a img:hover,
-#winter a img:hover,
-#alle-foraar a img:hover,
-#alle-sommer a img:hover,
-#alle-efteraar a img:hover,
-#alle-vinter a img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-.alle-foraar a img:hover,
-.alle-efteraar a img:hover,
-.alle-vinter a img:hover,
-.alle-sommer a img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-.telefon a:hover, 
-.mail a:hover, 
-.bi-instagram:hover,
-.bi-tiktok:hover{
-  color: var(--sekundær-blå);
-}
-
-/* Gør <a>-elementet til inline-block, så transform virker */
-.call-to-action a {
-  display: inline-block;
-
-  /* Gør overgangen glidende, så det ikke hopper ved hover */
-  transition: transform 0.3s ease;
-}
-
-.call-to-action {
-  width: 40%;
-}
-
-/* Når musen holdes over linket */
-.call-to-action a:hover {
-  /* Forstør linket en smule */
-  transform: scale(1.05);
-}
-
-/* Når musen holdes over billede*/
-.falles-link:hover img{
-  /* Forstør billede/link en smule */
-  transform: scale(1.05);
-}
-
-.falles-link img {
-   /*Gør overgangen glidende, så det ikke hopper ved hover*/
-  transition: transform 0.3s ease;
-}
+/*logo i navigationsbar til venstre*/
+.logo img {
+    width: 40px; 
+    height: auto;
+  }
 
 
-/*--------------------Dropdown-menu Vores egen styling----------------------*/
-/* Style for linket "Opskrifter" – gør det klikbart og giver korrekt placering */
+/* ============================================================================================================================= */
+/* ===   DROPDOWN MENU - EGEN STYLING   === */
+/* ============================================================================================================================= */
+
+/*Style for linket "Opskrifter" – gør det klikbart og giver korrekt placering*/
 .dropbtn {
   position: relative;      
   /* Gør at knappen ikke fylder hele linjen */   
@@ -186,7 +118,7 @@ a{
   cursor: pointer;            
 }
 
-/* Containeren omkring dropdown – bruges til at positionere dropdown-indholdet relativt */
+/*Containeren omkring dropdown – bruges til at positionere dropdown-indholdet relativt*/
 .vores-dropdown {
   position: relative;       
 }
@@ -207,131 +139,191 @@ a{
   left: 0;                    
 }
 
-/* Links i dropdown-menuen */
+/*Links i dropdown-menuen*/
 .dropdown-content a {
   color: var(--primær-blå);
   /*padding omkring teksten*/               
   padding: 12px 16px;
-  /*Gør hvert link til en blok, så hele arealet er klikbart*/         
+  /*gør hvert link til en blok, så hele arealet er klikbart*/         
   display: block;
-  /*Fjerner understregning*/           
+  /*fjerner understregning*/           
   text-decoration: none;      
 }
 
-/*Mus holdes over et link i dropdown-menuen */
+/*Hover ved links i dropdown-menu*/
 .dropdown-content a:hover {
   /*Ændrer baggrundsfarve for at vise interaktion*/
   background-color: var(--sekundær-blå);     
 }
 
-/*Ved hover over "Opskrift" vises dropdown-menu*/
+/*Hover over "Opskrift" gør at dropdown-menu vises*/
 .vores-dropdown:hover .dropdown-content {
   display: block;      
 }
 
 
-/*-------------------- Tilpasninger----------------------*/
 
 
 
-.logo img{
-    height: 50px;
+/* ============================================================================================================================= */
+/* ===   IKONER   === */
+/* ============================================================================================================================= */
+.telefon a, 
+.mail a, 
+.bi-suit-heart, 
+.bi-instagram, 
+.bi-tiktok {
+  color: black;
+}
+
+.telefon a:hover, 
+.mail a:hover, 
+.bi-instagram:hover,
+.bi-tiktok:hover {
+  color: var(--sekundær-blå);
 }
 
 
-/*sørger for, at billedet tilpasser sig bredden af dets container og bevarer proportionerne*/
-img{
-    width: 100%;
-    height: auto;
+/* ============================================================================================================================= */
+/* ===   SKRIFTSTØRRELSE FOR SÆSONKORT /    === */
+/* ============================================================================================================================= */
+/* ----------------------- Skriftstørrelse for sæsonkort ---------------------- */
+#alle-foraar a h3,
+#alle-sommer a h3,
+#alle-efteraar a h3,
+#alle-vinter a h3,
+.alle-foraar a h3,
+.alle-sommer a h3,
+.alle-efteraar a h3,
+.alle-vinter a h3 {
+  font-size: 20px;
 }
 
-.logo img {
-    width: 40px; 
-    height: auto; /* sørger for at billedet ikke bliver forvrænget */
-  }
+/* ============================================================================================================================= */
+/* ===   LINKS HOVER-EFFEKT    === */
+/* ============================================================================================================================= */
+.alle-foraar a h3:hover,
+.alle-foraar a p:hover,
+.alle-sommer a h3:hover,
+.alle-sommer a p:hover,
+.alle-efteraar a h3:hover,
+.alle-efteraar a p:hover,
+.alle-vinter a h3:hover,
+.alle-vinter a p:hover,
+#spring a:hover,
+#summer a:hover,
+#autumn a:hover,
+#winter a:hover,
+#alle-foraar a h2:hover,
+#alle-sommer a h2:hover,
+#alle-efteraar a h2:hover,
+#alle-vinter a h2:hover,
+#alle-foraar a h3:hover,
+#alle-sommer a h3:hover,
+#alle-efteraar a h3:hover,
+#alle-vinter a h3:hover {
+  color: var(--sekundær-blå);
+}
 
-i{
-    color: #093A9D;
-  }
+/* ============================================================================================================================= */
+/* ===   BILLEDER HOVER-EFFEKT    === */
+/* ============================================================================================================================= */
+#spring a img:hover,
+#summer a img:hover,
+#autumn a img:hover,
+#winter a img:hover,
+#alle-foraar a img:hover,
+#alle-sommer a img:hover,
+#alle-efteraar a img:hover,
+#alle-vinter a img:hover,
+.alle-foraar a img:hover,
+.alle-sommer a img:hover,
+.alle-efteraar a img:hover,
+.alle-vinter a img:hover,
+.falles-link:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 
-
-/*-------------------- Hero-sektion----------------------*/
+/* ============================================================================================================================= */
+/* ===   HERO-SEKTION STYLING    === */
+/* ============================================================================================================================= */
 /*Hero-sektion skal fylde hele bredden af siden. Fjerner det automatiske margin*/
 .hero-sektion{
   padding: 0;
   margin: 0;
 }
 
+.faellesskaal-hero{
+  width: 28%;
+}
 
 .illustration-introduktion-sommer1{
   transform: rotate(-25deg);
 }
 
+/* ============================================================================================================================= */
+/* ===   FORSIDE  === */
+/* ============================================================================================================================= */
 
 
-/*----------------------------FOOTER----------------------------*/
-footer{
-    background-image: url('img/ternstor.png');
-    /*background-color: var(--sekundær-blå);*/
-    background-size: cover; 
-    background-position: center; 
-    height: 350px;
-}
-
-.overskrift-footer{
-  font-size: 1.7rem;
-}
-
-
-
-/*--------------------------------------------------FORSIDE--------------------------------------------------*/
+/* ========================================================================= */
+/* ===   LOGO, CALL-TO-ACTION & FÆLLES-SKÅL I BUNDEN  === */
+/* ========================================================================= */
 .logo-forside{
-  width: 26%;
+  /*str. på logo i hero-sektion*/
+  width: 30%;
 }
 
-/*----------------------------OPSKRIFTER PÅ FORSIDEN----------------------------*/
-.season-banner{
-    height: 300px;
-    background-color: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*str. på call-to-action 'knap'*/
+.call-to-action {
+  width: 40%;
 }
 
-.season-card{
-    background-color: cover;
-    background-position: center;
-    height: 150px;
-    width: 100%;
-    /*centrerer teksten i midten af billedet*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*gør <a>-elementet til inline-block, så transform virker*/
+.call-to-action a {
+  display: inline-block;
+  /*gør overgangen glidende, så det ikke hopper ved hover*/
+  transition: transform 0.3s ease;
 }
 
-.season-row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5%;
+/*når musen holdes over linket */
+.call-to-action a:hover {
+  /* Forstør linket en smule */
+  transform: scale(1.05);
 }
 
-/*----------------------------COLLAGE E-MAGASIN TILMELDING----------------------------*/
+/**/
+.faelles-bord img{
+    width: 50%;
+}
+
+/* ========================================================================= */
+/* ===   COLLAGE M. TILMELDING TIL E-MAGASIN  === */
+/* ========================================================================= */
+/*hele containeren med collage - bruges til at placere billeder med absolute positioning*/
 .collage-container{
+    /*gør det muligt at absolut placere billederne (børn) inde i container*/
     position: relative;
+    /*fylder hele bredden*/
     width: 100%;
+    /*fast højde på collage*/
     height: 950px;
+    /*inkl. padding og border i height/width*/
     box-sizing: border-box;
 }
 
-/*Alle billeder i collagen*/
+/*Fællesstyling for alle billeder i collagen*/
 .billede{
+    /*gør det muligt at placere billeder (børn) frit inde i container*/
     position: absolute;
+    /*bevarer billedernes proportioner*/
     height: auto;
+    /*billeder udfylder deres felt uden at blive forvrænget*/
     object-fit: cover;
 }
 
+/*Individuelle positioner og str. for hvert billede i collage*/
 .kurv{ top: 8%; left: 10%; width: 27%; transform: rotate(-5deg)}
 .foraarsbord{ top: 43%; left: 20%; width: 25%;}
 .asparges{ top: 73%; left: 16%; width: 15%; transform: rotate(-60deg);}
@@ -340,121 +332,172 @@ footer{
 .driver{ top: 45%; left: 73%; width: 20%; transform: rotate(8deg)}
 .vin{ top: 5%; left: 65%; width: 25%; transform: rotate(3deg)}
 
+/*'Boks' til tilmelding af e-magasin*/
 .tilmelding-boks{
+  /*gør det muligt at placere boks frit inde i container*/
     position: absolute;
+    /*positioner og str. for boks*/
     top: 32%;
     right: 25%;
     width: 30%;
+    /*inkl. padding og border i height/width*/
     box-sizing: border-box;
 }
 
 
-.faelles-bord img{
-    width: 50%;
+
+
+/* ============================================================================================================================= */
+/* ===   FOOTER   === */
+/* ============================================================================================================================= */
+footer{
+    /*baggrundsbillede m. tern*/
+    background-image: url('img/ternstor.png');
+    /*billede dækker det hele*/
+    background-size: cover; 
+    /*billede er centreret*/
+    background-position: center; 
+    /*footer har fast højde*/
+    height: 350px;
+}
+
+.overskrift-footer{
+  /*str. på overskrift i footer*/
+  font-size: 1.7rem;
 }
 
 
 
 
-/*----------------------------STYLING TIL ALLE SIDER M. OPSKRIFTER----------------------------*/
+
+/* ============================================================================================================================= */
+/* ===   OPSKRIFT-SIDER   === */
+/* ============================================================================================================================= */
+/* ========================================================================= */
+/* ===   SELVE DELEN MED OPSKRIFTEN - STYLING    === */
+/* ========================================================================= */
+/*container til collage i opskrifts-sektion*/
 .collage-opskrift-container{
+  /*muligt at absolut placere billeder inde i container*/
   position: relative;
+  /*fast højde*/
   height: 750px;
 }
 
+/*placering & str. for billeder i collage*/
+.opskrift-billede1{ top: 35%; left: 10%; width: 58%; transform: rotate(-5deg);}
+.opskrift-billede2{ top: 55%; left: 52%; width: 44%; }
+.opskrift-billede3{ top: 72%; left: 20%; width: 68%; transform: rotate(10deg);}
 
-.opskrift-billede1{ top: 35%; left: 10%; width: 50%; transform: rotate(-5deg);}
-.opskrift-billede2{ top: 55%; left: 52%; width: 40%; }
-.opskrift-billede3{ top: 75%; left: 20%; width: 50%; transform: rotate(10deg);}
-
+/*vandret linje*/
 .linje{
+  /*fjerner standard-kant*/
   border: none;
   /*linjens tykkelse*/
   height: 2px;
-  /*farve*/
+  /*linjens farve*/
   background-color: black;
+  /*fylder hele bredden*/
   width: 100%;
+  /*maks bredde*/
   max-width: 1440px;
   /*centrerer streg og giver luft over/under*/
   margin: 20px auto;
 }
 
 
-.tip-boks{
-  position: absolute;
-  top: 148%;
-  right: 15%;
-  min-width: 100px;
-  max-width: 300px;
-  background: #5671A7;
-  color: #FBEBDE;
-  padding: 1.5rem;
-  border-radius: 3rem;
-}
-
-/*-----------------KOMMENTARSPOR---------------------*/
+/* ========================================================================= */
+/* ===   KOMMENTARSPOR - STYLING    === */
+/* ========================================================================= */
+/*Hele kommentar-sektion*/
 .comment-section {
+  /*ved siden af hinanden*/
   display: flex;
+  /*afstand ml. formular og kommentar-spor*/
   gap: 20px;
  
 }
 
 .comment-form, .comment-list {
+  /*Formular og kommentar-spor fylder lige meget*/
+  /*lige stor bredde*/
   flex: 1;
   display: flex;
+  /*elementer placeres lodret*/
   flex-direction: column;
 }
 
+/*Inputfelter til formular*/
 #nameInput, #commentInput {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   font-size: 16px;
+   /*padding og border tælles med i total bredde*/
   box-sizing: border-box;
 }
 
+/*Kommentar-tekstfelt*/
 #commentInput {
+  /*højde*/
   height: 100px;
+  /*tillader brugeren at justere højden lodret*/
   resize: vertical;
 }
 
+/*Knap til at indsende kommentar*/
 button {
   padding: 10px;
+  /*gør mus til hånd ved hover*/
   cursor: pointer;
   width: 200px;
   background-color: var(--primær-blå);
   color: var(--primær-orange);
 }
 
+/*Container til alle kommentarer*/
 .comment-list {
   border: 1px solid #ccc;
   padding: 10px;
+  /*Maks-højde før scroll aktiveres*/
   max-height: 300px;
+  /*Gør listen scrollbar hvis der er for mange kommentarer*/
   overflow-y: scroll;
   background-color: var(--sekundær-orange);
 }
 
+/*Hver enkelte kommentar*/
 .comment {
   border-bottom: 1px solid #ddd;
   padding: 8px 0;
 }
 
+
+/*Fjerner bundlinjen fra sidste kommentar*/
 .comment:last-child {
   border-bottom: none;
 }
 
+
+/*Navn i en kommentar*/
 .comment .name {
   font-weight: bold;
   margin-bottom: 4px;
 }
 
+
+/*Kommentarens tekst*/
 .comment .text {
-  white-space: pre-wrap; /* Bevarer linjeskift i kommentarer */
+  /*Bevarer linjeskift i kommentarer*/
+  white-space: pre-wrap; 
 }
 
 
 
-/*----------------------------OM OS----------------------------*/
+/* ============================================================================================================================= */
+/* ===   OM OS - STYLING  === */
+/* ============================================================================================================================= */
+/* Billede hvor Lærke & Amalie står i køkkenet – placering og størrelse */
 .madlavning{
   margin-top: 10%;
   margin-left: 25%;
@@ -462,60 +505,53 @@ button {
   width: 80%;
 }
 
+
+
+/**/
+/*Billede af Lærke & Amalie som står i køkkenet - skrå vinkel*/
 .kokke{
   transform: rotate(-5deg);
 }
 
-.teknik{
+/*Billede af Katrine & Marie som sidder udenfor ved bord samt Lærke & hund - skrå vinkel*/
+.teknik, .hugo{
   transform: rotate(4deg);
 }
 
-.hugo {
-  transform: rotate(4deg);
+
+
+/* ============================================================================================================================= */
+/* ===   KONTAKT OS - STYLING   === */
+/* ============================================================================================================================= */
+/*Billede af vin-glas - skrå vinkel */
+.kontakt-billede{
+  transform: rotate(3deg);
 }
 
-
-
-/*----------------------------KONTAKT----------------------------*/
-/*Logo i bunden af siden*/
+/*positionering af logo i bunden af siden*/
 .logo-hero{ top: 22%; left: 41%;}
 
+/*størrelse på logoets billede i bunden */
 .logo-hero img {
     width: 400px; 
     height: auto; 
   }
   
-.kontakt-billede{
-  transform: rotate(3deg);
-}
 
-  
-
- /*----------------------------FÆLLESSKÅL----------------------------*/
-  .bordhero {
-    width: 35%;
-    min-width: 200px;
-    max-width: 300px;
-
-  }
-
-  .skaal{
-    padding-bottom: 80px;
-  }
-
-
-
-
-  /*----------------------------MELLEM DESKTOP (TIL COLLAGE)----------------------------*/
-
+/* ============================================================================================================================= */
+/* ===   MELLEM DESKTOP - STYLING TIL COLLAGE PÅ FORSIDE OG OPSKRIFTER - for skærme med max bredde 1024px   === */
+/* ============================================================================================================================= */
 @media screen and (max-width: 1024px) {
-    /* Styling ved mellem desktop*/
-
+  /* ========================================================================= */
+  /* ===   FORSIDE   === */
+  /* ========================================================================= */
     /*Styling for collage*/
     .collage-container{
+      /*gør højden mindre på collage-sektion*/
         height: 750px;
     }
   
+     /*position og str. på collage-billeder justeres for mindre skærm */
     .kurv{ top: 8%; left: 10%; width: 27%;}
     .foraarsbord{ top: 42%; left: 17%; width: 25%;}
     .asparges{ top: 71%; left: 14%; width: 15%; transform: rotate(-55deg);}
@@ -524,6 +560,7 @@ button {
     .driver{ top: 55%; left: 74%; width: 20%;}
     .vin{ top: 2%; left: 65%; width: 25%;}
     
+    /*positionering og str. af tilmeldings'boks' justeres */
     .tilmelding-boks{
         position: absolute;
         top: 29%;
@@ -532,7 +569,10 @@ button {
         box-sizing: border-box;
     }
   
-    /*------------Styling til opskrifter----------*/
+    /* ========================================================================= */
+    /* ===   OPSKRIFTER M. COLLAGE   === */
+    /* ========================================================================= */
+    /*position og str. på collage-billeder justeres for mindre skærm */
     .opskrift-billede1{ top: 33%; left: 8%; width: 60%; transform: rotate(-5deg);}
     .opskrift-billede2{ top: 55%; left: 43%; width: 50%; }
     .opskrift-billede3{ top: 73%; left: 11%; width: 60%; transform: rotate(10deg);}
@@ -544,11 +584,13 @@ button {
 
   }
 
-/*----------------------------TABLET-VERISON----------------------------*/
-
+/* ============================================================================================================================= */
+/* ===   TABLET-VERISON - med skærmbredde mellem 768px og 1023px === */
+/* ============================================================================================================================= */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    /* Styling når det er en tablet */
-
+   /* ========================================================================= */
+    /* ===   CUSTOM-CONTAINER TILPASNING   === */
+    /* ========================================================================= */
     .custom-container{
     max-width: 1440px;
     /*automatisk centrering*/
@@ -559,13 +601,47 @@ button {
   }
 
 
+    /* ========================================================================= */
+    /* ===   SKRIFT-STR.   === */
+    /* ========================================================================= */
+    #alle-foraar a h3,
+    #alle-sommer a h3,
+    #alle-efteraar a h3,
+    #alle-vinter a h3{
+    font-size: 15px;
+    }
 
+    .alle-foraar a h3,
+    .alle-sommer a h3,
+    .alle-efteraar a h3,
+    .alle-vinter a h3{
+    font-size: 15px;
+    }
 
-    /*Styling for collage*/
+    .overskrift-kontakt{
+    font-size: 1.7rem;
+  }
+  
+    /* ========================================================================= */
+    /* ===   NAV-BAR   === */
+    /* ========================================================================= */
+    /*logo i nav-bar*/
+    .logo img{
+    height: 40px;
+    width: auto;
+  }
+  
+
+    /* ========================================================================= */
+    /* ===   FORSIDE   === */
+    /* ========================================================================= */
+    /*Styling af collage med tilmelding til e-magasin*/
+    /*gør højden mindre på collage-sektion*/
     .collage-container{
         height: 550px;
     }
-  
+    
+    /*position og str. på collage-billeder justeres for mindre skærm */
     .kurv{ top: 8%; left: 10%; width: 27%;}
     .foraarsbord{top: 44%; left: 10%; width: 25%;}
     .asparges{ top: 75%; left: 80%; width: 15%; transform: rotate(10deg);}
@@ -574,6 +650,7 @@ button {
     .driver{display: none;}
     .vin{left: 65%; width: 25%;}
     
+    /*positionering og str. af tilmeldings'boks' justeres */
     .tilmelding-boks{
         position: absolute;
         top: 30%;
@@ -585,70 +662,46 @@ button {
     
 
 
-/*Styling Om Os*/
-.teknik{
-  transform: rotate(2deg);
-}
+    /* ========================================================================= */
+    /* ===   OM OS   === */
+    /* ========================================================================= */
+    .teknik{
+    /*Skrå vinkel af Marie & Katrine ved bord i have*/
+    transform: rotate(2deg);
+    }
 
   
-/*------------Styling til opskrifter----------*/
+    /* ========================================================================= */
+    /* ===   OPSKRIFTER M. COLLAGE   === */
+    /* ========================================================================= */
+    /*plads over fremgangsmåde til collage*/
+    .fremgangsmaade{
+    margin-top: 40px;
+  }
 
-.fremgangsmaade{
-  margin-top: 40px;
-}
-
-.ingredienser{
-  margin-top: 350px;
-}
+    /*plads over ingredienser til collage*/
+    .ingredienser{
+    margin-top: 350px;
+  }
 
 
-
+  /*position og str. på collage-billeder justeres for mindre skærm */
   .opskrift-billede1{ top: 2%; left: 8%; width: 50%; transform: rotate(-5deg);}
   .opskrift-billede2{ top: 15%; left: 52%; width: 40%; transform: rotate(10deg); }
   .opskrift-billede3{ top: 60%; left: 40%; width: 50%;}
-
-
-
-.overskrift-kontakt{
-    font-size: 1.7rem;
-  }
   
-
-
-
-
-
-/*--------------------Tilpasninger----------------------*/
-
-.logo img{
-    height: 40px;
-    width: auto;
-}
-
-/*--------------------Skriftstørrelser-----------------------*/
-#alle-foraar a h3,
-#alle-sommer a h3,
-#alle-efteraar a h3,
-#alle-vinter a h3{
-  font-size: 15px;
-}
-
-.alle-foraar a h3,
-.alle-sommer a h3,
-.alle-efteraar a h3,
-.alle-vinter a h3{
-  font-size: 15px;
-}
-
 
     }
 
 
-  /*----------------------------MOBIL-VERISON----------------------------*/
 
+/* ============================================================================================================================= */
+/* ===   MOBIL-VERISON -  med skærmbredde op til 767px   === */
+/* ============================================================================================================================= */
 @media screen and (max-width: 767px) {
-    /* Stylingen gælder kun på mobil */
-  
+    /* ========================================================================= */
+    /* ===   CUSTOM-CONTAINER TILPASNING   === */
+    /* ========================================================================= */
     .custom-container{
     max-width: 1440px;
     /*automatisk centrering*/
@@ -658,25 +711,26 @@ button {
     padding-right: 15px;
   }
 
-
-
-
-
-
-    /*Styling til forside*/
+    /* ========================================================================= */
+    /* ===   FORSIDE   === */
+    /* ========================================================================= */
+    /*str. på logo i hero-sektion*/
     .logo-forside{
       width: 80%;
     }
 
+    /*str. på call-to-action knap i hero-sektion*/
     .call-to-action {
       width: 70%
     }
 
-    /*Styling for collage*/
+    /*Styling af collage med tilmelding til e-magasin*/
     .collage-container{
+      /*højde på collage-sektion*/
         height: 850px;
     }
   
+    /*position og str. på collage-billeder justeres for mindre skærm */
     .kurv{ top: 0%; left: 20%; width: 35%;}
     .foraarsbord{top: 70%; left: 10%; width: 37%; z-index: 4; transform: rotate(-6deg);}
     .asparges{display: none;}
@@ -685,6 +739,7 @@ button {
     .driver{display: none;}
     .vin{top: 12%; left: 45%; width: 35%;}
     
+    /*positionering og str. af tilmeldings'boks' justeres */
     .tilmelding-boks{
         position: static;
         width: 90%;
@@ -695,22 +750,28 @@ button {
 
 
   
-/*------------Styling til opskrifter----------*/
+  /* ========================================================================= */
+  /* ===   OPSKRIFTER M. COLLAGE   === */
+  /* ========================================================================= */
+  /*position og str. på collage-billeder justeres for mindre skærm */
   .opskrift-billede1{ top: 2%; left: 8%; width: 50%; transform: rotate(-5deg);}
-  .opskrift-billede2{ top: 15%; left: 52%; width: 40%; transform: rotate(10deg); }
+  .opskrift-billede2{ top: 15%; left: 52%; width: 40%; transform: rotate(10deg);}
   .opskrift-billede3{ top: 28%; left: 18%; width: 50%;}
 
-.ingredienser{
+  /*plads over ingredienser til collage*/
+  .ingredienser{
   margin-top: 350px;
-}
+  }
 
 
 
-/*-------------------KONTAKT------------------------------- */
-/*Logo i bunden af siden*/
-.logo-hero img {
+  /* ========================================================================= */
+  /* ===   KONTAKT   === */
+  /* ========================================================================= */
+  /*Logo i bunden af siden*/
+  .logo-hero img {
     width: 300px; 
-    height: auto; /* sørger for at billedet ikke bliver forvrænget */
+    height: auto;
   }
 
   /*Overskrift på serviet skal være mindre*/
@@ -721,16 +782,15 @@ button {
 
 
   
-/*----------------------------FOOTER----------------------------*/
+  /* ========================================================================= */
+  /* ===   FOOTER   === */
+  /* ========================================================================= */
     footer{
+        /*baggrundsbillede m. tern*/
         background-image: url('img/tern.png'); 
+        /*fast højde*/
         height: 450px;
     }
-
-    .serviet-tekst{
-        margin: 20px 0 20px 70px ;
-    }
-
 
   }
 
