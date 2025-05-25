@@ -73,20 +73,20 @@
        =========================== -->
   <!--ØVERSTE BILLEDE AF RET-->
   <!--To forskellige billeder ud fra om det er mobil eller tablet/desktop -->
+  <header>
   <div class="hero-sektion">
     <picture>
       <source media="(min-width: 768px)" srcset="img/efteraar/heroefteraarstor2.png">
       <img src="img/efteraar/herolilleefteraar2.png" alt="Efteråarsopskrifter af Lilleskål">
     </picture>
-
   </div>
 
   
-
   <!-- ===========================
        INTRO-SEKTION
        =========================== -->
-  <div class="custom-container">
+       <section class="custom-container">
+        <button class="knap-aarstider"><a href="alleopskrifter.html">Tilbage</a></button>
     <div class="row align-items-start my-5">
       <!--Tekstfelt m. introduktion til venstre-->
       <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
@@ -102,8 +102,8 @@
         <img src="img/illustrationer/lys.png" alt="illustration lys">
       </div>
     </div>
-  </div>
-
+  </section>
+</header>
 
   
   <!-- ===========================
@@ -126,11 +126,11 @@
       </section>
 
       <!--Sektion m. collage-billeder og fremgangsmåde-->
-      <div class="custom-container my-5">
+      <section class="custom-container my-5">
         <!--- 
         På små skærme (mobil): vis indholdet under hinanden (flex-column)
         På store skærme og op (fra 992px): vis indholdet ved siden af hinanden (flex-lg-row)-->
-        <div class="row align-items-start d-flex flex-column flex-lg-row">
+        <section class="row align-items-start d-flex flex-column flex-lg-row">
           <div class="col collage-opskrift-container">
             <!--Ingredienser til opskrift-->
             <div class="ingredienser">
@@ -187,8 +187,8 @@
               Server med creme fraiche, lidt ristede græskarkerner eller et stykke brød til.
             </p>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 
     </div>
   </section>
@@ -231,7 +231,6 @@
         <img src="img/efteraar/efteraar2billede2ny.png" alt="Lilleskåls efterårsopskrift: Efterårs-gnocchi med tomat, salvie og karamelliseret løg">
         <p>Efterårs-gnocchi med tomat, salvie og karamelliseret løg</p>
       </a>
-
       <!--Anden opskrift: hele boksen er et link-->
       <!-- Kolonne: 12 på mobil, 5 på små skærme (576px) og op -->
       <a class="col-12 col-sm-5" href="efteraar3.html">
@@ -249,7 +248,7 @@
        <!--
       På små skærme (mobil): vis indholdet under hinanden (flex-column)
       Fra små skærme (576px) og op: vis dem ved siden af hinanden (flex-sm-row)-->
-  <div class="comment-section custom-container d-flex flex-column flex-md-row my-5">
+  <section class="comment-section custom-container d-flex flex-column flex-md-row my-5">
     <div class="comment-form">
       <h2>Har du spørgsmål til opskriften?</h2>
       <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i
@@ -263,7 +262,7 @@
       <h2>Kommentarer</h2>
       <div id="commentsContainer"></div>
     </div>
-  </div>
+  </section>
 
 
   <!-- ===========================
