@@ -74,6 +74,7 @@
        =========================== -->
   <!--ØVERSTE BILLEDE AF RET-->
   <!--To forskellige billeder ud fra om det er mobil eller tablet/desktop -->
+<header>
   <div class="hero-sektion position-relative">
     <picture>
       <source media="(min-width: 768px)" srcset="img/foraar/heroforaar1.png">
@@ -86,7 +87,8 @@
   <!-- ===========================
        INTRO-SEKTION
        =========================== -->
-  <div class="custom-container">
+  <section class="custom-container">
+    <button class="knap-aarstider"><a href="foraar.html">Tilbage</a></button>
     <div class="row align-items-start my-5">
       <!--Tekstfelt m. introduktion til venstre-->
       <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
@@ -102,8 +104,8 @@
         <img src="img/illustrationer/basilikum.png" alt="Basilikum illustration">
       </div>
     </div>
-  </div>
-
+  </section>
+</header>
 
   <!-- ===========================
        OPSRKFIT M. COLLAGE, INGREDIENSER OG FREMGANGSMÅDE
@@ -125,7 +127,7 @@
       </section>
 
       <!--Sektion m. collage-billeder og fremgangsmåde-->
-      <div class="custom-container my-5">
+      <section class="custom-container my-5">
         <!--- 
         På små skærme (mobil): vis indholdet under hinanden (flex-column)
         På store skærme og op (fra 992px): vis indholdet ved siden af hinanden (flex-lg-row)-->
@@ -198,7 +200,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
     </div>
   </section>
@@ -259,21 +261,21 @@
   <!--
       På små skærme (mobil): vis indholdet under hinanden (flex-column)
       Fra små skærme (576px) og op: vis dem ved siden af hinanden (flex-sm-row)-->
-  <div class="comment-section custom-container d-flex flex-column flex-md-row  my-5">
-    <div class="comment-form">
+  <section class="comment-section custom-container d-flex flex-column flex-md-row  my-5">
+    <form class="comment-form">
       <h2>Har du spørgsmål til opskriften?</h2>
       <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i
         kommentarfeltet herunder.</p>
       <input type="text" id="nameInput" placeholder="Dit navn" />
       <textarea id="commentInput" placeholder="Din kommentar"></textarea>
       <button onclick="addComment()">Send</button>
-    </div>
+    </form>
 
-    <div class="comment-list">
+    <aside class="comment-list">
       <h2>Kommentarer</h2>
       <div id="commentsContainer"></div>
-    </div>
-  </div>
+    </aside>
+  </section>
 
 
   <!-- ===========================
