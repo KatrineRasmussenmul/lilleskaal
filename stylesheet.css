@@ -164,8 +164,16 @@ a{
   transform: scale(1.05);
 }
 
+/* Når musen holdes over billede*/
+.falles-link:hover img{
+  /* Forstør billede/link en smule */
+  transform: scale(1.05);
+}
 
-
+.falles-link img {
+   /*Gør overgangen glidende, så det ikke hopper ved hover*/
+  transition: transform 0.3s ease;
+}
 
 
 /*--------------------Dropdown-menu Vores egen styling----------------------*/
