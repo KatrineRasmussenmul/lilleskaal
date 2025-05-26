@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lille Skål: et sæsonbaserede madunivers</title>
+  <title>Lille Skål | Sæsonbaserede, Bæredygtige Opskrifter & Madfællesskab i Storkøbenhavn</title>
   <meta name="description"
-    content="Lille Skål er en madplatform med fokus på sæsonens råvarer, fællesskab og bæredygtige opskrifter for unge i Storkøbenhavn.">
+    content="Oplev Lille Skål - din madplatform med fokus på sæsonens friske råvarer, bæredygtige og budgetvenlige opskrifter samt et inspirerende fællesskab for unge i Storkøbenhavn.">
+
+
 
 
   <!--Bootstrap CSS-->
@@ -15,17 +18,32 @@
   <!--Eget ekstern stylesheet-->
   <link rel="stylesheet" href="stylesheet.css">
 
+
   <!--Bootstrap ikoner-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
 
 
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+
+  <!--E-mail form-->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("3LdleP9UAzHffR-I7");
+  })();
+</script>
+
+
 </head>
 
+
 <body>
+
 
   <!-- ===========================
        NAVIGATIONSBAR
@@ -35,15 +53,18 @@
     <div class="container-fluid">
       <a class="navbar-brand logo" href="index.html"><img src="img/logo-vand-2.png" alt="logo skål"></a>
 
+
       <!--Burger-menu til mobil-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+
       <!--Links i navbar-->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
+
 
           <!-- Custom dropdown-menu til sæsoner-->
           <li class="nav-item dropdown vores-dropdown">
@@ -55,6 +76,7 @@
               <a href="foraar.html">Forår</a>
             </div>
           </li>
+
 
           <!--Andre links-->
           <li class="nav-item">
@@ -70,6 +92,8 @@
       </div>
     </div>
   </nav>
+
+
 
 
   <!-- ===========================
@@ -100,7 +124,10 @@
       </div>
     </div>
 
+
   </header>
+
+
 
 
   <!-- ===========================
@@ -124,9 +151,12 @@
   </div>
 
 
+
+
   <!-- ===========================
-       NUVÆRENDE SÆSON - JS 
+       NUVÆRENDE SÆSON - JS
        =========================== -->
+
 
   <!--Oversigt over alle sæsoner, som kan komme på forsiden. UPS der bliver kun vist den nuværende sæson, som man er i-->
   <div class="orange py-5">
@@ -135,6 +165,7 @@
       <div id="summer" class="season-container row d-none">
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
+
 
           <!--Tekst om sæson-->
           <h2>Velkommen til sommeren!</h2>
@@ -149,6 +180,7 @@
           <a href="sommer.html">Se alle sommer-opskrifter her</a>
         </div>
 
+
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
           <!--Billede af sæson som link-->
@@ -156,10 +188,12 @@
         </div>
       </div>
 
+
       <!-- Forår -->
       <div id="spring" class=" season-container row d-none">
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
+
 
           <!--Tekst om sæson-->
           <h2>Velkommen til foråret!</h2>
@@ -175,6 +209,7 @@
           <a href="foraar.html">Find alle forårs-opskrifter her</a>
         </div>
 
+
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
           <!--Billede af sæson som link-->
@@ -182,10 +217,12 @@
         </div>
       </div>
 
+
       <!-- Efterår -->
       <div id="autumn" class="season-container row d-none">
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
+
 
           <!--Tekst om sæson-->
           <h2>Velkommen til efteråret!</h2>
@@ -198,6 +235,7 @@
           <a href="efteraar.html">Oplev alle efterårs-opskrifter her</a>
         </div>
 
+
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
           <!--Billede af sæson som link-->
@@ -206,10 +244,12 @@
         </div>
       </div>
 
+
       <!-- Vinter -->
       <div id="winter" class="season-container d-none">
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
+
 
           <!--Tekst om sæson-->
           <h2>Velkommen til vinteren!</h2>
@@ -225,6 +265,7 @@
           <a href="vinter.html">Find alle vinter-opskrifter her</a>
         </div>
 
+
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
           <!--Billede af sæson som link-->
@@ -233,12 +274,16 @@
       </div>
     </div>
 
+
   </div>
 
 
+
+
   <!-- ===========================
-       E-MAGASIN TILMELDING M. COLLAGE 
+       E-MAGASIN TILMELDING M. COLLAGE
        =========================== -->
+
 
   <!--Collage m. billeder-->
   <section class="collage-container custom-container">
@@ -250,7 +295,9 @@
     <img src="img/driver.png" class="billede driver" alt="">
     <img src="img/vin.png" class="billede vin" alt="">
 
+
     <div class="custom-container d-flex justify-content-center align-items-center">
+
 
       <!--Tilmelding til e-magasin-->
       <div class="tilmelding-boks">
@@ -263,19 +310,28 @@
           Tilmeld dig vores e-magasin
         </p>
 
+
         <!--Kan skrive sin mail vha. js og få mail m. e-magasin-->
-        <form id="contact-form">
+        <form id="kontaktForm">
+
+
           <label>Email</label>
           <input type="email" name="email" required>
-          <input type="submit" value="Send">
+           <button class="knap-forside my-2" type="submit">Send</button>
+           <p id="status"></p>
+
+
         </form>
+       
       </div>
     </div>
 
+
   </section>
 
+
   <!-- ===========================
-       FÆLLESSKAB-AFSNIT M. BORD - LINKER TIL FÆLLES-SKÅL SIDEN 
+       FÆLLESSKAB-AFSNIT M. BORD - LINKER TIL FÆLLES-SKÅL SIDEN
        =========================== -->
   <div class="orange position-relative faelles-bord">
     <a class="falles-link" href="faellesskaal.html">
@@ -285,6 +341,9 @@
       </picture>
     </a>
   </div>
+
+
+
 
 
 
@@ -301,10 +360,12 @@
         <img src="img/lilleservietmobil.png" alt="Serviet">
       </picture>
 
+
       <!-- Tekst ovenpå papir-->
       <!-- position-absolute gør, at teksten kan placeres ovenpå billedet -->
       <div class="position-absolute p-4">
         <h1 class="overskrift-footer">Kontakt os:</h1>
+
 
         <!-- Første række med telefon og mail -->
         <div class="row">
@@ -317,6 +378,7 @@
             <a href="mailto:lille@skaal.dk">lille@skaal.dk</a>
           </p>
         </div>
+
 
         <!-- Anden række med adresse og Instagram -->
         <div class="row">
@@ -342,13 +404,18 @@
     </div>
   </footer>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
 
+
   <!--JavaScript benyttes til at navigationsbar: nuværende sæson øverst ved dropdown menu + tilmelding til e-magasin (mail)-->
   <script src="script.js"></script>
 
+
 </body>
 
+
 </html>
+

@@ -1,6 +1,8 @@
+
 /*********************************************************
  * NAVIGATIONSBAR – viser den aktuelle sæson øverst
  *********************************************************/
+
 
 // Venter til hele siden er færdig med at indlæse
 document.addEventListener("DOMContentLoaded", function () {
@@ -9,12 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
   //Stopper, hvis boksen ikke findes
   if (!dropdown) return;
 
+
   // Laver en liste med alle links (sæsoner) inde i boksen
   const seasonLinks = Array.from(dropdown.querySelectorAll("a"));
+
 
   // Finder den aktuelle måned (0 = januar, 11 = december)
   const currentMonth = new Date().getMonth();
   let currentSeason;
+
 
   // Bestemmer hvilken sæson det er ud fra måneden
   // Først tjekkes, hvilken måned det er lige nu – 0 = januar, 1 = februar, ..., 11 = december
@@ -32,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSeason = "Vinter";
   }
 
+
   // Finder det link, der passer til den aktuelle sæson
   const matchingLink = seasonLinks.find(link => link.textContent.trim() === currentSeason);
   if (matchingLink) {
@@ -39,6 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdown.prepend(matchingLink);
   }
 });
+
+
+
+
 
 
 
@@ -56,10 +66,12 @@ function getCurrentSeason() {
   return "winter";                                 // december-februar
 }
 
+
 // Viser kun den rigtige sæson og skjuler de andre
 function showCurrentSeason() {
   const season = getCurrentSeason();
   const containers = document.querySelectorAll(".season-container");
+
 
   containers.forEach(div => {
     if (div.id === season) {
@@ -70,8 +82,13 @@ function showCurrentSeason() {
   });
 }
 
+
 // Kører funktionen når siden er klar
 document.addEventListener("DOMContentLoaded", showCurrentSeason);
+
+
+
+
 
 
 
@@ -92,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     efteraar: document.getElementById("alle-efteraar")
   };
 
+
    // Finder den aktuelle sæson
   function getCurrentSeason() {
     const month = new Date().getMonth() + 1; // Januar = 1
@@ -101,17 +119,22 @@ document.addEventListener("DOMContentLoaded", function () {
     return "vinter"; // December, Januar, Februar
   }
 
+
   const currentSeason = getCurrentSeason();
   const seasonElement = seasons[currentSeason];
+
 
   if (seasonElement) {
     // Finder den tekst, der står øverst (introduktion
     const introduktion = document.querySelector(".introduktion");
 
+
     // Flytter den aktuelle sæsons opskrifter lige under introduktionen
     introduktion.insertAdjacentElement("afterend", seasonElement);
   }
 });
+
+
 
 
 /*************************
@@ -126,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
     efteraar: document.querySelector("#carousel-efteraar")?.closest(".col-12")
   };
 
+
   // Finder den aktuelle sæson
   function getCurrentSeason() {
     const month = new Date().getMonth() + 1;
@@ -135,8 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
     return "vinter";
   }
 
+
   const currentSeason = getCurrentSeason();
   const currentCarousel = carousels[currentSeason];
+
 
   if (currentCarousel) {
     // Flytter karusellen med den aktuelle sæson øverst i containeren
@@ -144,6 +170,9 @@ document.addEventListener("DOMContentLoaded", function () {
     container.insertBefore(currentCarousel, container.firstElementChild);
   }
 });
+
+
+
 
 
 
@@ -155,39 +184,65 @@ function addComment() {
   const commentInput = document.getElementById('commentInput'); // Felt til kommentar
   const commentsContainer = document.getElementById('commentsContainer'); // Boksen med kommentarer
 
+
   const name = nameInput.value.trim(); // Fjerner mellemrum før og efter
   const comment = commentInput.value.trim();
+
 
   if (!name || !comment) {
     alert('Skriv både navn og kommentar!'); // Viser advarsel, hvis noget mangler
     return;
   }
 
+
    // Laver en ny boks til kommentaren
   const commentEl = document.createElement('div');
   commentEl.classList.add('comment');
+
 
   const nameEl = document.createElement('div');
   nameEl.classList.add('name');
   nameEl.textContent = name;  //Sætter navnet ind
 
+
   const textEl = document.createElement('div');
   textEl.classList.add('text');
   textEl.textContent = comment; // Sætter kommentaren ind
 
+
   commentEl.appendChild(nameEl);
   commentEl.appendChild(textEl);
 
+
   // Lægger den nye kommentar i bunden af boksen
   commentsContainer.appendChild(commentEl);
+
 
   // Tømmer inputfelterne
   nameInput.value = '';
   commentInput.value = '';
 
+
   // Ruller ned, så man kan se den nyeste kommentar
   commentsContainer.scrollTop = commentsContainer.scrollHeight;
 }
+
+
+document.getElementById('kontaktForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Forhindrer siden i at reloade
+
+
+  emailjs.sendForm('service_uvrupo8', 'template_mzxgu4i', this)
+    .then(function() {
+      document.getElementById('status').innerText = "Besked sendt!";
+    }, function(error) {
+      document.getElementById('status').innerText = "Noget gik galt. Prøv igen.";
+      console.log(error);
+    });
+});
+
+
+
 
 
 
