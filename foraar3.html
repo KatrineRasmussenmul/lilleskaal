@@ -29,7 +29,7 @@
   <!--Fixed navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo skål"></a>
+      <a class="navbar-brand logo" href="index.html"><img src="img/logo-vand-2.png" alt="Lilleskål logo"></a>
 
       <!--Burger-menu til mobil-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -74,10 +74,11 @@
        =========================== -->
   <!--ØVERSTE BILLEDE AF RET-->
   <!--To forskellige billeder ud fra om det er mobil eller tablet/desktop -->
+<header>
   <div class="hero-sektion position-relative">
     <picture>
       <source media="(min-width: 768px)" srcset="img/foraar/heroforaarstor3.png">
-      <img src="img/foraar/herolilleforaar3.png" alt="">
+      <img src="img/foraar/herolilleforaar3.png" alt="Lilleskål forårsopskrift: Forårsnudler med radiser, porre og sesam">
     </picture>
 
   </div>
@@ -86,7 +87,8 @@
   <!-- ===========================
        INTRO-SEKTION
        =========================== -->
-  <div class="custom-container">
+  <section class="custom-container">
+    <button class="knap-aarstider"><a href="foraar.html">Tilbage</a></button>
     <div class="row align-items-start my-5">
       <!--Tekstfelt m. introduktion til venstre-->
       <!-- Kolonne: 12 på mobil, 7 på små skærme (576px) og op -->
@@ -99,10 +101,11 @@
       <!--Illustration vises ikke på mobil-->
       <!--Kolonne: 3 kol på små skærme (576px) og op + forskydes 1 kol ved medium skærm (768px) og op-->
       <div class="d-none d-sm-block col-sm-3 offset-md-1">
-        <img src="img/illustrationer/porre.png" alt="illustration">
+        <img src="img/illustrationer/porre.png" alt="Porre illustration">
       </div>
     </div>
-  </div>
+  </section>
+</header>
 
 
   <!-- ===========================
@@ -146,9 +149,9 @@
             </div>
 
             <!--Billeder-->
-            <img src="img/foraar/foraar3billede1igen.png" class="billede opskrift-billede1" alt="">
-            <img src="img/foraar/foraar3ny.png" class="billede opskrift-billede2" alt="">
-            <img src="img/foraar/foraaar.png" class="billede opskrift-billede3" alt="">
+            <img src="img/foraar/foraar3billede1igen.png" class="billede opskrift-billede1" alt="Lilleskål forårsopskrift: Forårsnudler med radiser, porre og sesam">
+            <img src="img/foraar/foraar3ny.png" class="billede opskrift-billede2" alt="Lilleskål forårsopskrift: Forårsnudler med radiser, porre og sesam">
+            <img src="img/foraar/foraaar.png" class="billede opskrift-billede3" alt="Indkøbskurv med årstidens grøntsager">
           </div>
 
 
@@ -219,14 +222,14 @@
       <!--Første opskrift: hele boksen er et link-->
       <!-- Kolonne: 12 på mobil, 5 på små skærme (576px) og op -->
       <a class="col-12 col-sm-5" href="foraar2.html">
-        <img src="img/foraar/foraar2billede4.png" alt="">
+        <img src="img/foraar/foraar2billede4.png" alt="Lilleskål forårsopskrift: Forårs-orzo med tomater og citron">
         <p>Forårs-orzo med tomater og citron</p>
       </a>
 
       <!--Anden opskrift: hele boksen er et link-->
       <!-- Kolonne: 12 på mobil, 5 på små skærme (576px) og op -->
       <a class="col-12 col-sm-5" href="foraar1.html">
-        <img src="img/foraar/foraar1billede2.png" alt="">
+        <img src="img/foraar/foraar1billede2.png" alt="Lilleskål forårsopskrift: Pasta med tomat, spidskål og ramsløgspesto">
         <p>Pasta med tomat, spidskål og ramsløgspesto</p>
       </a>
     </div>
@@ -239,21 +242,21 @@
   <!--
       På små skærme (mobil): vis indholdet under hinanden (flex-column)
       Fra små skærme (576px) og op: vis dem ved siden af hinanden (flex-sm-row)-->
-  <div class="comment-section custom-container d-flex flex-column flex-md-row  my-5">
-    <div class="comment-form">
-      <h2>Har du spørgsmål til opskriften?</h2>
-      <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i
-        kommentarfeltet herunder.</p>
-      <input type="text" id="nameInput" placeholder="Dit navn" />
-      <textarea id="commentInput" placeholder="Din kommentar"></textarea>
-      <button onclick="addComment()">Send</button>
-    </div>
-
-    <div class="comment-list">
-      <h2>Kommentarer</h2>
-      <div id="commentsContainer"></div>
-    </div>
-  </div>
+      <section class="comment-section custom-container d-flex flex-column flex-md-row  my-5">
+        <form class="comment-form">
+          <h2>Har du spørgsmål til opskriften?</h2>
+          <p>Har du et spørgsmål til opskriften eller lyst til at sende en hilsen med et tip, så kan du skrive til os i
+            kommentarfeltet herunder.</p>
+          <input type="text" id="nameInput" placeholder="Dit navn" />
+          <textarea id="commentInput" placeholder="Din kommentar"></textarea>
+          <button onclick="addComment()">Send</button>
+        </form>
+    
+        <aside class="comment-list">
+          <h2>Kommentarer</h2>
+          <div id="commentsContainer"></div>
+        </aside>
+      </section>
 
 
   <!-- ===========================
