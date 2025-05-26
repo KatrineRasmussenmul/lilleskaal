@@ -19,6 +19,15 @@
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--E-mail form-->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("3LdleP9UAzHffR-I7");
+  })();
+</script>
+
 </head>
 
 <body>
@@ -165,11 +174,15 @@
             <br><br> Vil du se, hvad der rører sig netop nu? Tag et kig til højre og få et sneak peek af den aktuelle udgave af vores e-magasin, hvor du finder friske opskrifter, event info og meget mere </p>
 
           <!--Kan skrive sin mail vha. js og få mail m. e-magasin-->
-          <form id="contact-form">
-            <label>Email</label>
-            <input type="email" name="email" required>
-            <input type="submit" value="Send">
-          </form>
+           <!--Kan skrive sin mail vha. js og få mail m. e-magasin-->
+        <form id="kontaktForm">
+
+          <label>Email</label>
+          <input type="email" name="email" required>
+           <button class="knap-forside my-2" type="submit">Send</button>
+           <p id="status"></p>
+
+        </form>
         </article>
 
         <!--E-magasin fra Indesign / Sneak-peek-->

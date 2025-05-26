@@ -22,6 +22,15 @@
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!--E-mail form-->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("3LdleP9UAzHffR-I7");
+  })();
+</script>
+
 </head>
 
 <body>
@@ -263,11 +272,15 @@
         </p>
 
         <!--Kan skrive sin mail vha. js og få mail m. e-magasin-->
-        <form id="contact-form">
+        <form id="kontaktForm">
+
           <label>Email</label>
           <input type="email" name="email" required>
-          <input type="submit" value="Send">
+           <button class="knap-forside my-2" type="submit">Send</button>
+           <p id="status"></p>
+
         </form>
+       
       </div>
     </div>
 

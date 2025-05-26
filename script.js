@@ -189,6 +189,16 @@ function addComment() {
   commentsContainer.scrollTop = commentsContainer.scrollHeight;
 }
 
+document.getElementById('kontaktForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Forhindrer siden i at reloade
 
+  emailjs.sendForm('service_uvrupo8', 'template_mzxgu4i', this)
+    .then(function() {
+      document.getElementById('status').innerText = "Besked sendt!";
+    }, function(error) {
+      document.getElementById('status').innerText = "Noget gik galt. Prøv igen.";
+      console.log(error);
+    });
+});
 
 
