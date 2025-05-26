@@ -31,7 +31,7 @@
   <!--Fixed navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-4">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="index.html"><img src="img/logo-vand-2.png" alt="Lilleskål logo"></a>
+      <a class="navbar-brand logo" href="index.html"><img src="img/logo-vand-2.png" alt="logo skål"></a>
 
       <!--Burger-menu til mobil-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -73,11 +73,12 @@
   <!-- ===========================
        HERO-SEKTION
        =========================== -->
+  <!--ØVERSTE BILLEDE AF RET-->
   <!--To forskellige billeder ud fra om det er mobil eller tablet/desktop -->
-  <header class="hero-sektion position-relative">
+  <div class="hero-sektion position-relative">
     <picture>
       <source media="(min-width: 768px)" srcset="img/forsidebillede.png">
-      <img src="img/forsidemobil.png" alt="Lilleskåls køkken med de 2 kokke der laver mad og drikker vin">
+      <img src="img/forsidemobil.png" alt="billede af de to kokke i køkkenet, en drikker vin den anden står med en peberkværn, på køkkenet er der pizza de er i gang med at lave">
     </picture>
     <!--Tekst & logo over baggrundsbillede-->
     <!--position-absolute top-0 start 0: placer indholdet i øverste venstre hjørne-->
@@ -85,21 +86,36 @@
     <!--d-flex ....: centrerer tekst midt i billedet-->
     <div
       class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center       align-items-center text-center">
+<<<<<<< HEAD
       <img class="logo-forside" src="img/logovandmaling.png" alt="Lilleskål logo">
       <div class="call-to-action"><a href="alleopskrifter.html">
+=======
+      <img class="logo-forside" src="img/logovandmaling.png" alt="">
+      <h4 class="call-to-action"><a href="alleopskrifter.html">
+>>>>>>> a69afbdbf49a2fd242c645de1bbc944293d27710
           <picture>
             <source media="(min-width: 768px)" srcset="img/opskriftknapstor.png">
-            <img src="img/opskriftknapmobil.png" alt=" Se opskrifter mobil knap">
+            <img src="img/opskriftknapmobil.png" alt="">
           </picture>
         </a></div>
     </div>
+<<<<<<< HEAD
   </header>
+=======
+  </div>
+
+  <!--UPS!!!!!!!!! der kommer fejlkode ved linje 88:  Empty heading.
+
+From line 88, column 7; to line 88, column 33
+
+"">↩      <h4 class="call-to-action"><a hre-->
+>>>>>>> a69afbdbf49a2fd242c645de1bbc944293d27710
   
 
   <!-- ===========================
        INTRO-SEKTION
        =========================== -->
-  <section class="custom-container">
+  <div class="custom-container">
     <div class="row align-items-start my-5">
       <!--Tekstfelt m. introduktion til side-->
       <!-- Kolonne: 12 på mobil, 6 på små skærme (≥576px) og op -->
@@ -111,10 +127,10 @@
       <!--Illustration vises ikke på mobil-->
       <!-- Kolonne: 2 på små skærme (≥576px) og op; forskydning til venstre: 2 kolonner -->
       <div class="d-none d-sm-block col-sm-2 offset-sm-2">
-        <img src="img/illustrationer/basilikum.png" alt="Basilikum illustration">
+        <img src="img/illustrationer/basilikum.png" alt="illustration">
       </div>
     </div>
-  </section>
+  </div>
 
 
   <!-- ===========================
@@ -122,12 +138,13 @@
        =========================== -->
 
   <!--Oversigt over alle sæsoner, som kan komme på forsiden. UPS der bliver kun vist den nuværende sæson, som man er i-->
-  <section class="orange py-5">
+  <div class="orange py-5">
     <div class="custom-container">
       <!-- Sommer -->
-      <section id="summer" class="season-container row d-none">
+      <div id="summer" class="season-container row d-none">
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
+
           <!--Tekst om sæson-->
           <h2>Velkommen til sommeren!</h2>
           <p>
@@ -146,10 +163,10 @@
           <!--Billede af sæson som link-->
           <a href="sommer.html"><img src="img/sommer/sommer2billede2.png" alt="Sommer" class="img-fluid rounded" /></a>
         </div>
-      </section>
+      </div>
 
       <!-- Forår -->
-      <section id="spring" class=" season-container row d-none">
+      <div id="spring" class=" season-container row d-none">
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
 
@@ -172,10 +189,10 @@
           <!--Billede af sæson som link-->
           <a href="foraar.html"><img src="img/foraar/foraar1billede2.png" alt="Forår" class="img-fluid rounded" /></a>
         </div>
-      </section>
+      </div>
 
       <!-- Efterår -->
-      <section id="autumn" class="season-container row d-none">
+      <div id="autumn" class="season-container row d-none">
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
 
@@ -196,10 +213,10 @@
           <a href="efteraar.html"><img src="img/efteraar/efteraar2billede1ny.png" alt="Efterår"
               class="img-fluid rounded" /></a>
         </div>
-      </section>
+      </div>
 
       <!-- Vinter -->
-      <section id="winter" class="season-container d-none">
+      <div id="winter" class="season-container d-none">
         <!-- Kolonne: 12 på mobil, 6 på mellemstore skærme (≥768px) og op -->
         <div class="col-12 col-md-6">
 
@@ -222,10 +239,10 @@
           <!--Billede af sæson som link-->
           <a href="vinter.html"><img src="img/vinter/vinter1billede1.png" alt="Vinter" class="img-fluid rounded" /></a>
         </div>
-      </section>
+      </div>
     </div>
 
-  </section>
+  </div>
 
 
   <!-- ===========================
@@ -234,13 +251,13 @@
 
   <!--Collage m. billeder-->
   <section class="collage-container custom-container">
-    <img src="img/kurv.png" class="billede kurv" alt="Indkøbskurv med årstidens grøntsager">
-    <img src="img/foraarsbord.png" class="billede foraarsbord" alt="Forårsbord">
-    <img src="img/illustrationer/porre.png" class="billede asparges" alt="Porre illustration">
-    <img src="img/illustrationer/tomat.png" class="billede tomat" alt="Tomat illustration">
-    <img src="img/foraarsmad.png" class="billede foraarsmad" alt="Lilleskål forårsret">
-    <img src="img/driver.png" class="billede driver" alt="Kvinder i drivhus spiser lilleskål mad">
-    <img src="img/vin.png" class="billede vin" alt="Vin på bord">
+    <img src="img/kurv.png" class="billede kurv" alt="">
+    <img src="img/foraarsbord.png" class="billede foraarsbord" alt="">
+    <img src="img/illustrationer/porre.png" class="billede asparges" alt="">
+    <img src="img/illustrationer/tomat.png" class="billede tomat" alt="">
+    <img src="img/foraarsmad.png" class="billede foraarsmad" alt="">
+    <img src="img/driver.png" class="billede driver" alt="">
+    <img src="img/vin.png" class="billede vin" alt="">
 
     <div class="container d-flex justify-content-center align-items-center">
 
@@ -269,14 +286,14 @@
   <!-- ===========================
        FÆLLESSKAB-AFSNIT M. BORD - LINKER TIL FÆLLES-SKÅL SIDEN 
        =========================== -->
-  <section class="orange position-relative faelles-bord">
+  <div class="orange position-relative faelles-bord">
     <a class="falles-link" href="faellesskaal.html">
       <picture class="d-flex justify-content-center">
         <source media="(min-width: 768px)" srcset="img/deskfaellesskaal.png">
-        <img src="img/mobilfaellesskaal.png" alt="Vinglas skåler illustration">
+        <img src="img/mobilfaellesskaal.png" alt="">
       </picture>
     </a>
-  </section>
+  </div>
 
 
 
