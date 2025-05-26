@@ -107,9 +107,9 @@ h5 {
     height: auto;
   }
 
-
-.aktiv{
-  background-color: aqua;
+  /* Styling til den aktive side */
+li.aktiv a, .dropdown-content a.aktiv, a.aktiv  {
+  text-decoration: underline;
 }
 
 
