@@ -476,6 +476,8 @@ button {
   width: 200px;
   background-color: var(--primær-blå);
   color: var(--primær-orange);
+  border: none;
+  font-family: poppins;
 }
 
 /*Container til alle kommentarer*/
