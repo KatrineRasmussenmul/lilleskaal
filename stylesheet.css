@@ -108,10 +108,17 @@ h5 {
   }
 
 
-.aktiv{
-  color: pink
+li.aktiv a{
+  font-weight: bold;
 }
 
+a.aktiv {
+  font-weight: bold;
+}
+
+.dropdown-content a.aktiv{
+  font-weight: bold;
+}
 
 /* ============================================================================================================================= */
 /* ===   DROPDOWN MENU - EGEN STYLING   === */
