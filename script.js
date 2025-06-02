@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (currentCarousel) {
     // Flytter karusellen med den aktuelle sæson øverst i containeren
-    const container = document.querySelector("carousel-container");
+    const container = document.querySelector(".carousel-container");
     container.insertBefore(currentCarousel, container.firstElementChild);
   }
 });
