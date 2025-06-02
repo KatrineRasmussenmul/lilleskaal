@@ -63,13 +63,13 @@ h1 {
   font-weight: bold;
 }
 
-h2, h3 {
+h2, h3, h4{
   /*tekst bliver tyk/kraftig*/
   font-weight: bold;
 }
 
-p, h2, h3, a {
-  /*skrifttype til brødtekst samt mindre overskrifter end h1*/
+p, h2, h3, h4 , a{
+  /*skrifttype*/
   font-family: 'Poppins', sans-serif;
 }
 
@@ -77,12 +77,6 @@ a {
   color: var(--primær-blå);
   /*fjerner steg under links*/
   text-decoration: none;
-}
-
-h5 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: bolder;
 }
 
 
