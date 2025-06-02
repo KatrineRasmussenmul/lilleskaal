@@ -83,15 +83,15 @@ document.addEventListener("DOMContentLoaded", showCurrentSeason);
 
 
 
+
 /*********************************************************
  * ALLE OPSKRIFTER - SIDE – viser den aktuelle sæson øverst
  *********************************************************/
 /*************************
  * Desktop & tablet
  *************************/
+
 document.addEventListener("DOMContentLoaded", function () {
-  // Find ID'er på sæson-sektioner
-  // Finder alle sektioner med opskrifter til hver sæson
   const seasons = {
     vinter: document.getElementById("alle-vinter"),
     foraar: document.getElementById("alle-foraar"),
@@ -99,34 +99,42 @@ document.addEventListener("DOMContentLoaded", function () {
     efteraar: document.getElementById("alle-efteraar")
   };
 
-   // Finder den aktuelle sæson
   function getCurrentSeason() {
-    const month = new Date().getMonth() + 1; // Januar = 1
+    const month = new Date().getMonth() + 1;
     if (month >= 3 && month <= 5) return "foraar";
     if (month >= 6 && month <= 8) return "sommer";
     if (month >= 9 && month <= 11) return "efteraar";
-    return "vinter"; // December, Januar, Februar
+    return "vinter";
   }
 
+  const seasonOrder = ["foraar", "sommer", "efteraar", "vinter"];
   const currentSeason = getCurrentSeason();
-  const seasonElement = seasons[currentSeason];
+  const currentIndex = seasonOrder.indexOf(currentSeason);
 
-  if (seasonElement) {
-    // Finder den tekst, der står øverst (introduktion
-    const introduktion = document.querySelector(".introduktion");
+  // Lav ny rækkefølge startende fra den aktuelle sæson
+  const reorderedSeasons = [
+    ...seasonOrder.slice(currentIndex),
+    ...seasonOrder.slice(0, currentIndex)
+  ];
 
-    // Flytter den aktuelle sæsons opskrifter lige under introduktionen
-    introduktion.insertAdjacentElement("afterend", seasonElement);
-  }
+  const introduktion = document.querySelector(".introduktion");
+
+  // Flyt alle sektioner i ny rækkefølge under introduktion
+  reorderedSeasons.reverse().forEach(season => {
+    const section = seasons[season];
+    if (section) {
+      introduktion.insertAdjacentElement("afterend", section);
+    }
+  });
 });
 
 
 
 /*************************
- * Mobil / karusel
+ * Mobil / karusel – sorteret efter aktuel sæson
  *************************/
 document.addEventListener("DOMContentLoaded", function () {
-   // Finder kasserne med karuseller til hver sæson
+  // Finder kasserne med karuseller til hver sæson
   const carousels = {
     vinter: document.querySelector("#carousel-vinter")?.closest(".col-12"),
     foraar: document.querySelector("#carousel-foraar")?.closest(".col-12"),
@@ -144,13 +152,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const currentSeason = getCurrentSeason();
-  const currentCarousel = carousels[currentSeason];
+  const seasonOrder = ["foraar", "sommer", "efteraar", "vinter"];
+  const startIndex = seasonOrder.indexOf(currentSeason);
 
-  if (currentCarousel) {
-    // Flytter karusellen med den aktuelle sæson øverst i containeren
-    const container = document.querySelector(".carousel-container");
-    container.insertBefore(currentCarousel, container.firstElementChild);
-  }
+  // Ny rækkefølge: den aktuelle sæson først
+  const reorderedSeasons = [
+    ...seasonOrder.slice(startIndex),
+    ...seasonOrder.slice(0, startIndex)
+  ];
+
+  const container = document.querySelector(".carousel-container");
+
+  // Flyt karuseller i ny rækkefølge
+  reorderedSeasons.slice().reverse().forEach(season => {
+    const item = carousels[season];
+    if (item && container) {
+      container.insertBefore(item, container.firstElementChild);
+    }
+  });
 });
 
 
