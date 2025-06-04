@@ -218,6 +218,10 @@ function addComment() {
   commentsContainer.scrollTop = commentsContainer.scrollHeight;
 }
 
+
+/*********************************************************
+ * E-MAIL
+ *********************************************************/
 document.getElementById('kontaktForm').addEventListener('submit', function(e) {
   e.preventDefault(); // Forhindrer siden i at reloade
 
