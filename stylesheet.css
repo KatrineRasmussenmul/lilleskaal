@@ -244,6 +244,7 @@ li.aktiv a, .dropdown-content a.aktiv, a.aktiv  {
 .alle-sommer a img:hover,
 .alle-efteraar a img:hover,
 .alle-vinter a img:hover,
+.emagasin-popup img:hover,
 .falles-link:hover img {
   transform: scale(1.05);
   transition: transform 0.3s ease;
@@ -270,6 +271,20 @@ li.aktiv a, .dropdown-content a.aktiv, a.aktiv  {
 
 .illustration-introduktion-sommer1{
   transform: rotate(-25deg);
+}
+
+.cta-img {
+  animation: pulse 2s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
 }
 
 /* ============================================================================================================================= */
