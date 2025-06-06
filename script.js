@@ -233,3 +233,13 @@ document.getElementById('kontaktForm').addEventListener('submit', function(e) {
       console.log(error);
     });
 });
+
+
+/*********************************************************
+ * POP UP
+ *********************************************************/
+
+// gør så krydset lukker pop up med tilmeld e-magasin
+document.querySelector('.close-popup').addEventListener('click', function() {
+  document.querySelector('.emagasin-popup').style.display = 'none';
+});
