@@ -73,6 +73,12 @@ p, h2, h3, h4 , a{
   font-family: 'Poppins', sans-serif;
 }
 
+h5, .tip-tekst {
+  font-family: 'Fuzzy Bubbles';
+  color: var(--primær-blå);
+}
+
+
 a {
   color: var(--primær-blå);
   /*fjerner steg under links*/
