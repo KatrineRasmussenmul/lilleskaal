@@ -63,14 +63,10 @@ h1 {
   font-weight: bold;
 }
 
-h2, h3, h4{
-  /*tekst bliver tyk/kraftig*/
-  font-weight: bold;
-}
-
 p, h2, h3, h4 , a{
   /*skrifttype*/
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 h5, .tip-tekst {
