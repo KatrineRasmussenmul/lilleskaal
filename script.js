@@ -42,11 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-
-
-
 /*********************************************************
  * FORSIDE - kun nuværende sæson, som bliver vist
  *********************************************************/
@@ -79,11 +74,6 @@ document.addEventListener("DOMContentLoaded", showCurrentSeason);
 
 
 
-
-
-
-
-
 /*********************************************************
  * ALLE OPSKRIFTER - SIDE – viser den aktuelle sæson øverst
  *********************************************************/
@@ -99,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     efteraar: document.getElementById("alle-efteraar")
   };
 
+  // definerer månederne 
   function getCurrentSeason() {
     const month = new Date().getMonth() + 1;
     if (month >= 3 && month <= 5) return "foraar";
@@ -107,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return "vinter";
   }
 
+  //definerer rækkefølge
   const seasonOrder = ["foraar", "sommer", "efteraar", "vinter"];
   const currentSeason = getCurrentSeason();
   const currentIndex = seasonOrder.indexOf(currentSeason);
@@ -171,8 +163,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-
 
 
 
